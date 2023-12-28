@@ -5,12 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TipoDocumentoContable extends Model
+class ProcesosContabilidad extends Model
 {
     use HasFactory;
-
-    public function comprobante()
-    {
-        return $this->hasMany(Comprobante::class);
-    }
 }
