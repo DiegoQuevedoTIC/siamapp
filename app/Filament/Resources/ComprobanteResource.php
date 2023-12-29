@@ -8,6 +8,7 @@ use App\Models\Comprobante;
 use App\Models\Puc;
 use App\Models\TipoDocumentoContable;
 use Filament\Forms;
+use Filament\Forms\Components\Actions\Action;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -22,6 +23,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Support\RawJs;
+use Icetalker\FilamentTableRepeater\Forms\Components\TableRepeater;
 
 class ComprobanteResource extends Resource
 {
@@ -51,56 +53,60 @@ class ComprobanteResource extends Resource
         return $form
             ->schema([
                 //
-                Wizard::make([
-                    Wizard\Step::make('Creacion de comprobante')
+                Select::make('tipo_documento_contables_id')
+                    ->label('Tipo de Documento')
+                    ->native(false)
+                    ->options($tipoDocumento)
+                    ->required(),
+                
+                TextInput::make('n_documento')
+                    ->label('Nº de Documento')
+                    ->required(),
+
+                TextInput::make('tercero_comprobante')
+                    ->label('Tercero Comprobante')
+                    ->required(),
+
+                Toggle::make('is_plantilla')
+                    ->label('¿Guardar como Plantilla?')
+                    ->live()
+                    ->required(),
+
+                Textarea::make('descripcion_comprobante')
+                    ->label('Descripcion del Comprobante')
+                    ->required(),
+
+                Select::make('clase_comprobante_origen')
+                    ->label('Clase Comprobante Origen')
+                    ->options([
+                        1 => 'Ejemplo de comprobante origen'
+                    ])
+                    ->required(),
+                TableRepeater::make('detalle')
+                    ->label('Detalle comprobante')
                     ->schema([
-                        Select::make('tipo_documento_contables_id')
-                        ->label('Tipo de Documento')
-                        ->native(false)
-                        ->options($tipoDocumento),
-
-                        TextInput::make('n_documento')
-                        ->label('Nº de Documento'),
-
-                        TextInput::make('tercero_comprobante')
-                        ->label('Tercero Comprobante'),
-
-                        Toggle::make('is_plantilla')
-                        ->label('¿Guardar como Plantilla?'),
-
-                        Textarea::make('descripcion_comprobante')
-                        ->label('Descripcion del Comprobante'),
-
-                        Select::make('clase_comprobante_origen')
-                        ->label('Clase Comprobante Origen')
-                        ->options([
-                            1 => 'Ejemplo de comprobante origen'
-                        ]),
-
-                    Wizard\Step::make('Contenido del comprobante')
-                    ->schema([
-                        Repeater::make('linea')
-                        ->schema([
-                            Select::make('pucs_id')
+                        Select::make('pucs_id')
                             ->label('Cuenta PUC')
                             ->options($puc),
 
-                            TextInput::make('tercero_registro')
+                        TextInput::make('tercero_registro')
                             ->label('Tercero Registro'),
 
-                            TextInput::make('descripcion_linea')
+                        TextInput::make('descripcion_linea')
                             ->label('Descripcion Linea'),
 
-                            TextInput::make('debito')
+                        TextInput::make('debito')
                             ->placeholder('Debito'),
 
-                            TextInput::make('credito')
+                        TextInput::make('credito')
                             ->placeholder('Credito'),
-                        ])
-                    ])->hidden(fn (Get $get): bool => $get('is_plantilla'))
                     ])
-                ])
-                
+                    ->reorderable()
+                    ->cloneable()
+                    ->collapsible()
+                    ->defaultItems(1)
+                    ->columnSpanFull()
+                    ->visible(fn (Get $get): bool =>  ! $get('is_plantilla')),
             ]);
     }
 

@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('descripcion_linea', 400);
             $table->decimal('debito', 12, 2)->nullable();
             $table->decimal('credito', 12, 2)->nullable();
+            $table->unsignedBigInteger('comprobante_id');
+            $table->foreign('comprobante_id')->on('comprobantes')->references('id');
             $table->timestamps();
         });
     }
