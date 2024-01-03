@@ -3,35 +3,25 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ComprobanteResource\Pages;
-use App\Filament\Resources\ComprobanteResource\RelationManagers;
 use App\Models\Comprobante;
 use App\Models\Puc;
 use App\Models\TipoDocumentoContable;
-use Filament\Forms;
-use Filament\Forms\Components\Actions\Action;
 use Filament\Forms\Components\DatePicker;
-use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Forms\Components\Wizard;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
-use Filament\Infolists\Components\Section;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Support\RawJs;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
-use Filament\Tables\Filters\TernaryFilter;
 use Icetalker\FilamentTableRepeater\Forms\Components\TableRepeater;
-use NunoMaduro\Collision\Adapters\Phpunit\State;
 
 class ComprobanteResource extends Resource
 {
@@ -124,17 +114,18 @@ class ComprobanteResource extends Resource
                 TextColumn::make('id')
                     ->label('Nº'),
 
-                TextColumn::make('tipoDocumentoContable.id')
-                    ->label('Tipo de Documento Contable'),
+                TextColumn::make('tipo_documento_contables_id')
+                    ->label('Tipo de Documento Contable')
+                    ->formatStateUsing(fn (string $state): string => TipoDocumentoContable::all()->find($state)['tipo_documento']),
 
                 TextColumn::make('n_documento')
                     ->label('Nº de documento'),
 
                 TextColumn::make('tercero_comprobante')
-                ->label('Tercero Comprobante'),
+                    ->label('Tercero Comprobante'),
 
-                TextColumn::make('claseComprobante.id')
-                ->label('Clase comprobante origen'),
+                TextColumn::make('clase_comprobante_origen')
+                    ->label('Clase comprobante origen'),
 
             ])
             ->filters([
@@ -146,34 +137,33 @@ class ComprobanteResource extends Resource
 
                 Filter::make('created_at')->form([
                     DatePicker::make('created_from')
-                    ->label('Creado desde')
-                    ->native(false),
+                        ->label('Creado desde')
+                        ->native(false),
                     DatePicker::make('created_until')
-                    ->label('Creado hasta')
-                    ->native(false)
+                        ->label('Creado hasta')
+                        ->native(false)
                 ])
-                ->query(function (Builder $query, array $data): Builder {
-                    return $query
-                    ->when(
-                        $data['created_from'],
-                        fn (Builder $query, $date): Builder => $query->whereDate('created_at', ">=", $date),
-                    )
-                    ->when(
-                        $data['created_until'],
-                        fn (Builder $query, $date): Builder => $query->whereDate('created_at', "<=", $date),
-                    );
-                })
+                    ->query(function (Builder $query, array $data): Builder {
+                        return $query
+                            ->when(
+                                $data['created_from'],
+                                fn (Builder $query, $date): Builder => $query->whereDate('created_at', ">=", $date),
+                            )
+                            ->when(
+                                $data['created_until'],
+                                fn (Builder $query, $date): Builder => $query->whereDate('created_at', "<=", $date),
+                            );
+                    })
             ])
             ->actions([
                 Tables\Actions\ViewAction::make()
-                ->label('Ver comprobante'),
+                    ->label('Ver comprobante'),
                 Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
                 /*Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
-                ])*/
-            ])
+                ])*/])
             ->emptyStateHeading('Sin comprobantes');
     }
 
@@ -196,48 +186,5 @@ class ComprobanteResource extends Resource
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->where('is_plantilla', false);
-    }
-
-    public static function infolist(Infolist $infolist): Infolist
-    {
-        return $infolist->schema([
-            TextEntry::make('id')
-            ->label('Nº'),
-
-            TextEntry::make('tipo_documento_contables_id')
-            ->label('Tipo de Documento Contable')
-            ->formatStateUsing(fn (State $state): string => dd($state)),
-
-            Section::make('detalle')
-            ->label('Detalle comprobante')
-            ->schema([
-                TableRepeater::make('detalle')
-                    ->label('Detalle comprobante')
-                    ->schema([
-                        TextInput::make('pucs_id')
-                            ->label('Cuenta PUC'),
-
-                        TextInput::make('tercero_registro')
-                            ->label('Tercero Registro'),
-
-                        TextInput::make('descripcion_linea')
-                            ->label('Descripcion Linea'),
-
-                        TextInput::make('debito')
-                            ->placeholder('Debito'),
-
-                        TextInput::make('credito')
-                            ->placeholder('Credito'),
-                    ])
-                    ->reorderable()
-                    ->cloneable()
-                    ->collapsible()
-                    ->defaultItems(1)
-                    ->columnSpanFull()
-                    ->visible(fn (Get $get): bool =>  !$get('is_plantilla'))
-            ])
-
-
-        ]);
     }
 }
