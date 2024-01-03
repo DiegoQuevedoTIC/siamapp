@@ -30,7 +30,6 @@ class CreateComprobante extends CreateRecord
 
     protected function afterCreate(): void
     {
-        $detalle = array();
         $comprobante_id = Comprobante::latest()->first()->id;
         if(!empty($this->detalle))
         {
@@ -41,10 +40,16 @@ class CreateComprobante extends CreateRecord
                     unset($this->detalle[$key]);
                 }
                 else{
-                    $value['comprobante_id'] = $comprobante_id;
+                    $this->detalle[$key]['comprobante_id'] = $comprobante_id;
                 }
             }
         }
+        /*Recorremos el arreglo final de nuevo*/
+        foreach($this->detalle as $row)
+        {
+            ComprobanteLinea::create($row);
+        }
+        
     }
 
     protected function getRedirectUrl(): string
