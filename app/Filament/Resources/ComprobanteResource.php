@@ -101,8 +101,7 @@ class ComprobanteResource extends Resource
                     ->cloneable()
                     ->collapsible()
                     ->defaultItems(1)
-                    ->columnSpanFull()
-                    ->visible(fn (Get $get): bool =>  !$get('is_plantilla')),
+                    ->columnSpanFull(),
             ]);
     }
 
