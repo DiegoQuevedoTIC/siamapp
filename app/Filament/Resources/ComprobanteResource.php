@@ -51,8 +51,7 @@ class ComprobanteResource extends Resource
         unset($query);
         $query = TipoContribuyente::all()->toArray();
         $terceroComprobante = array();
-        foreach ($query as $row)
-        {
+        foreach ($query as $row) {
             $terceroComprobante[$row['id']] = $row['nombre'];
         }
         return $form
@@ -76,21 +75,24 @@ class ComprobanteResource extends Resource
                     ->options($terceroComprobante),
 
                 DatePicker::make('fecha_comprobante')
-                ->label('Fecha de comprobante')
-                ->required()
-                ->native(false)
-                ->disabled(function(Get $get, Set $set){
-                    $id = $get('tipo_documento_contables_id');
-                    $isDateModified = TipoDocumentoContable::all()->find($id)->toArray()['fecha_modificable'];
-                    if($isDateModified == 1)
-                    {
-                        return false;
-                    }
-                    else{
-                        $set('fecha_comprobante', date('Y-m-d'));
-                        return true;
-                    }
-                }),
+                    ->label('Fecha de comprobante')
+                    ->required()
+                    ->native(false)
+                    ->disabled(function (Get $get, Set $set): bool {
+                        $id = $get('tipo_documento_contables_id');
+                        if (!is_null($id)) {
+                            $isDateModified = TipoDocumentoContable::all()->find($id)->toArray()['fecha_modificable'];
+                            if ($isDateModified == 1) {
+                                return false;
+                            } else {
+                                $set('fecha_comprobante', date('Y-m-d'));
+                                return true;
+                            }
+                        }
+                        else{
+                            return false;
+                        }
+                    }),
 
                 Toggle::make('is_plantilla')
                     ->label('¿Guardar como Plantilla?')

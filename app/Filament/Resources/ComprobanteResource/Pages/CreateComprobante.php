@@ -11,6 +11,16 @@ class CreateComprobante extends CreateRecord
 {
     protected static string $resource = ComprobanteResource::class;
 
+    protected function mutateFormDataBeforeCreate(array $data): array
+    {
+        if (!array_key_exists('fecha_comprobante', $data)) {
+            $data['fecha_comprobante'] = date('Y-m-d');
+            return $data;
+        } else {
+            return $data;
+        }
+    }
+
     protected function beforeCreate(): void
     {
         $data = $this->data;
@@ -25,7 +35,7 @@ class CreateComprobante extends CreateRecord
         }
 
         if ((array_sum($credito) - array_sum($debito)) != 0.0) {
-            
+
             $this->halt();
         }
     }

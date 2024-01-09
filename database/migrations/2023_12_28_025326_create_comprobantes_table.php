@@ -20,7 +20,7 @@ return new class extends Migration
             $table->boolean('is_plantilla');
             $table->string('descripcion_comprobante');
             $table->integer('clase_comprobante_origen');
-            $table->date('fecha_comprobante');
+            $table->date('fecha_comprobante')->default(date('Y-m-d'));
             $table->timestamps();
         });
     }
