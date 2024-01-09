@@ -16,9 +16,8 @@ use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
 use Filament\Forms\Set;
-use Filament\Infolists\Components\TextEntry;
-use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
+use Filament\Support\RawJs;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
@@ -63,7 +62,8 @@ class ComprobanteResource extends Resource
                     ->label('Tipo de Documento')
                     ->native(false)
                     ->options($tipoDocumento)
-                    ->required(),
+                    ->required()
+                    ->live(),
 
                 TextInput::make('n_documento')
                     ->label('Nº de Documento')
@@ -78,7 +78,19 @@ class ComprobanteResource extends Resource
                 DatePicker::make('fecha_comprobante')
                 ->label('Fecha de comprobante')
                 ->required()
-                ->native(false),
+                ->native(false)
+                ->disabled(function(Get $get, Set $set){
+                    $id = $get('tipo_documento_contables_id');
+                    $isDateModified = TipoDocumentoContable::all()->find($id)->toArray()['fecha_modificable'];
+                    if($isDateModified == 1)
+                    {
+                        return false;
+                    }
+                    else{
+                        $set('fecha_comprobante', date('Y-m-d'));
+                        return true;
+                    }
+                }),
 
                 Toggle::make('is_plantilla')
                     ->label('¿Guardar como Plantilla?')
@@ -112,10 +124,16 @@ class ComprobanteResource extends Resource
                             ->label('Descripcion Linea'),
 
                         TextInput::make('debito')
-                            ->placeholder('Debito'),
+                            ->placeholder('Debito')
+                            ->mask(RawJs::make('$money($input)'))
+                            ->numeric()
+                            ->prefix('$'),
 
                         TextInput::make('credito')
-                            ->placeholder('Credito'),
+                            ->placeholder('Credito')
+                            ->numeric()
+                            ->inputMode('decimal')
+                            ->prefix('$'),
                     ])
                     ->reorderable()
                     ->cloneable()
