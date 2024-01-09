@@ -3,9 +3,6 @@
 namespace App\Filament\Resources\ComprobanteResource\Pages;
 
 use App\Filament\Resources\ComprobanteResource;
-use App\Models\Comprobante;
-use App\Models\ComprobanteLinea;
-use Filament\Notifications\Livewire\Notifications;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\CreateRecord;
 
@@ -13,43 +10,25 @@ class CreateComprobante extends CreateRecord
 {
     protected static string $resource = ComprobanteResource::class;
 
-    protected $detalle;
-
-    protected function mutateFormDataBeforeCreate(array $data): array
+    protected function beforeCreate(): void
     {
-        if($data['is_plantilla'])
+        $data = $this->data;
+        $credito = array();
+        $debito = array();
+        foreach($data['detalle'] as $key => $value)
         {
-            unset($data['detalle']);
-        }
-        else{
-            $this->detalle = $data['detalle'];
-            unset($data['detalle']);
-        }
-        return $data;
-    }
-
-    protected function afterCreate(): void
-    {
-        $comprobante_id = Comprobante::latest()->first()->id;
-        if(!empty($this->detalle))
-        {
-            foreach($this->detalle as $key => $value)
+            if($value['debito'] == '')
             {
-                if(is_null($value['pucs_id']))
-                {
-                    unset($this->detalle[$key]);
-                }
-                else{
-                    $this->detalle[$key]['comprobante_id'] = $comprobante_id;
-                }
+                $credito[] = floatval($value['credito']);
+            }
+            else{
+                $debito[] = floatval($value['debito']); 
             }
         }
-        /*Recorremos el arreglo final de nuevo*/
-        foreach($this->detalle as $row)
-        {
-            ComprobanteLinea::create($row);
+
+        if((array_sum($credito) - array_sum($debito)) != 0.0){
+            $this->halt();
         }
-        
     }
 
     protected function getRedirectUrl(): string

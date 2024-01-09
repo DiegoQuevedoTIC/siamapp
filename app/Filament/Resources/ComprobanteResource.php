@@ -4,7 +4,9 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ComprobanteResource\Pages;
 use App\Models\Comprobante;
+use App\Models\ParametrosTercero;
 use App\Models\Puc;
+use App\Models\TipoContribuyente;
 use App\Models\TipoDocumentoContable;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -13,6 +15,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
+use Filament\Forms\Set;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
@@ -46,6 +49,13 @@ class ComprobanteResource extends Resource
         foreach ($query as $row) {
             $puc[$row['id']] = "{$row['puc']} - {$row['descripcion']}";
         }
+        unset($query);
+        $query = TipoContribuyente::all()->toArray();
+        $terceroComprobante = array();
+        foreach ($query as $row)
+        {
+            $terceroComprobante[$row['id']] = $row['nombre'];
+        }
         return $form
             ->schema([
                 //
@@ -59,13 +69,19 @@ class ComprobanteResource extends Resource
                     ->label('Nº de Documento')
                     ->required(),
 
-                TextInput::make('tercero_comprobante')
+                Select::make('tercero_comprobante')
                     ->label('Tercero Comprobante')
-                    ->required(),
+                    ->required()
+                    ->native(false)
+                    ->options($terceroComprobante),
+
+                DatePicker::make('fecha_comprobante')
+                ->label('Fecha de comprobante')
+                ->required()
+                ->native(false),
 
                 Toggle::make('is_plantilla')
                     ->label('¿Guardar como Plantilla?')
-                    ->live()
                     ->required(),
 
                 Textarea::make('descripcion_comprobante')
@@ -80,13 +96,17 @@ class ComprobanteResource extends Resource
                     ->required(),
                 TableRepeater::make('detalle')
                     ->label('Detalle comprobante')
+                    ->relationship('comprobanteLinea')
                     ->schema([
                         Select::make('pucs_id')
                             ->label('Cuenta PUC')
                             ->options($puc),
 
-                        TextInput::make('tercero_registro')
-                            ->label('Tercero Registro'),
+                        Select::make('tercero_registro')
+                            ->label('Tercero Registro')
+                            ->options(function () {
+                                return TipoDocumentoContable::all()->pluck('tipo_documento', 'id');
+                            }),
 
                         TextInput::make('descripcion_linea')
                             ->label('Descripcion Linea'),
@@ -125,7 +145,6 @@ class ComprobanteResource extends Resource
 
                 TextColumn::make('clase_comprobante_origen')
                     ->label('Clase comprobante origen'),
-
             ])
             ->filters([
                 //
@@ -180,10 +199,5 @@ class ComprobanteResource extends Resource
             'create' => Pages\CreateComprobante::route('/create'),
             'edit' => Pages\EditComprobante::route('/{record}/edit'),
         ];
-    }
-
-    public static function getEloquentQuery(): Builder
-    {
-        return parent::getEloquentQuery()->where('is_plantilla', false);
     }
 }
