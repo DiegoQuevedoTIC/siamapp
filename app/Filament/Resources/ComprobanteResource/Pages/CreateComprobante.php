@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\ComprobanteResource\Pages;
 
 use App\Filament\Resources\ComprobanteResource;
+use Filament\Notifications\Livewire\Notifications;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\CreateRecord;
 
@@ -15,18 +16,16 @@ class CreateComprobante extends CreateRecord
         $data = $this->data;
         $credito = array();
         $debito = array();
-        foreach($data['detalle'] as $key => $value)
-        {
-            if($value['debito'] == '')
-            {
+        foreach ($data['detalle'] as $key => $value) {
+            if ($value['debito'] == '') {
                 $credito[] = floatval($value['credito']);
-            }
-            else{
-                $debito[] = floatval($value['debito']); 
+            } else {
+                $debito[] = floatval($value['debito']);
             }
         }
 
-        if((array_sum($credito) - array_sum($debito)) != 0.0){
+        if ((array_sum($credito) - array_sum($debito)) != 0.0) {
+            
             $this->halt();
         }
     }

@@ -105,7 +105,7 @@ class ComprobanteResource extends Resource
                         Select::make('tercero_registro')
                             ->label('Tercero Registro')
                             ->options(function () {
-                                return TipoDocumentoContable::all()->pluck('tipo_documento', 'id');
+                                return TipoContribuyente::all()->pluck('nombre', 'id');
                             }),
 
                         TextInput::make('descripcion_linea')
@@ -141,18 +141,14 @@ class ComprobanteResource extends Resource
                     ->label('Nº de documento'),
 
                 TextColumn::make('tercero_comprobante')
-                    ->label('Tercero Comprobante'),
+                    ->label('Tercero Comprobante')
+                    ->formatStateUsing(fn (string $state): string => TipoContribuyente::all()->find($state)['nombre']),
 
                 TextColumn::make('clase_comprobante_origen')
                     ->label('Clase comprobante origen'),
             ])
             ->filters([
                 //
-                Filter::make('is_plantilla')
-                    ->label('Mostrar solo las plantillas')
-                    ->toggle()
-                    ->default(false),
-
                 Filter::make('created_at')->form([
                     DatePicker::make('created_from')
                         ->label('Creado desde')
@@ -165,11 +161,11 @@ class ComprobanteResource extends Resource
                         return $query
                             ->when(
                                 $data['created_from'],
-                                fn (Builder $query, $date): Builder => $query->whereDate('created_at', ">=", $date),
+                                fn (Builder $query, $date): Builder => $query->whereDate('fecha_comprobante', ">=", $date),
                             )
                             ->when(
                                 $data['created_until'],
-                                fn (Builder $query, $date): Builder => $query->whereDate('created_at', "<=", $date),
+                                fn (Builder $query, $date): Builder => $query->whereDate('fecha_comprobante', "<=", $date),
                             );
                     })
             ])

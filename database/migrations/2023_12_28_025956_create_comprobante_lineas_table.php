@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('pucs_id');
             $table->foreign('pucs_id')->on('pucs')->references('id');
-            $table->string('tercero_registro', 50);
+            $table->unsignedBigInteger('tercero_registro');
+            $table->foreign('tercero_registro')->on('tipo_contribuyentes')->references('id');
             $table->string('descripcion_linea', 400);
             $table->decimal('debito', 12, 2)->nullable();
             $table->decimal('credito', 12, 2)->nullable();
