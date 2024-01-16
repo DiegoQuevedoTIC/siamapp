@@ -14,6 +14,10 @@ class CreateComprobante extends CreateRecord
 
     protected function mutateFormDataBeforeCreate(array $data): array
     {
+        if(array_key_exists('usar_plantilla', $data)){
+            unset($data['usar_plantilla']);
+            unset($data['plantilla']);
+        }
         if (!array_key_exists('fecha_comprobante', $data)) {
             $data['fecha_comprobante'] = date('Y-m-d');
             return $data;
