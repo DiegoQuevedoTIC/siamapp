@@ -16,4 +16,10 @@ class ComprobanteLinea extends Model
     {
         return $this->belongsTo(Comprobante::class);
     }
+
+
+    public function tercero(): BelongsTo
+    {
+        return $this->belongsTo(Tercero::class);
+    }
 }

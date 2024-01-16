@@ -16,7 +16,8 @@ return new class extends Migration
             $table->unsignedBigInteger('tipo_documento_contables_id');
             $table->foreign('tipo_documento_contables_id')->on('tipo_documento_contables')->references('id');
             $table->string('n_documento', 50);
-            $table->string('tercero_comprobante', 50);
+            $table->unsignedBigInteger('tercero_id');
+            $table->foreign('tercero_id')->on('terceros')->references('id')->onDelete('restrict')->onUpdate('restrict');
             $table->boolean('is_plantilla');
             $table->string('descripcion_comprobante');
             $table->integer('clase_comprobante_origen');

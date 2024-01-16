@@ -22,4 +22,9 @@ class Comprobante extends Model
     {
         return $this->belongsTo(TipoDocumentoContable::class);
     }
+
+    public function tercero(): BelongsTo
+    {
+        return $this->belongsTo(Tercero::class);
+    }
 }

@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ComprobanteResource\Pages;
+use App\Filament\Resources\ComprobanteResource\Widgets\PlantillaComprobanteOverview;
 use App\Models\Comprobante;
 use App\Models\ParametrosTercero;
 use App\Models\Puc;
@@ -57,6 +58,25 @@ class ComprobanteResource extends Resource
         return $form
             ->schema([
                 //
+                Toggle::make('usar_plantilla')
+                ->label('Usar plantilla')
+                ->live(),
+
+                Select::make('plantilla')
+                ->label('Plantilla')
+                ->native(false)
+                ->options(function (){
+                    return Comprobante::where('is_plantilla', '=', true)->get()->pluck('descripcion_comprobante', 'id');
+                })
+                ->disabled(function (Get $get): bool {
+                    if($get('usar_plantilla')){
+                        return false;
+                    }
+                    else{
+                        return true;
+                    }
+                }),
+
                 Select::make('tipo_documento_contables_id')
                     ->label('Tipo de Documento')
                     ->native(false)
@@ -68,7 +88,7 @@ class ComprobanteResource extends Resource
                     ->label('Nº de Documento')
                     ->required(),
 
-                Select::make('tercero_comprobante')
+                Select::make('tercero_id')
                     ->label('Tercero Comprobante')
                     ->required()
                     ->native(false)
@@ -102,12 +122,6 @@ class ComprobanteResource extends Resource
                     ->label('Descripcion del Comprobante')
                     ->required(),
 
-                Select::make('clase_comprobante_origen')
-                    ->label('Clase Comprobante Origen')
-                    ->options([
-                        1 => 'Ejemplo de comprobante origen'
-                    ])
-                    ->required(),
                 TableRepeater::make('detalle')
                     ->label('Detalle comprobante')
                     ->relationship('comprobanteLinea')
@@ -116,11 +130,9 @@ class ComprobanteResource extends Resource
                             ->label('Cuenta PUC')
                             ->options($puc),
 
-                        Select::make('tercero_registro')
+                        Select::make('tercero_id')
                             ->label('Tercero Registro')
-                            ->options(function () {
-                                return TipoContribuyente::all()->pluck('nombre', 'id');
-                            }),
+                            ,
 
                         TextInput::make('descripcion_linea')
                             ->label('Descripcion Linea'),
@@ -216,4 +228,6 @@ class ComprobanteResource extends Resource
             'edit' => Pages\EditComprobante::route('/{record}/edit'),
         ];
     }
+
+    
 }

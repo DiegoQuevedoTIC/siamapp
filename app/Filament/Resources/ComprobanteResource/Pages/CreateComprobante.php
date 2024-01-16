@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\ComprobanteResource\Pages;
 
 use App\Filament\Resources\ComprobanteResource;
+use App\Filament\Resources\ComprobanteResource\Widgets\PlantillaComprobanteOverview;
 use Filament\Notifications\Livewire\Notifications;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\CreateRecord;
