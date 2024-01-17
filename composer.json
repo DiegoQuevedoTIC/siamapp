@@ -12,6 +12,7 @@
         "althinect/filament-spatie-roles-permissions": "^2.2",
         "filament/filament": "3.1",
         "guzzlehttp/guzzle": "^7.2",
+        "icetalker/filament-table-repeater": "^1.1",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8"
@@ -20,6 +21,7 @@
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.26",
+        "laravel/telescope": "^4.17",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
         "phpunit/phpunit": "^10.1",
@@ -55,7 +57,9 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "laravel/telescope"
+            ]
         }
     },
     "config": {

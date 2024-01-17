@@ -13,13 +13,18 @@ class Comprobante extends Model
 
     protected $fillable = ['tipo_documento_contables_id', 'n_documento', 'tercero_comprobante', 'is_plantilla', 'descripcion_comprobante', 'clase_comprobante_origen'];
 
-    public function comprobanteLinea()
+    public function comprobanteLinea(): HasMany
     {
         return $this->HasMany(ComprobanteLinea::class);
     }
 
-    public function tipoDocumentoContable()
+    public function tipoDocumentoContable(): BelongsTo
     {
         return $this->belongsTo(TipoDocumentoContable::class);
+    }
+
+    public function tercero(): BelongsTo
+    {
+        return $this->belongsTo(Tercero::class);
     }
 }

@@ -15,10 +15,13 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('pucs_id');
             $table->foreign('pucs_id')->on('pucs')->references('id');
-            $table->string('tercero_registro', 50);
+            $table->unsignedBigInteger('tercero_id');
+            $table->foreign('tercero_id')->on('terceros')->references('id')->onDelete('restrict')->onUpdate('restrict');
             $table->string('descripcion_linea', 400);
             $table->decimal('debito', 12, 2)->nullable();
             $table->decimal('credito', 12, 2)->nullable();
+            $table->unsignedBigInteger('comprobante_id');
+            $table->foreign('comprobante_id')->on('comprobantes')->references('id');
             $table->timestamps();
         });
     }

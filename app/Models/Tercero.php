@@ -84,6 +84,16 @@ class Tercero extends Model
         return $this->hasOne(Asociado::class);
     }
 
+    public function comprobantes(): HasMany
+    {
+        return $this->hasMany(Comprobante::class);
+    }
+
+    public function comprobantesLineas(): HasMany
+    {
+        return $this->hasMany(ComprobanteLinea::class);
+    }
+
 
     
     protected $fillable = [
