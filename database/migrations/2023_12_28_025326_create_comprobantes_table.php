@@ -20,7 +20,6 @@ return new class extends Migration
             $table->foreign('tercero_id')->on('terceros')->references('id')->onDelete('restrict')->onUpdate('restrict');
             $table->boolean('is_plantilla');
             $table->string('descripcion_comprobante');
-            $table->integer('clase_comprobante_origen');
             $table->date('fecha_comprobante')->default(date('Y-m-d'));
             $table->timestamps();
         });

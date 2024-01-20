@@ -40,7 +40,10 @@ class CreateComprobante extends CreateRecord
         }
 
         if ((array_sum($credito) - array_sum($debito)) != 0.0) {
-
+            Notification::make()
+            ->title('No puede guardar un comprobante desbalanceado')
+            ->danger()
+            ->send();
             $this->halt();
         }
     }

@@ -11,7 +11,7 @@ class Comprobante extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['tipo_documento_contables_id', 'n_documento', 'tercero_comprobante', 'is_plantilla', 'descripcion_comprobante', 'clase_comprobante_origen'];
+    protected $fillable = ['tipo_documento_contables_id', 'n_documento', 'tercero_comprobante', 'is_plantilla', 'descripcion_comprobante'];
 
     public function comprobanteLinea(): HasMany
     {
@@ -26,5 +26,10 @@ class Comprobante extends Model
     public function tercero(): BelongsTo
     {
         return $this->belongsTo(Tercero::class);
+    }
+
+    public function puc(): BelongsTo
+    {
+        return $this->belongsTo(Puc::class);
     }
 }

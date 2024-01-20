@@ -7,6 +7,7 @@ use App\Filament\Resources\ComprobanteResource\Widgets\PlantillaComprobanteOverv
 use App\Models\Comprobante;
 use App\Models\ParametrosTercero;
 use App\Models\Puc;
+use App\Models\Tercero;
 use App\Models\TipoContribuyente;
 use App\Models\TipoDocumentoContable;
 use Filament\Forms\Components\DatePicker;
@@ -59,23 +60,22 @@ class ComprobanteResource extends Resource
             ->schema([
                 //
                 Toggle::make('usar_plantilla')
-                ->label('Usar plantilla')
-                ->live(),
+                    ->label('Usar plantilla')
+                    ->live(),
 
                 Select::make('plantilla')
-                ->label('Plantilla')
-                ->native(false)
-                ->options(function (){
-                    return Comprobante::where('is_plantilla', '=', true)->get()->pluck('descripcion_comprobante', 'id');
-                })
-                ->disabled(function (Get $get): bool {
-                    if($get('usar_plantilla')){
-                        return false;
-                    }
-                    else{
-                        return true;
-                    }
-                }),
+                    ->label('Plantilla')
+                    ->options(function () {
+                        $query = Comprobante::where('is_plantilla', '=', true)->get()->pluck('descripcion_comprobante', 'id');
+                        return $query;
+                    })
+                    ->disabled(function (Get $get): bool {
+                        if ($get('usar_plantilla')) {
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    }),
 
                 Select::make('tipo_documento_contables_id')
                     ->label('Tipo de Documento')
@@ -92,7 +92,7 @@ class ComprobanteResource extends Resource
                     ->label('Tercero Comprobante')
                     ->required()
                     ->native(false)
-                    ->options($terceroComprobante),
+                    ->relationship(name: 'tercero', titleAttribute: 'nombres'),
 
                 DatePicker::make('fecha_comprobante')
                     ->label('Fecha de comprobante')
@@ -108,8 +108,7 @@ class ComprobanteResource extends Resource
                                 $set('fecha_comprobante', date('Y-m-d'));
                                 return true;
                             }
-                        }
-                        else{
+                        } else {
                             return false;
                         }
                     }),
@@ -132,7 +131,7 @@ class ComprobanteResource extends Resource
 
                         Select::make('tercero_id')
                             ->label('Tercero Registro')
-                            ,
+                            ->relationship(name: 'tercero', titleAttribute: 'nombres'),
 
                         TextInput::make('descripcion_linea')
                             ->label('Descripcion Linea'),
@@ -228,6 +227,4 @@ class ComprobanteResource extends Resource
             'edit' => Pages\EditComprobante::route('/{record}/edit'),
         ];
     }
-
-    
 }
