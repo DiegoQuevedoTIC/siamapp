@@ -62,17 +62,27 @@ class EditComprobante extends EditRecord
 
                 Select::make('plantilla')
                     ->label('Plantilla')
-                    ->native(false)
                     ->options(function () {
-                        return Comprobante::where('is_plantilla', '=', true)->get()->pluck('descripcion_comprobante', 'id');
+                        $query = Comprobante::where('is_plantilla', '=', true)->get()->pluck('descripcion_comprobante', 'id');
+                        return $query;
                     })
-                    ->disabled(function (Get $get): bool {
+                    ->disabled(function (Get $get, Set $set): bool {
                         if ($get('usar_plantilla')) {
+                            $template = Comprobante::all()->find($get('plantilla'));
+                            if (!is_null($template)) {
+                                $template = $template->toArray();
+                                $set('tipo_documento_contables_id', $template['tipo_documento_contables_id']);
+                                $set('n_documento', $template['n_documento']);
+                                $set('tercero_id', $template['tercero_id']);
+                                $set('is_plantilla', 0);
+                                $set('descripcion_comprobante', $template['descripcion_comprobante']);
+                            }
                             return false;
                         } else {
                             return true;
                         }
-                    }),
+                    })
+                    ->live(),
 
                 Select::make('tipo_documento_contables_id')
                     ->label('Tipo de Documento')
@@ -124,7 +134,10 @@ class EditComprobante extends EditRecord
                     ->schema([
                         Select::make('pucs_id')
                             ->label('Cuenta PUC')
-                            ->options($puc),
+                            ->options($puc)
+                            ->live()
+                            ->native(false)
+                            ->searchable(),
 
                         Select::make('tercero_id')
                             ->label('Tercero Registro')
@@ -137,13 +150,33 @@ class EditComprobante extends EditRecord
                             ->placeholder('Debito')
                             ->mask(RawJs::make('$money($input)'))
                             ->numeric()
-                            ->prefix('$'),
+                            ->prefix('$')
+                            ->disabled(function (Get $get): bool {
+                                $query = Puc::all()->find($get('pucs_id'));
+                                if (!is_null($query)) {
+                                    $query = $query->toArray();
+                                    if ($query['naturaleza'] != 'D') {
+                                        return true;
+                                    }
+                                }
+                                return false;
+                            }),
 
                         TextInput::make('credito')
                             ->placeholder('Credito')
                             ->numeric()
                             ->inputMode('decimal')
-                            ->prefix('$'),
+                            ->prefix('$')
+                            ->disabled(function (Get $get): bool {
+                                $query = Puc::all()->find($get('pucs_id'));
+                                if (!is_null($query)) {
+                                    $query = $query->toArray();
+                                    if ($query['naturaleza'] != 'D') {
+                                        return true;
+                                    }
+                                }
+                                return false;
+                            }),
                     ])
                     ->reorderable()
                     ->cloneable()
