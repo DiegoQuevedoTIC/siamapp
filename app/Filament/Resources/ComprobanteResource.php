@@ -201,18 +201,26 @@ class ComprobanteResource extends Resource
             ->columns([
                 //
                 TextColumn::make('id')
-                    ->label('Nº'),
+                    ->label('Nº')
+                    ->searchable()
+                    ->sortable(),
 
                 TextColumn::make('tipo_documento_contables_id')
                     ->label('Tipo de Documento Contable')
-                    ->formatStateUsing(fn (string $state): string => TipoDocumentoContable::all()->find($state)['tipo_documento']),
+                    ->formatStateUsing(fn (string $state): string => TipoDocumentoContable::all()->find($state)['tipo_documento'])
+                    ->searchable()
+                    ->sortable(),
 
                 TextColumn::make('n_documento')
-                    ->label('Nº de documento'),
+                    ->label('Nº de documento')
+                    ->searchable()
+                    ->sortable(),
 
                 TextColumn::make('tercero_id')
                     ->label('Tercero Comprobante')
-                    ->formatStateUsing(fn (string $state): string => Tercero::all()->find($state)['nombres']),
+                    ->formatStateUsing(fn (string $state): string => Tercero::all()->find($state)['nombres'])
+                    ->searchable()
+                    ->sortable(),
             ])
             ->filters([
                 //
@@ -259,8 +267,8 @@ class ComprobanteResource extends Resource
     {
         return [
             'index' => Pages\ListComprobantes::route('/'),
-            'create' => Pages\CreateComprobante::route('/create'),
-            'edit' => Pages\EditComprobante::route('/{record}/edit'),
+            //'create' => Pages\CreateComprobante::route('/create'),
+            //'edit' => Pages\EditComprobante::route('/{record}/edit'),
         ];
     }
 }
