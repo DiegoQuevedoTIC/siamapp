@@ -267,8 +267,8 @@ class ComprobanteResource extends Resource
     {
         return [
             'index' => Pages\ListComprobantes::route('/'),
-            //'create' => Pages\CreateComprobante::route('/create'),
-            //'edit' => Pages\EditComprobante::route('/{record}/edit'),
+            'create' => Pages\CreateComprobante::route('/create'),
+            'edit' => Pages\EditComprobante::route('/{record}/edit'),
         ];
     }
 }
