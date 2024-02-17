@@ -14,6 +14,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             BancoSeeder::class,
+            ProfesionsSeeder::class,
+            PucSeeder::class
         ]);
         // \App\Models\User::factory(10)->create();
 
