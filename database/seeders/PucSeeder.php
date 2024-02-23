@@ -15,1061 +15,1631 @@ class PucSeeder extends Seeder
     {
         //
         DB::insert("
-        INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1,'1','1','Activo','1','D',1,0,0,0,0,'',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (2,'11','1','Disponible','2','D',0,0,0,0,0,'1',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (3,'1105','1','Caja','3','D',1,0,0,0,0,'11',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (4,'110505','1','Caja General','4','D',0,0,0,0,0,'1105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (5,'11050501','1','Caja General Administracion','5','D',0,1,0,1,1,'110505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (6,'110510','1','Caja Menor','4','D',0,0,0,0,0,'1105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (7,'11051001','1','Caja Menor Administracion','5','D',0,1,0,0,0,'110510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (8,'110515','1','Bonos Almacenes','4','D',0,0,0,0,0,'1105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (9,'11051501','1','Bonos Almacenes','5','D',0,1,0,0,1,'110515',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (10,'11051502','1','Bonos Almacenes Sao','5','D',0,1,0,0,1,'110515',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (11,'1110','1','Bancos Y Otras Entidades','3','D',1,0,0,1,0,'11',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (12,'111005','1','Bancos Comerciales','4','D',0,0,0,1,0,'1110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (13,'11100501','1','Banco De Occidente','5','D',0,1,0,1,1,'111005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (14,'11100502','1','Banco De Bogota Corriente 564-42999-1','5','D',0,1,0,1,1,'111005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (15,'11100503','1','Banco Davivienda Ahorro 1160-0046474-7','5','D',0,1,0,1,1,'111005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (16,'11100504','1','Banco Bbva 0013-0518-21-0200067673','5','D',0,1,0,1,0,'111005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (17,'11100505','1','Bancoomeva','5','D',0,1,0,1,1,'111005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (18,'11100506','1','Banco Occidente 8289','5','D',0,1,0,1,1,'111005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (19,'1120','1','Fondo De Liquidez','3','D',1,0,0,0,0,'11',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (20,'112005','1','Deposito De Ahorro A La Vista','4','D',0,0,0,0,0,'1120',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (21,'11200501','1','Cuenta Fiduciaria','5','D',0,1,0,0,1,'112005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (22,'112010','1','Fondo De Liquidez Otros','4','D',0,0,0,0,0,'1120',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (23,'11201095','1','Fondo Abonos Sao','5','D',0,1,0,0,1,'112010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (24,'12','1','Inversiones','2','D',0,0,0,0,0,'1',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (25,'1203','1','Fondo De Liquidez','3','D',1,0,0,0,0,'12',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (26,'120320','1','Fondo Fiduciario','4','D',0,0,0,0,0,'1203',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (27,'12032001','1','Fondo Fiduciario','5','D',0,1,0,0,1,'120320',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (28,'12032002','1','Cdt Davivienda','5','D',0,1,0,0,1,'120320',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (29,'1215','1','Inversiones Permanentes','3','D',0,0,0,0,0,'12',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (30,'121585','1','Titulos De Otros Entes','4','D',0,0,0,0,0,'1215',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (31,'12158501','1','Creando Y Proyectando S.A.S','5','D',0,1,0,0,0,'121585',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (32,'13','1','Inventarios','2','D',0,0,0,0,0,'1',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (33,'1305','1','Bienes No Transformados Por La Entidad','3','D',1,0,0,0,0,'13',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (34,'130505','1','Mercancias','4','D',0,0,0,0,0,'1305',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (35,'13050501','1','Prendas De Vestir','5','D',0,1,0,0,0,'130505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (36,'13050502','1','Bicicleta','5','D',0,1,0,0,1,'130505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (37,'13050503','1','Memorias Pucas','5','D',0,1,0,0,1,'130505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (38,'13050504','1','Kit Compras','5','D',0,1,0,0,1,'130505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (39,'1355','1','Bienes Raices Para La Venta','3','D',1,0,0,0,0,'13',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (40,'135505','1','Casas Terminadas - Proyecto Sol Naciente','4','D',0,0,0,0,0,'1355',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (41,'13550503','1','Casa 7','5','D',0,1,0,0,0,'135505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (42,'13550504','1','Casa 8','5','D',0,1,0,0,0,'135505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (43,'13550505','1','Casa 9','5','D',0,1,0,0,0,'135505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (44,'1365','1','Obras De Construcci?N En Curso','3','D',1,0,0,0,0,'13',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (45,'136505','1','Proyecto - Casas Cisne','4','D',0,0,0,0,0,'1365',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (46,'13650501','1','Lote 05','5','D',0,1,0,0,1,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (47,'13650502','1','Lote 06','5','D',0,1,0,0,1,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (48,'13650503','1','Lote 07','5','D',0,1,0,0,1,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (49,'13650504','1','Lote 08','5','D',0,1,0,0,1,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (50,'13650505','1','Lote 09','5','D',0,1,0,0,1,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (51,'13650506','1','Lote 10','5','D',0,1,0,0,0,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (52,'13650507','1','Lote 11','5','D',0,1,0,0,0,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (53,'13650508','1','Lote 12','5','D',0,1,0,0,0,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (54,'13650509','1','Lote 13','5','D',0,1,0,0,0,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (55,'13650510','1','Lote 14','5','D',0,1,0,0,0,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (56,'13650511','1','Lote 15','5','D',0,1,0,0,0,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (57,'13650512','1','Lote 16','5','D',0,1,0,0,0,'136505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (58,'136506','1','Proyecto - Centro Recreacional Cree','4','D',0,0,0,0,0,'1365',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (59,'13650601','1','Proyecto- Centro Recreacional Cree','5','D',0,1,0,0,1,'136506',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (60,'14','1','Cartera De Credito','2','D',0,0,0,0,0,'1',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (61,'1405','1','Credito Vivienda - Sin Libranza','3','D',1,0,0,0,0,'14',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (62,'140505','1','Riesgo Normal','4','D',0,1,0,0,1,'1405',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (65,'1411','1','Credito De Consumo ','3','D',1,0,0,0,1,'14',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (66,'141105','1','Riesgo Normal','4','D',0,1,0,0,1,'1411',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (67,'141110','1','Categoria B Riesgo Aceptado','4','D',0,1,0,0,1,'1411',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (68,'141115','1','Categoria C  Riesgo Apreciado','4','D',0,1,0,0,1,'1411',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (69,'141120','1','Categoria D Riesgo Significativo','4','D',0,1,0,0,0,'1411',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (70,'141125','1','Categoria E Riesgo De Incrobabilidad','4','D',0,1,0,0,1,'1411',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (71,'1441','1','Credito De Consumo - Con Libranza','3','D',1,0,0,0,1,'14',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (72,'144105','1','Riesgo Normal','4','D',0,1,0,0,1,'1441',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (75,'1442','1','Credito De Consumo - Sin Libranza','3','D',1,0,0,0,0,'14',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (76,'144205','1','Riesgo Normal','4','D',0,1,0,0,1,'1442',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (79,'1489','1','Provision Creditos De Vivienda','3','C',1,0,0,0,0,'14',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (80,'148905','1','Categoria A - Credito Normal, Garantia Admisible','4','C',0,1,0,0,0,'1489',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (81,'148910','1','Categoria B - Credito Aceptable, Garantia Admisible','4','C',0,1,0,0,0,'1489',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (82,'148915','1','Categoria C   Credito Apreciable, Garantia Admisible','4','C',0,1,0,0,0,'1489',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (83,'148920','1','Categoria D   Credito Significativo, Garantia Admisible','4','C',0,1,0,0,0,'1489',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (84,'148925','1','Categoria E   Credito Irrecuperable, Garantia Admisible','4','C',0,1,0,0,0,'1489',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (85,'1491','1','Provision Creditos De Consumo','3','C',1,0,0,0,0,'14',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (86,'149105','1','Categoria A - Credito Normal, Garantia Admisible','4','C',0,1,0,0,0,'1491',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (87,'149107','1','Categoria A - Credito Normal, Otras Garantias','4','C',0,1,0,0,0,'1491',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (88,'149110','1','Categoria B - Credito Aceptable, Garantia Admisible','4','C',0,1,0,0,0,'1491',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (89,'149112','1','Categoria B - Credito Aceptable, Otras Garantias','4','C',0,1,0,0,0,'1491',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (90,'149115','1','Categoria C   Credito Apreciable, Garantia Admisible','4','C',0,1,0,0,0,'1491',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (91,'149117','1','Categoria C   Credito Apreciable, Otras Garantias','4','C',0,1,0,0,0,'1491',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (92,'149120','1','Categoria D   Credito Significativo, Garantia Admisible','4','C',0,1,0,0,0,'1491',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (93,'149122','1','Categoria D   Credito Significativo, Otras Garantias','4','C',0,1,0,0,0,'1491',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (94,'149125','1','Categoria E   Credito Irrecuperable, Garantia Admisible','4','C',0,1,0,0,0,'1491',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (95,'149127','1','Categoria E   Credito Irrecuperable, Otras Garantias','4','C',0,1,0,0,1,'1491',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (96,'1498','1','Provision General','3','C',1,0,0,0,1,'14',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (97,'149805','1','Provision Creditos Con Libranza','4','C',0,1,0,0,1,'1498',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (98,'149810','1','Provision Creditos Sin Libranza','4','C',0,1,0,0,1,'1498',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (99,'16','1','Cuenta Por Cobrar','2','D',0,0,0,0,1,'1',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (100,'1605','1','Convenios Por Cobrar','3','D',0,0,0,0,1,'16',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (101,'160505','1','Servicios Medicos Y Hospitalarios','4','D',0,0,0,0,1,'1605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (102,'16050501','1','Ami','5','D',0,1,0,0,1,'160505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (103,'16050502','1','Colsanitas','5','D',0,1,0,0,1,'160505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (104,'160520','1','Convenios Funerarios','4','D',0,0,0,0,1,'1605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (105,'16052001','1','Funeraria','5','D',0,1,0,0,1,'160520',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (106,'160525','1','Seguros Voluntarios','4','D',0,0,0,0,0,'1605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (107,'16052501','1','Seguros De Vida Y Deudores','5','D',0,1,0,0,1,'160525',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (108,'160535','1','Otros Convenios','4','D',0,0,0,0,1,'1605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (109,'16053501','1','Gimnasio','5','D',0,1,0,0,1,'160535',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (110,'160595','1','Otros Convenios','4','D',0,0,0,0,1,'1605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (111,'16059501','1','Davivienda','5','D',0,1,0,0,1,'160595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (112,'1625','1','Anticipos De Contratos Y Proveedores','3','D',1,0,0,0,0,'16',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (113,'162505','1','A Contratistas','4','D',0,0,0,0,1,'1625',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (114,'16250501','1','A Contratistas','5','D',0,1,0,0,0,'162505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (115,'162510','1','A Proveedores','4','D',0,0,0,0,0,'1625',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (116,'16251001','1','A Proveedores','5','D',0,1,0,0,1,'162510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (117,'1635','1','Adelantos Al Personal','3','D',1,0,0,0,1,'16',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (118,'163505','1','Anticipos Laborales','4','D',0,0,0,0,0,'1635',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (119,'16350501','1','Anticipos Laborales','5','D',0,1,0,0,1,'163505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (120,'163510','1','Gastos De Viaje','4','D',0,0,0,0,1,'1635',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (121,'16351001','1','Gastos De Viaje','5','D',0,1,0,0,1,'163510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (122,'163595','1','Otros','4','D',0,0,0,0,0,'1635',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (123,'16359501','1','Cuentas Por Cobrar A Trabajadores','5','D',0,1,0,0,1,'163595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (124,'163596','1','Gastos Legales - Compra De Suministros Y Servicio','4','D',0,0,0,0,0,'1635',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (125,'16359601','1','Gastos Legales','5','D',0,1,0,0,0,'163596',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (126,'16359602','1','Compra De Suministros','5','D',0,1,0,0,0,'163596',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (127,'16359603','1','Compra De Servicios','5','D',0,1,0,0,1,'163596',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (128,'1636','1','Pagos Por Cuenta De  Asociados, Vivienda','3','D',1,0,0,0,1,'16',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (129,'163605','1','Categoria A Riesgo Normal','4','D',0,0,0,0,1,'1636',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (130,'16360501','1','Categoria A Riesgo Normal','5','D',0,1,0,0,0,'163605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (131,'1650','1','Deudores Patronales Y Empresas','3','D',1,0,0,0,1,'16',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (132,'165005','1','Descuento De Nomina','4','D',0,0,0,0,1,'1650',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (133,'16500501','1','Aportes De Asociados','5','D',0,1,0,0,1,'165005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (134,'16500502','1','Afiliaciones','5','D',0,1,0,0,1,'165005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (135,'16500503','1','Prestamos','5','D',0,1,0,0,1,'165005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (136,'165015','1','Libranzas','4','D',0,0,0,0,1,'1650',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (137,'16501501','1','Libranza Davivienda','5','D',0,1,0,0,1,'165015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (138,'16501502','1','Librnza Funeraria','5','D',0,1,0,0,1,'165015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (139,'16501503','1','Librnza Seguros','5','D',0,1,0,0,1,'165015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (140,'16501504','1','Librnza Almacen Y Granero','5','D',0,1,0,0,0,'165015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (141,'16501505','1','Librnza Cacharreria Y Papeleria','5','D',0,1,0,0,1,'165015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (142,'16501506','1','Librnza Celular','5','D',0,1,0,0,0,'165015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (143,'16501507','1','Librnza  Evento','5','D',0,1,0,0,1,'165015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (144,'16501508','1','Casino Refineria','5','D',0,1,0,0,1,'165015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (145,'16501509','1','Oftalmologia','5','D',0,1,0,0,0,'165015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (146,'165020','1','Aportes Y Contribuci?N Empresa','4','D',0,0,0,0,1,'1650',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (147,'16502001','1','Aportes Y Contribuci?N Empresa','5','D',0,1,0,0,0,'165020',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (148,'165095','1','De Años Anteriores','4','D',0,0,0,0,0,'1650',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (149,'16509501','1','De Años Anteriores','5','D',0,1,0,0,1,'165095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (150,'1675','1','Anticipo De Impuestos','3','D',1,0,0,0,0,'16',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (151,'167515','1','Retencion En La Fuente','4','D',0,0,0,0,1,'1675',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (152,'16751501','1','Retencion En La Fuente Sobre Intereses','5','D',0,1,0,0,0,'167515',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (153,'1690','1','Otras Cuentas Por Cobrar','3','D',1,0,0,0,0,'16',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (154,'169025','1','Cuentas Por Cobrar  De Terceros','4','D',0,0,0,0,0,'1690',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (155,'16902501','1','Cuentas Por Cobrar A Ex - Asociados','5','D',0,1,0,0,1,'169025',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (156,'16902502','1','Cuentas En Proceso Juridico','5','D',0,1,0,0,1,'169025',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (157,'16902503','1','Cuentas Por Cobrar A Particulares','5','D',0,1,0,0,0,'169025',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (158,'169095','1','Otras','4','D',0,0,0,0,0,'1690',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (159,'16909501','1','Licencias De Maternidad','5','D',0,1,0,0,0,'169095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (160,'16909502','1','Incapacidad General','5','D',0,1,0,0,0,'169095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (161,'16909503','1','Incapacidad Accidente Laboral','5','D',0,1,0,0,0,'169095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (162,'16909504','1','Cuentas Por Cobrar A Filial','5','D',0,1,0,0,1,'169095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (163,'16909505','1','Licencia De Paternidad','5','D',0,1,0,0,1,'169095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (164,'17','1','Propiedades Planta Y Equipo','2','D',0,0,0,0,0,'1',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (165,'1705','1','Terrenos','3','D',1,0,0,0,0,'17',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (166,'170510','1','Rural','4','D',0,0,0,0,0,'1705',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (167,'17051001','1','Ubicacion Sede Recreacional Masinga','5','D',0,1,0,0,1,'170510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (168,'1710','1','Construcciones O Montajes  En Curso ','3','D',1,0,0,0,0,'17',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (169,'171005','1','Construcciones En Proceso','4','D',0,0,0,0,0,'1710',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (170,'17100501','1','Sede Recreacional Fondaabon','5','D',0,1,0,0,0,'171005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (171,'1715','1','Edificaciones','3','D',0,0,0,0,0,'17',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (172,'171535','1','Otras','4','D',0,0,0,0,0,'1715',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (173,'17153501','1','Casa Urbanizacion Sol Naciente','5','D',0,1,0,0,0,'171535',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (174,'1720','1','Muebles Y Equipo De Oficina','3','D',1,0,0,0,0,'17',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (175,'172010','1','Muebles','4','D',0,0,0,0,0,'1720',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (176,'17201001','1','Muebles Y Enseres','5','D',0,1,0,0,0,'172010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (177,'1725','1','Equipo De Computo Y Comunicacion','3','D',1,0,0,0,0,'17',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (178,'172505','1','Equipos De Computo','4','D',0,0,0,0,0,'1725',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (179,'17250501','1','Computadores','5','D',0,1,0,0,0,'172505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (180,'17250502','1','Impresora','5','D',0,1,0,0,0,'172505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (181,'17250503','1','Video Proyector','5','D',0,1,0,0,0,'172505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (182,'17250504','1','Dvr Digital 4Ch Spectrum','5','D',0,1,0,0,0,'172505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (183,'17250505','1','Camara Ref Lnx','5','D',0,1,0,0,0,'172505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (184,'17250506','1','Video Balum 4Rj45','5','D',0,1,0,0,1,'172505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (185,'17250507','1','Mouse Opticos Genius ','5','D',0,1,0,0,0,'172505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (186,'172510','1','Equipos De Comunicacion','4','D',0,0,0,0,1,'1725',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (187,'17251001','1','Equipo De Telecomunicaciones','5','D',0,1,0,0,1,'172510',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (188,'1728','1','Equipo De Hoteles Y Restaurantes','3','D',1,0,0,0,1,'17',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (189,'172810','1','De Comestibles','4','D',0,0,0,0,0,'1728',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (190,'17281001','1','Cernidor 24 Cm Acero Inox','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (191,'17281002','1','Caldero Prof Imusa 50Lt 40*40 Cm','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (192,'17281003','1','Bandeja Autoser Gran 35.5 X 47 V','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (193,'17281004','1','Balanza De Charcuteria Pintada','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (194,'17281005','1','Señal De Prevencion Cuidado','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (195,'17281006','1','Caja 40X30X25 Cerrad Rombo','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (196,'17281007','1','Caldero Recortado Umco*32','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (197,'17281008','1','Cuchara Sopa Primaveral','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (198,'17281009','1','Tenedor Mesa Primaveral','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (199,'17281010','1','Cuchillo Mesa Primaveral','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (200,'17281011','1','Pocillo Te Chocolate 230 Cc','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (201,'17281012','1','Vaso Electroplata Acero Inox','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (202,'17281013','1','Colador Metalico','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (203,'17281014','1','Cucharon Industrial','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (204,'17281015','1','Cuchara Aluminio','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (205,'17281016','1','Horno Lg Ms-074','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (206,'17281017','1','Estufa Haceb','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (207,'17281018','1','Sanduchera Black&','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (208,'17281019','1','Licuadora Oster','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (209,'17281020','1','Congelador Whirlpool','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (210,'17281021','1','Caja Para Domicilio Sencilla','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (211,'17281022','1','Registradora Sharp Xea 106','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (212,'17281023','1','Bandeja Autoservicio 35.5 X 47','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (213,'17281024','1','Recipiente Artesa Peletizado','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (214,'17281025','1','Bowl 14Cm Aro','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (215,'17281026','1','Plato Para Taza 220Cc','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (216,'17281027','1','Plato Ovalado 31.5Cm','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (217,'17281028','1','Taza 220Cc','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (218,'17281029','1','Balde Escurridor','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (219,'17281030','1','Bowl V 12.7Cm','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (220,'17281031','1','Loker Metalico De 4 Compartimentos','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (221,'17281032','1','Balanza De Pesar Electronica 30 Kgs','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (222,'17281033','1','Vajilla 16Pz','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (223,'17281034','1','Dispensador Ge Gxcf','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (224,'17281035','1','Cuchara #5 Madera/Palote','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (225,'17281036','1','Tazon Multiusos 3 Lts','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (226,'17281037','1','Cucharon Aluminio No 8','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (227,'17281038','1','Recipiente Fantasia Mediano','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (228,'17281039','1','Artesa 9 Tls ','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (229,'17281040','1','Caja Cuadrada Baja  ','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (230,'17281041','1','Caja Royal 1.5 Lts','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (231,'17281042','1','Caja Brodway No3 65','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (232,'17281043','1','Surtihogar','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (233,'17281044','1','Super Tarro 18 Lts','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (234,'17281045','1','Paleta Reposteria M/Acero ','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (235,'17281046','1','Tenedor Ref 100','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (236,'17281047','1','Sanduchera Asador Altezza 2Puesto ','5','D',0,1,0,0,1,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (237,'17281048','1','Buzon De Sugerencia','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (238,'17281049','1','Jarro 1 Litro Púlido','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (239,'17281050','1','Olla 18 Cm Ovalada Imusa ','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (240,'17281051','1','Olla 22 Cm Imusa 50Lts','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (241,'17281052','1','Bandeja Andina','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (242,'17281053','1','Termo 44 Litros Popotamo Alumar','5','D',0,1,0,0,0,'172810',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (243,'172811','1','Casino Fundacion','4','D',0,0,0,0,1,'1728',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (244,'17281101','1','Estante Metalico De 6 Entrepaños','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (245,'17281102','1','Loocker Metalico 4 Compartimientos','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (246,'17281103','1','Nevera Haceb 305 Lt','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (247,'17281104','1','Frizer Wirpool 311 Ltr','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (248,'17281105','1','Nevera Mabe 509 Litros','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (249,'17281106','1','Bja Ovalada Corona ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (250,'17281107','1','Molinillo','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (251,'17281108','1','Colador 21','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (252,'17281109','1','Caja Organizadora ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (253,'17281110','1','Trapero Copa Aro ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (254,'17281111','1','Mortero Grande','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (255,'17281112','1','Exprmidor Jugo ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (256,'17281113','1','Platero No2 Vanyplast','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (257,'17281114','1','Taxa Gde 23.5 Lts ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (258,'17281115','1','Pela Papas Vertical Incanox','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (259,'17281116','1','Set Cuchillo + Trinche Tramontina','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (260,'17281117','1','Ponchera Plast Vanyplast','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (261,'17281118','1','Balde Imusa Azul','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (262,'17281119','1','Jarra Apilable ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (263,'17281120','1','Caja Organizadora Alta Imusa','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (264,'17281121','1','Servilletero Especial ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (265,'17281122','1','Tenedor De Mesa ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (266,'17281123','1','Cuchara Sopa ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (267,'17281124','1','Salero Novedadesplast ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (268,'17281125','1','Juego Recipi Star','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (269,'17281126','1','Horno Microondas','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (270,'17281127','1','Termo Imusa Liso','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (271,'17281128','1','Cacerola C/Mango Imusa','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (272,'17281129','1','Cj Plast Pleion ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (273,'17281130','1','Sarten Meistar Antiadherente','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (274,'17281132','1','Caldero Recortado','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (275,'17281133','1','Licuadora Cromada Oster','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (276,'17281134','1','Salsera Aro','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (277,'17281136','1','Plato Redondo ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (278,'17281137','1','Bowl Aro Redondo','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (279,'17281138','1','Mug Melanina 12 Oz','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (280,'17281139','1','Tabla Plastica Para Cortar','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (281,'17281140','1','Rallador Aceinox Ilkoasa','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (282,'17281141','1','Colador Malla Reg','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (283,'17281142','1','Cucharon O Cuchara Flexible ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (284,'17281143','1','Pala Flexible','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (285,'17281144','1','Tanque Estra V','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (286,'17281145','1','Recogedor C/Perfil','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (287,'17281146','1','Cepillo Planch C/Mag ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (288,'17281147','1','Vaso Aro Policarb','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (289,'17281148','1','Artesa Umco Redonda','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (290,'17281149','1','Caja Organizadora ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (291,'17281150','1','Espumadera Industrial ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (292,'17281151','1','Tenedor Insdustrial ','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (293,'17281152','1','Cuchara Sopa ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (294,'17281153','1','Cuchara Sopa Linea  ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (295,'17281154','1','Pinza De Hielo Clasica','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (296,'17281155','1','Escoba Superior Aro Suav','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (297,'17281156','1','Wok Antiadherente','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (298,'17281157','1','Bandeja Andina ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (299,'17281158','1','Paila Recor 40 Cm ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (300,'17281159','1','Set 4 Recipien Snapware','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (301,'17281160','1','Picador Imusa','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (302,'17281161','1','Ponchera Plast ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (303,'17281162','1','Tabla De Cortar Elipse ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (304,'17281163','1','Caldero Extrafuerte','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (305,'17281164','1','Vaso Aro Apilable','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (306,'17281165','1','Balanza ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (307,'17281166','1','Exprimidor','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (308,'17281167','1','Conten Estra Elite','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (309,'17281168','1','Cuchillo Tramontina Carne','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (310,'17281169','1','Set Tenedor Tramonina ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (311,'17281170','1','Set Cuchillo Tramontina ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (312,'17281171','1','Cucharon Pro Ut Met','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (313,'17281172','1','Espatula Plana Pro ','5','D',0,1,0,0,1,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (314,'17281173','1','Sarten Profesional ','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (315,'17281174','1','Cest Redon Aro Para Freir','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (316,'17281175','1','Olla Presion Imusa ','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (317,'17281176','1','Pinza Aro Acero Inox','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (318,'17281177','1','Cepillo Fuller Techos','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (319,'17281178','1','Platos Cuadr Corona','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (320,'17281179','1','Estufa Industrial De 2.15X 0.55X 0.80 ','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (321,'17281180','1','Mesa En Acero De 1.20X0.60.0.90','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (322,'17281181','1','Cucharon Aluminio No20 Dolis ','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (323,'17281182','1','Sanduchera Asador Altezza ','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (324,'17281183','1','Plancha Asadora De Carnes ','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (325,'17281184','1','Olla Ovalada Imusa','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (326,'17281185','1','Termo Popotamo Alumar','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (327,'17281186','1','Utensilios Casinos Fundacion','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (328,'17281187','1','Nevera Haceb 87 Lt Oficina','5','D',0,1,0,0,0,'172811',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (329,'1795','1','Depreciacion  Acumulada','3','C',1,0,0,0,0,'17',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (330,'179510','1','Muebles Y Equipo De Oficina','4','C',0,0,0,0,0,'1795',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (331,'17951001','1','Muebles Y Equipo De Oficina','5','C',0,1,0,0,0,'179510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (332,'179515','1','Equipos De Hoteles Y Restaurantes ','4','C',0,0,0,0,0,'1795',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (333,'17951501','1','Equipos De Hoteles Y Restaurantes ','5','C',0,1,0,0,1,'179515',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (334,'179520','1','Equipo De Computacion Y Comunicacion','4','C',0,0,0,0,1,'1795',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (335,'17952001','1','Equipo De Computacion Y Comunicacion','5','C',0,1,0,0,0,'179520',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (336,'18','1','Diferidos','2','D',0,0,0,0,0,'1',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (337,'1820','1','Cargos Diferidos','3','D',1,0,0,0,0,'18',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (338,'182005','1','Organizacion Y Preoperativos','4','D',0,0,0,0,1,'1820',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (339,'18200501','1','Organizacion Y Preoperativos','5','D',0,1,0,0,1,'182005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (340,'18200502','1','Casino Fundacion','5','D',0,1,0,0,1,'182005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (341,'182020','1','Programas Para Computador (Software)','4','D',0,0,0,0,1,'1820',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (342,'18202001','1','Programa Contable','5','D',0,1,0,0,1,'182020',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (343,'182095','1','Otros','4','D',0,0,0,0,1,'1820',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (344,'18209501','1','Anchetas ','5','D',0,1,0,0,0,'182095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (345,'18209502','1','Asistencia Tecnica Zeus','5','D',0,1,0,0,0,'182095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (346,'18209503','1','Casino','5','D',0,1,0,0,0,'182095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (347,'18209504','1','Compra De Estatutos','5','D',0,1,0,0,0,'182095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (348,'18209505','1','Sweter Fondaabon','5','D',0,1,0,0,0,'182095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (349,'18209506','1','Kit Escolares','5','D',0,1,0,0,0,'182095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (350,'19','1','Otros Activos','2','D',0,0,0,0,0,'1',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (351,'1987','1','Otras Inversiones','3','D',1,0,0,0,0,'19',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (352,'198715','1','Entidades Sin ?Nimo De Lucro','4','D',0,0,0,0,1,'1987',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (353,'19871501','1','Entidades Sin ?Nimo De Lucro','5','D',0,1,0,0,1,'198715',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (354,'2','1','Pasivo','1','C',0,0,0,0,0,'',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (355,'21','1','Depositos','2','C',0,0,0,0,0,'2',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (356,'2125','1','Depositos  De Ahorro Contractual','3','C',1,0,0,0,0,'21',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (357,'212505','1','Depositos A Corto Plazo -  Activas','4','C',0,0,0,0,1,'2125',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (358,'21250501','1','Ahorro Programado A La Vista','5','C',0,1,0,0,1,'212505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (359,'21250502','1','Ahorro Vacacional','5','C',0,1,0,0,0,'212505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (360,'21250503','1','Ahorro Navideño','5','C',0,1,0,0,0,'212505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (361,'2130','1','Depositos De Ahorro Permanente','3','C',1,0,0,0,0,'21',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (362,'213010','1','Depositos A Largo Plazo','4','C',0,0,0,0,0,'2130',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (363,'21301001','1','Depositos A Largo Plazo','5','C',0,1,0,0,1,'213010',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (364,'23','1','Creditos De Bancos Y Otras Obligaciones','2','C',0,0,0,0,0,'2',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (365,'2305','1','Otras Obligaciones Financiera','3','C',1,0,0,0,0,'23',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (366,'230595','1','Nacionales','4','C',0,0,0,0,0,'2305',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (367,'23059501','1','Sogregiro','5','C',0,1,0,0,0,'230595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (368,'2308','1','Obligaciones Financieras Largo Plazo','3','C',1,0,0,0,0,'23',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (369,'230805','1','Bancos Comerciales','4','C',0,0,0,0,0,'2308',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (370,'23080501','1','Bancos Comerciales','5','C',0,1,0,0,0,'230805',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (371,'24','1','Cuentas Por Pagar','2','C',0,0,0,0,1,'2',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (372,'2410','1','A Contratistas','3','C',1,0,0,0,0,'24',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (373,'241005','1','A Contratistas','4','C',0,0,0,0,1,'2410',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (374,'24100501','1','A Contratistas','5','C',0,1,0,0,0,'241005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (375,'2415','1','Costos Y Gastos Por Pagar','3','C',1,0,0,0,1,'24',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (376,'241510','1','Honorarios','4','C',0,0,0,0,0,'2415',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (377,'24151001','1','Honorarios Por Pagar','5','C',0,1,0,0,1,'241510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (378,'241515','1','Servicios Publicos','4','C',0,0,0,0,1,'2415',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (379,'24151501','1','Servicios Publicos Por Pagar','5','C',0,1,0,0,0,'241515',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (380,'241540','1','Gastos De Viajes','4','C',0,0,0,0,0,'2415',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (381,'24154001','1','Gastos De Viajes','5','C',0,1,0,0,0,'241540',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (382,'2435','1','Proveedores','3','C',1,0,0,0,0,'24',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (383,'243505','1','Nacionales','4','C',0,0,0,0,0,'2435',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (384,'24350501','1','Nacionales','5','C',0,1,0,0,1,'243505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (385,'2440','1','Contribuciones Y Afiliaciones','3','C',1,0,0,0,0,'24',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (386,'244055','1','Asociaciones','4','C',0,0,0,0,1,'2440',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (387,'24405501','1','Asociaciones','5','C',0,1,0,0,0,'244055',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (388,'2445','1','Retencion En La Fuente','3','C',1,0,0,0,0,'24',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (389,'244505','1','Salario Y Pagos Laborales','4','C',0,0,0,0,0,'2445',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (390,'24450501','1','Salario Y Pagos Laborales','5','C',0,1,0,0,1,'244505',1,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (391,'244515','1','Honorarios','4','C',0,0,0,0,0,'2445',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (392,'24451501','1','Retefuente Honorarios','5','C',0,1,0,0,1,'244515',1,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (393,'244525','1','Servicios','4','C',0,0,0,0,0,'2445',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (394,'24452501','1','Retefuente Servicios','5','C',0,1,0,0,1,'244525',1,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (395,'244530','1','Arrendamientos','4','C',0,0,0,0,1,'2445',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (396,'24453001','1','Retefuente Arrendamientos','5','C',0,1,0,0,0,'244530',1,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (397,'244535','1','Rendimientos Financieros','4','C',0,0,0,0,0,'2445',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (398,'24453501','1','Rendimientos Finanacieros Ahorros Contra','5','C',0,1,0,0,1,'244535',1,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (399,'244540','1','Compras','4','C',0,0,0,0,1,'2445',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (400,'24454001','1','Retefuente Compras','5','C',0,1,0,0,0,'244540',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (401,'24454002','1','Retefuente Compras 1.5%','5','C',0,1,0,0,0,'244540',1,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (402,'2446','1','Retencion Por Impuesto Cree','3','C',1,0,0,0,1,'24',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (403,'244605','1','Retenciones Impuestos Cree','4','C',0,0,0,0,0,'2446',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (404,'24460501','1','Porcentaje 0.6%','5','C',0,1,0,0,1,'244605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (405,'24460502','1','Porcentaje 0.3%','5','C',0,1,0,0,0,'244605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (406,'2450','1','Retenciones Y Aportes De Nomina','3','C',1,0,0,0,1,'24',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (407,'245005','1','Aportes A Bienestar Promotoras De Salud Eps ','4','C',0,0,0,0,0,'2450',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (408,'24500501','1','Salud Eps','5','C',0,1,0,0,1,'245005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (409,'245010','1','Aportes A Bienestar Promotoras De  Pension ','4','C',0,0,0,0,0,'2450',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (410,'24501001','1','Pension','5','C',0,1,0,0,1,'245010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (411,'245015','1','Ap.   Administradoras De Riesgos Profesionales Arp','4','C',0,0,0,0,0,'2450',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (412,'24501501','1','Arp','5','C',0,1,0,0,1,'245015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (413,'245020','1','Aportes Al I.C.B.F., Sena Y Cajas De Compensacion','4','C',0,0,0,0,1,'2450',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (414,'24502001','1','Para Fiscales','5','C',0,1,0,0,1,'245020',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (415,'245095','1','Otros','4','C',0,0,0,0,0,'2450',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (416,'24509501','1','Fondo De Solidaridad','5','C',0,1,0,0,1,'245095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (417,'2465','1','Remanentes Por Pagar','3','C',1,0,0,0,0,'24',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (418,'246505','1','De Aportes Ex-Asociados','4','C',0,0,0,0,1,'2465',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (419,'24650501','1','De Aportes Ex-Asociados','5','C',0,1,0,0,1,'246505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (420,'2495','1','Diversas','3','C',1,0,0,0,1,'24',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (421,'249510','1','Nominas Por Pagar','4','C',0,0,0,0,1,'2495',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (422,'24951001','1','Nominas Por Pagar','5','C',0,1,0,0,1,'249510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (423,'249530','1','Valores Por Reintegrar','4','C',0,0,0,0,0,'2495',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (424,'24953001','1','Mayor Descuento   ','5','C',0,1,0,0,1,'249530',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (425,'249595','1','Otras Cuentas Por Pagar','4','C',0,0,0,0,0,'2495',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (426,'24959501','1','Otras Cuentas Por Pagar','5','C',0,1,0,0,1,'249595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (427,'24959502','1','Reebolso De Caja Menor','5','C',0,1,0,0,1,'249595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (428,'24959503','1','Provision Premios Por Pagar Rifa Fondaab','5','C',0,1,0,0,0,'249595',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (429,'25','1','Impuestos Gravamenes Y Tasas','2','C',0,0,0,0,0,'2',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (430,'2595','1','Otros','3','C',1,0,0,0,0,'25',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (431,'259501','1','Impuestos Por Pagar Gmf','4','C',0,0,0,0,0,'2595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (432,'25950105','1','Gmf 4 X 1000','5','C',0,1,0,0,1,'259501',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (433,'26','1','Fondos Sociales, Mutuales Y Otros','2','C',0,0,0,0,0,'2',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (434,'2605','1','Fondo Social De Educacion','3','C',1,0,0,0,0,'26',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (435,'260505','1','Fondo Social De Educacion','4','C',0,0,0,0,0,'2605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (436,'26050501','1','Fondo Para Educacion','5','C',0,1,0,0,0,'260505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (437,'2610','1','Fondo Social De  Solidaridad','3','C',1,0,0,0,0,'26',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (438,'261005','1','Fondo Social De  Solidaridad','4','C',0,0,0,0,0,'2610',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (439,'26100501','1','Fondo Para La Solidaridad','5','C',0,1,0,0,0,'261005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (440,'2615','1','Fondo Social De  Recreacion','3','C',1,0,0,0,0,'26',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (441,'261505','1','Fondo Social De  Recreacion','4','C',0,0,0,0,0,'2615',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (442,'26150501','1','Fondo Para La Recreacion','5','C',0,1,0,0,0,'261505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (443,'2625','1','Fondo De Bienestar  Social','3','C',1,0,0,0,0,'26',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (444,'262505','1','Fondo De Bienestar  Social','4','C',0,0,0,0,0,'2625',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (445,'26250501','1','Fondo Para Bienestar Social','5','C',0,1,0,0,0,'262505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (446,'2648','1','Fondo Social Para Otros Fines','3','C',1,0,0,0,0,'26',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (447,'264805','1','Fondo Social Para Otros Fines','4','C',0,0,0,0,0,'2648',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (448,'26480501','1','Desarrollo Empresarial','5','C',0,1,0,0,0,'264805',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (449,'2695','1','Fondo Mutuales Para Otros Fines','3','C',1,0,0,0,1,'26',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (450,'269505','1','Fondo Mortuorio','4','C',0,0,0,0,0,'2695',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (451,'26950501','1','Fondo Mortuorio','5','C',0,1,0,0,1,'269505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (452,'27','1','Otros Pasivos','2','C',0,0,0,0,0,'2',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (453,'2710','1','Obligaciones Laborales','3','C',1,0,0,0,1,'27',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (454,'271005','1','Salarios Por Pagar','4','C',0,0,0,0,0,'2710',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (455,'27100501','1','Salarios Por Pagar','5','C',0,1,0,0,1,'271005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (456,'271010','1','Cesantias Consolidadas','4','C',0,0,0,0,0,'2710',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (457,'27101001','1','Cesantias Consolidadas','5','C',0,1,0,0,1,'271010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (458,'271015','1','Intereses Sobre Cesantias','4','C',0,0,0,0,0,'2710',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (459,'27101501','1','Intereses Sebre Cesantias','5','C',0,1,0,0,1,'271015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (460,'271020','1','Prima Por Pagar','4','C',0,0,0,0,1,'2710',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (461,'27102001','1','Primas Por Pagar','5','C',0,1,0,0,1,'271020',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (462,'271025','1','Vacaciones Consolidadas','4','C',0,0,0,0,0,'2710',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (463,'27102501','1','Vacaciones Consolidadas','5','C',0,1,0,0,1,'271025',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (464,'2725','1','Ingresos Recibidos Por Anticipado','3','C',1,0,0,0,1,'27',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (465,'272595','1','Otros','4','C',0,0,0,0,1,'2725',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (466,'27259501','1','Ingreso Recibido Casa Venta','5','C',0,1,0,0,1,'272595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (467,'2740','1','Ingresos Recibidos Para Terceros','3','C',1,0,0,0,1,'27',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (468,'274005','1','Valores Recibidos Para Terceros','4','C',0,0,0,0,1,'2740',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (469,'27400501','1','Libranza - Servicios Y Suministro','5','C',0,1,0,0,1,'274005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (470,'27400502','1','Libranza - Davivienda','5','C',0,1,0,0,1,'274005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (471,'27400503','1','Libranza-Ami','5','C',0,1,0,0,1,'274005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (472,'27400504','1','Libranza-Colsanitas','5','C',0,1,0,0,1,'274005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (473,'27400505','1','Libranza-Suramericana','5','C',0,1,0,0,1,'274005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (474,'27400506','1','Libranza-Funeraria','5','C',0,1,0,0,0,'274005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (475,'27400507','1','Libranza-Gymnasio','5','C',0,1,0,0,0,'274005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (476,'27400508','1','Consumos Casinos','5','C',0,1,0,0,0,'274005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (477,'27400509','1','Fondaabolsa','5','C',0,1,0,0,1,'274005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (478,'27400510','1','Libranza- Deudores Colmena','5','C',0,1,0,0,1,'274005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (479,'27400511','1','Libranza- Vida Grupo Exequias Colmena','5','C',0,1,0,0,1,'274005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (480,'2745','1','Anticipos Y Avances Recibidos','3','C',1,0,0,0,0,'27',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (481,'274598','1','Otros','4','C',0,0,0,0,0,'2745',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (482,'27459801','1','Apoyo A Calamidad','5','C',0,1,0,0,0,'274598',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (483,'2795','1','Diversos','3','C',1,0,0,0,0,'27',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (484,'279595','1','Abonos No Identificados','4','C',0,0,0,0,1,'2795',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (485,'27959501','1','Partidas Por Conciliar','5','C',0,1,0,0,0,'279595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (486,'27959502','1','Provisional','5','C',0,1,0,0,1,'279595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (487,'28','1','Pasivos Estimados Y Provisiones','2','C',0,0,0,0,0,'2',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (488,'2825','1','Obligaciones Laborales','3','C',1,0,0,0,1,'28',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (489,'282505','1','Cesantias','4','C',0,0,0,0,0,'2825',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (490,'28250501','1','Cesantias','5','C',0,1,0,0,1,'282505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (491,'282510','1','Intereses Sobre Cesantias','4','C',0,0,0,0,0,'2825',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (492,'28251001','1','Intereses Sobre Cesantias','5','C',0,1,0,0,1,'282510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (493,'282515','1','Vacaciones','4','C',0,0,0,0,0,'2825',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (494,'28251501','1','Vacaciones','5','C',0,1,0,0,1,'282515',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (495,'282520','1','Prima Legal','4','C',0,0,0,0,1,'2825',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (496,'28252001','1','Prima Legal','5','C',0,1,0,0,1,'282520',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (497,'2830','1','Otros','3','C',1,0,0,0,0,'28',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (498,'283005','1','Otros ','4','C',0,0,0,0,0,'2830',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (499,'28300501','1','Otros','5','C',0,1,0,0,0,'283005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (500,'3','1','Patrimonio','1','C',0,0,0,0,0,'',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (501,'31','1','Capital Social','2','C',0,0,0,0,0,'3',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (502,'3105','1','Aportes Sociales','3','C',1,0,0,0,0,'31',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (503,'310505','1','Aportes Ordinarios','4','C',0,0,0,0,0,'3105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (504,'31050501','1','Aportes Ordinarios','5','C',0,1,0,0,1,'310505',0,1,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (505,'32','1','Reservas','2','C',0,0,0,0,0,'3',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (506,'3205','1','Reserva Protecci?N De Aportes','3','C',1,0,0,0,0,'32',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (507,'320505','1','Reserva Proteccion De Aportes','4','C',0,0,0,0,0,'3205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (508,'32050501','1','Reserva Proteccion De Aportes','5','C',0,1,0,0,0,'320505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (509,'33','1','Fondos De Destinacion Espec?Fica','2','C',0,0,0,0,0,'3',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (510,'3310','1','Fondo Para Revalorizacion De Aportes','3','C',1,0,0,0,0,'33',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (511,'331005','1','Fondo Para Revalorizacion De Aportes ','4','C',0,0,0,0,0,'3310',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (512,'33100501','1','Fondo Para Revalorizacion De Aportes ','5','C',0,1,0,0,1,'331005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (513,'34','1','Superavit','2','C',0,0,0,0,1,'3',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (514,'3405','1','Auxilios Y Donaciones','3','C',1,0,0,0,0,'34',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (515,'340505','1','Entidades Particulares','4','C',0,0,0,0,0,'3405',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (516,'34050501','1','Entidades Particulares','5','C',0,1,0,0,0,'340505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (517,'3415','1','Valorizaciones','3','C',1,0,0,0,0,'34',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (518,'341510','1','Propiedades Planta Y Equipo','4','C',0,0,0,0,0,'3415',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (519,'34151005','1','Terrenos Urbanizacion Sol Naciente','5','C',0,1,0,0,0,'341510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (520,'35','1','Resultados Del Ejercicio','2','C',0,0,0,0,0,'3',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (521,'3505','1','Excedentes Y/O Perdidas','3','C',1,0,0,0,0,'35',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (522,'350505','1','Excedentes','4','C',0,0,0,0,0,'3505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (523,'35050501','1','Excedentes','5','C',0,1,0,0,1,'350505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (524,'350510','1','Perdida','4','C',0,0,0,0,0,'3505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (525,'35051001','1','Perdida','5','C',0,1,0,0,1,'350510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (526,'36','1','Resultados De Ejercicios Anteriores','2','C',0,0,0,0,0,'3',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (527,'3605','1','Exedentes Y/O Perdidas','3','C',1,0,0,0,0,'36',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (528,'360505','1','Excedentes De Ejercicios Anteriores','4','C',0,0,0,0,0,'3605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (529,'36050501','1','Excedentes De Ajercicios Anteriores','5','C',0,1,0,0,0,'360505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (530,'360510','1','Perdidas De Ejercicios Anteriores','4','C',0,0,0,0,1,'3605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (531,'36051001','1','Perdidas De Ejercicios Anteriores','5','C',0,1,0,0,0,'360510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (532,'4','1','Ingresos','1','C',0,0,0,0,0,'',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (533,'41','1','Operacionales','2','C',0,0,0,0,1,'4',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (534,'4130','1','Construccion','3','C',1,0,0,0,0,'41',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (535,'413020','1','Terminacion De Edificaciones','4','C',0,0,0,0,0,'4130',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (536,'41302001','1','Venta De Casas','5','C',0,1,0,0,1,'413020',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (537,'4140','1','Aportes De Destinacion Especifica','3','C',1,0,0,0,0,'41',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (538,'414015','1','Aportes De Destinacion Especifica','4','C',0,0,0,0,0,'4140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (539,'41401501','1','Destinacion Especifica En Alimentos','5','C',0,1,0,0,1,'414015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (540,'4150','1','Actividad Financiera','3','C',1,0,0,0,0,'41',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (541,'415046','1','Intereses Fondo De Liquides','4','C',0,0,0,0,0,'4150',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (542,'41504601','1','Intereses Fondo De Liquidez','5','C',0,1,0,0,0,'415046',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (543,'415098','1','Recuperacion 4  * 1000','4','C',0,0,0,0,0,'4150',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (544,'41509802','1','Recuperacion 4 X 1000','5','C',0,1,0,0,0,'415098',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (545,'41509803','1','Recuperacion  Comision','5','C',0,1,0,0,0,'415098',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (546,'4185','1','Servicio De Credito','3','C',1,0,0,0,0,'41',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (547,'418510','1','Intereses Creditos Consumo','4','C',0,0,0,0,0,'4185',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (548,'41851001','1','Intereses Credito De Consumo','5','C',0,1,0,0,0,'418510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (549,'418515','1','Intereses Creditos De Vivienda','4','C',0,0,0,0,0,'4185',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (550,'41851501','1','Intereses Creditos De Vivienda','5','C',0,1,0,0,0,'418515',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (551,'418598','1','Otros Servicios De Credito','4','C',0,0,0,0,1,'4185',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (552,'41859801','1','Otros Servicios De Credito','5','C',0,1,0,0,1,'418598',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (553,'4190','1','Administrativos Y Sociales','3','C',1,0,0,0,1,'41',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (554,'419005','1','Cuotas De Admisi?N Y/O Afiliacion','4','C',0,0,0,0,0,'4190',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (555,'41900501','1','Afiliacion','5','C',0,1,0,0,0,'419005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (556,'419090','1','Otros Ingresos Adminidtrativos - Convenios','4','C',0,0,0,0,0,'4190',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (557,'41909001','1','Vivienda','5','C',0,1,0,0,1,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (558,'41909002','1','Salud','5','C',0,1,0,0,0,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (559,'41909003','1','Educacion','5','C',0,1,0,0,1,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (560,'41909004','1','Seguros ','5','C',0,1,0,0,1,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (561,'41909005','1','Funeraria','5','C',0,1,0,0,1,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (562,'41909006','1','Almacenes Y Graneros','5','C',0,1,0,0,0,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (563,'41909007','1','Cachareria Y Papeleria','5','C',0,1,0,0,0,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (564,'41909008','1','Eventos','5','C',0,1,0,0,1,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (565,'41909009','1','Sweter Fondaabon','5','C',0,1,0,0,0,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (566,'41909010','1','Kit Escolar','5','C',0,1,0,0,0,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (567,'41909011','1','Rifa Fondaabon','5','C',0,1,0,0,0,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (568,'41909012','1','Gimnasio','5','C',0,1,0,0,0,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (569,'41909013','1','Penalizacion Retiro Anticipado Ahorro','5','C',0,1,0,0,0,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (570,'41909014','1','Estetica','5','C',0,1,0,0,0,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (571,'41909015','1','Bicicletas','5','C',0,1,0,0,0,'419090',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (572,'42','1','No Operacionales','2','C',0,0,0,0,1,'4',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (573,'4210','1','Financieros','3','C',1,0,0,0,0,'42',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (574,'421005','1','Intereses ','4','C',0,0,0,0,0,'4210',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (575,'42100501','1','Intereses','5','C',0,1,0,0,0,'421005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (576,'4215','1','Dividendos Participaciones Y Excedentes','3','C',1,0,0,0,0,'42',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (577,'421510','1','De Sociedades Limitadas Y O Asimiladas','4','C',0,0,0,0,0,'4215',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (578,'42151001','1','Creando Y Proyectando S.A.S','5','C',0,1,0,0,0,'421510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (579,'4250','1','Recuperaciones','3','C',1,0,0,0,0,'42',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (580,'425040','1','Gastos Bancarios','4','C',0,0,0,0,0,'4250',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (581,'42504001','1','Recuperaciones De 4X1,000','5','C',0,1,0,0,0,'425040',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (582,'42504002','1','Comisiones','5','C',0,1,0,0,0,'425040',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (583,'425050','1','Reintegro De Costos Y Gastos','4','C',0,0,0,0,1,'4250',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (584,'42505001','1','Reintegro De Costos Y Gastos En General','5','C',0,1,0,0,0,'425050',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (585,'4295','1','Diversos','3','C',1,0,0,0,0,'42',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (586,'429505','1','Aprovechamientos','4','C',0,0,0,0,0,'4295',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (587,'42950501','1','Aprovechamientos','5','C',0,1,0,0,0,'429505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (588,'429509','1','Donaciones O Subvenciones','4','C',0,0,0,0,0,'4295',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (589,'42950901','1','Donaciones ','5','C',0,1,0,0,0,'429509',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (590,'429581','1','Ajuste Al Peso','4','C',0,0,0,0,1,'4295',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (591,'42958101','1','Ajuste Al Peso','5','C',0,1,0,0,0,'429581',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (592,'5','1','Gastos','1','D',0,0,0,0,1,'',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (593,'51','1','Gastos De Administracion','2','D',0,0,0,0,0,'5',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (594,'5105','1','Gastos De Personal','3','D',1,0,0,0,1,'51',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (595,'510506','1','Sueldos','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (596,'51050601','1','Sueldos','5','D',0,1,0,0,1,'510506',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (597,'510515','1','Horas Extras Dominicales Y Festivo','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (598,'51051501','1','Horas Extras Dominical Y Festivo','5','D',0,1,0,0,1,'510515',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (599,'510524','1','Incapacidades','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (600,'51052401','1','Incapacidades Administracion','5','D',0,1,0,0,1,'510524',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (601,'510527','1','Auxilio De Transporte','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (602,'51052701','1','Auxilio De Transporte','5','D',0,1,0,0,1,'510527',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (603,'510528','1','Ayuda Para El Transporte','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (604,'51052801','1','Ayuda Para El Transporte','5','D',0,1,0,0,1,'510528',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (605,'510530','1','Cesantias','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (606,'51053001','1','Cesantias','5','D',0,1,0,0,1,'510530',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (607,'510533','1','Intereses Sobre Cesantias','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (608,'51053301','1','Intereses Sobre Cesantias','5','D',0,1,0,0,1,'510533',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (609,'510536','1','Prima De Servicios','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (610,'51053601','1','Prima De Servicios','5','D',0,1,0,0,1,'510536',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (611,'510539','1','Vacaciones','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (612,'51053901','1','Vacaciones','5','D',0,1,0,0,1,'510539',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (613,'510548','1','Bonificaciones','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (614,'51054801','1','Bonificaciones','5','D',0,1,0,0,1,'510548',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (615,'510551','1','Dotacion Y Suministro','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (616,'51055101','1','Dotacion Y Suministro A Empleados','5','D',0,1,0,0,1,'510551',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (617,'510560','1','Indemnizaciones','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (618,'51056001','1','Indemnizaciones Por Parte Del Empleador','5','D',0,1,0,0,1,'510560',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (619,'510563','1','Capacitacion Al Personal','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (620,'51056301','1','Capacitacion','5','D',0,1,0,0,1,'510563',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (621,'510569','1','Aportes Salud','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (622,'51056901','1','Aportes Salud','5','D',0,1,0,0,1,'510569',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (623,'510570','1','Aportes Pension','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (624,'51057001','1','Aportes Pension','5','D',0,1,0,0,1,'510570',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (625,'510571','1','Aportes A.R.P.','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (626,'51057101','1','Aportes A.R.P.','5','D',0,1,0,0,1,'510571',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (627,'510572','1','Aportes Cajas De Compensacion Familiar','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (628,'51057201','1','Aportes Cajas De Compensacion Familiar','5','D',0,1,0,0,1,'510572',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (629,'510575','1','Aportes I.C.B.F. ','4','D',0,0,0,0,1,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (630,'51057501','1','Aportes I.C.B.F. ','5','D',0,1,0,0,0,'510575',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (631,'510578','1','Sena','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (632,'51057801','1','Sena','5','D',0,1,0,0,0,'510578',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (633,'510595','1','Otros','4','D',0,0,0,0,0,'5105',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (634,'51059501','1','Examenes De Ingreso Laboral','5','D',0,1,0,0,0,'510595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (635,'51059502','1','Examenes Periodicos Personal Admon','5','D',0,1,0,0,1,'510595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (636,'51059595','1','Otros','5','D',0,1,0,0,1,'510595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (637,'5110','1','Gastos  Generales ','3','D',1,0,0,0,1,'51',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (638,'511001','1','Honorarios','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (639,'51100101','1','Asesoria Niff','5','D',0,1,0,0,1,'511001',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (640,'51100102','1','Revisor Fiscal','5','D',0,1,0,0,0,'511001',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (641,'51100103','1','Microbiologa','5','D',0,1,0,0,1,'511001',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (642,'51100104','1','Asesoria Juridica','5','D',0,1,0,0,0,'511001',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (643,'51100105','1','Veeduria Proyecto Cre','5','D',0,1,0,0,1,'511001',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (644,'51100107','1','Asistencia Tecnica','5','D',0,1,0,0,0,'511001',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (645,'51100195','1','Contador','5','D',0,1,0,0,1,'511001',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (646,'511002','1','Impuestos','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (647,'51100201','1','Impuesto Predial','5','D',0,1,0,0,1,'511002',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (648,'511004','1','Arrendamientos','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (649,'51100401','1','Arrendamiento De Inmuebles','5','D',0,1,0,0,0,'511004',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (650,'511008','1','Seguros','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (651,'51100801','1','Poliza De Cumplimiento','5','D',0,1,0,0,0,'511008',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (652,'511010','1','Mantenimiento Y Reparaciones','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (653,'51101001','1','De Muebles Y Enceres','5','D',0,1,0,0,0,'511010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (654,'51101002','1','De Computadores','5','D',0,1,0,0,0,'511010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (655,'51101003','1','Equipos De Restaurante','5','D',0,1,0,0,0,'511010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (656,'511016','1','Reparaciones Locativas','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (657,'51101601','1','Oficina Casa Daabon','5','D',0,1,0,0,0,'511016',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (658,'511018','1','Elementos De Aseo Y Cafeteria','4','D',0,0,0,0,1,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (659,'51101801','1','Elementos De Aseo Y Cafeteria','5','D',0,1,0,0,0,'511018',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (660,'511020','1','Cafeteria','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (661,'51102001','1','Servicio De Comedor','5','D',0,1,0,0,0,'511020',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (662,'511022','1','Servicios Publicos','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (663,'51102201','1','Telefono Celular','5','D',0,1,0,0,0,'511022',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (664,'51102202','1','Telefonos Fijos','5','D',0,1,0,0,0,'511022',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (665,'511026','1','Transporte,  Fletes Y Acarreos','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (666,'51102601','1','De Mercancia Y Paquetes','5','D',0,1,0,0,0,'511026',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (667,'511028','1','Papeleria Y Utiles ','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (668,'51102801','1','Papeleria Y Utiles - Administracion','5','D',0,1,0,0,0,'511028',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (669,'51102802','1','Papeleria Y Utiles - Centros De Trabajo','5','D',0,1,0,0,0,'511028',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (670,'511030','1','Fotocopias','4','D',0,0,0,0,1,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (671,'51103001','1','Fotocopias - Administracion','5','D',0,1,0,0,0,'511030',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (672,'51103002','1','Fotocopias - Centros De Trabajo','5','D',0,1,0,0,0,'511030',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (673,'511032','1','Suministro','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (674,'51103201','1','Casino Y Restaurante','5','D',0,1,0,0,0,'511032',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (675,'511036','1','Contribuciones Y Afiliaciones ','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (676,'51103601','1','Superintendencia De La Economia Solidari','5','D',0,1,0,0,0,'511036',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (677,'51103602','1','Fondo De Garantias De Entidades Cooperativas','5','D',0,1,0,0,0,'511036',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (678,'51103603','1','Confederaciones','5','D',0,1,0,0,0,'511036',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (679,'51103604','1','Federaciones','5','D',0,1,0,0,0,'511036',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (680,'51103605','1','Asociaciones','5','D',0,1,0,0,0,'511036',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (681,'511038','1','Gastos De Asamblea ','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (682,'51103801','1','Auditorio Asamblea','5','D',0,1,0,0,0,'511038',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (683,'51103802','1','Servicio De Comedor Asamblea','5','D',0,1,0,0,1,'511038',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (684,'51103803','1','Papeleria Y Utiles Asamblea','5','D',0,1,0,0,0,'511038',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (685,'51103804','1','Transporte Asamblea','5','D',0,1,0,0,1,'511038',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (686,'51103805','1','Sueteres Delegados Asamblea','5','D',0,1,0,0,0,'511038',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (687,'51103806','1','Servicio De Alojamiento Delegados','5','D',0,1,0,0,0,'511038',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (688,'511040','1','Gastos De Directivos','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (689,'51104001','1','Servicio De Comedor Directivos','5','D',0,1,0,0,1,'511040',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (690,'51104002','1','Papeleria Y Utiles Directivos','5','D',0,1,0,0,0,'511040',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (691,'51104003','1','Transporte Direcitvos','5','D',0,1,0,0,0,'511040',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (692,'511042','1','Gastos De Comites','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (693,'51104201','1','Servicio De Comedor Comites','5','D',0,1,0,0,0,'511042',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (694,'51104202','1','Papeleria Y Utiles Comites','5','D',0,1,0,0,0,'511042',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (695,'51104203','1','Transporte Comites','5','D',0,1,0,0,0,'511042',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (696,'511046','1','Gastos Legales','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (697,'51104601','1','Notariales','5','D',0,1,0,0,0,'511046',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (698,'51104602','1','Registro Mercantil','5','D',0,1,0,0,0,'511046',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (699,'51104603','1','Tramites Y Licencias','5','D',0,1,0,0,0,'511046',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (700,'51104604','1','Aduaneros ','5','D',0,1,0,0,0,'511046',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (701,'51104605','1','Consulares','5','D',0,1,0,0,1,'511046',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (702,'51104606','1','Impuesto Predial','5','D',0,1,0,0,1,'511046',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (703,'511052','1','Gastos De Viajes','4','D',0,0,0,0,1,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (704,'51105201','1','Combustible','5','D',0,1,0,0,0,'511052',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (705,'51105202','1','Peajes','5','D',0,1,0,0,0,'511052',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (706,'51105203','1','Servicio De Comedor','5','D',0,1,0,0,0,'511052',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (707,'51105204','1','Pasejes Terrestre','5','D',0,1,0,0,0,'511052',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (708,'51105205','1','Pasajes Fluvial','5','D',0,1,0,0,0,'511052',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (709,'51105206','1','Pasajes Aereos','5','D',0,1,0,0,0,'511052',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (710,'51105207','1','Alojamientos','5','D',0,1,0,0,0,'511052',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (711,'51105208','1','Actualizar','5','D',0,1,0,0,0,'511052',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (712,'511054','1','Servicios Temporales ','4','D',0,0,0,0,1,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (713,'51105401','1','De Administracion ','5','D',0,1,0,0,1,'511054',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (714,'51105402','1','Eventos','5','D',0,1,0,0,0,'511054',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (715,'51105403','1','Servicios De Aseo','5','D',0,1,0,0,0,'511054',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (716,'51105404','1','Alquiler','5','D',0,1,0,0,0,'511054',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (717,'511058','1','Sistematizacion','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (718,'51105801','1','Pagina Web Fondaabon','5','D',0,1,0,0,0,'511058',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (719,'51105802','1','Camaras Digitales Casino','5','D',0,1,0,0,0,'511058',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (720,'511060','1','Cuotas De Sostenimiento','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (721,'51106001','1','Superintendencia De La Economia Solidaria','5','D',0,1,0,0,0,'511060',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (722,'51106002','1','Fondo De Garantias De Entidades Cooperativas','5','D',0,1,0,0,0,'511060',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (723,'51106003','1','Confederaciones','5','D',0,1,0,0,1,'511060',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (724,'51106004','1','Federaciones','5','D',0,1,0,0,1,'511060',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (725,'51106005','1','Asociaciones','5','D',0,1,0,0,0,'511060',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (726,'511068','1','Asistencia Tecnica','4','D',0,0,0,0,1,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (727,'51106801','1','Asistencia Tecnica Zeus Open','5','D',0,1,0,0,0,'511068',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (728,'511079','1','Comision Y Miv Financiro Actividad Princ','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (729,'51107901','1','4 X 1.000 En Actividad Principal','5','D',0,1,0,0,0,'511079',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (730,'51107902','1','Comision En Actividad Principal','5','D',0,1,0,0,0,'511079',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (731,'511096','1','Gastos Varios ','4','D',0,0,0,0,0,'5110',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (732,'51109601','1','Taxis Y Buses','5','D',0,1,0,0,0,'511096',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (733,'51109602','1','Atenciones Y Agasajos','5','D',0,1,0,0,1,'511096',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (734,'51109603','1','Correspondencia','5','D',0,1,0,0,0,'511096',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (735,'51109604','1','Atencion Empleados','5','D',0,1,0,0,0,'511096',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (736,'51109695','1','Otros ','5','D',0,1,0,0,0,'511096',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (737,'5115','1','Provisiones','3','D',1,0,0,0,1,'51',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (738,'511505','1','Inversiones','4','D',0,0,0,0,0,'5115',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (739,'51150501','1','Provision Premios Por Pagar Rifa Fondaab','5','D',0,1,0,0,0,'511505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (740,'511524','1','Privision General De Cartera','4','D',0,0,0,0,0,'5115',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (741,'51152401','1','Cartera De La Dificil Cobro','5','D',0,1,0,0,0,'511524',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (742,'51152402','1','Gastos Asumidos  Carteras Erradas Años A','5','D',0,1,0,0,1,'511524',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (743,'511530','1','Cuentas Por Cobrar','4','D',0,0,0,0,0,'5115',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (744,'51153001','1','Patronales','5','D',0,1,0,0,0,'511530',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (745,'5120','1','Amortizacion Y Agotamiento','3','D',1,0,0,0,0,'51',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (746,'512010','1','Cargos Diferidos','4','D',0,0,0,0,0,'5120',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (747,'51201001','1','Cargos Diferidos','5','D',0,1,0,0,0,'512010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (748,'5125','1','Depreciaciones','3','D',1,0,0,0,0,'51',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (749,'512520','1','Muebles Y Equipos De Oficina','4','D',0,0,0,0,0,'5125',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (750,'51252001','1','Muebles Y Equipos De Oficina','5','D',0,1,0,0,1,'512520',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (751,'512525','1','Equio De Computo Y Comunicacion','4','D',0,0,0,0,1,'5125',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (752,'51252501','1','Equio De Computo Y Comunicacion','5','D',0,1,0,0,0,'512525',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (753,'512528','1','Equipo De Hoteles Y Restaurantes','4','D',0,0,0,0,0,'5125',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (754,'51252801','1','Equipo De Hoteles Y Restaurantes','5','D',0,1,0,0,0,'512528',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (755,'5140','1','Gastos Financieros','3','D',1,0,0,0,0,'51',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (756,'514095','1','Otros Gastos','4','D',0,0,0,0,0,'5140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (757,'51409501','1','Otros Gastos Financieros','5','D',0,1,0,0,0,'514095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (758,'5195','1','Diversos','3','D',1,0,0,0,1,'51',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (759,'519510','1','Libros,Suscripciones, Periodicos Y Revis','4','D',0,0,0,0,0,'5195',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (760,'51951001','1','Empastes Libros','5','D',0,1,0,0,1,'519510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (761,'52','1','Gastos Casino','2','D',0,0,0,0,0,'5',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (762,'5205','1','Gastos De Personal','3','D',1,0,0,0,1,'52',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (763,'520506','1','Sueldos','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (764,'52050601','1','Sueldos','5','D',0,1,0,0,1,'520506',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (765,'520515','1','Horas Extras Y Recargos','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (766,'52051501','1','Horas Extras Y Regargos','5','D',0,1,0,0,1,'520515',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (767,'520524','1','Incapacidades','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (768,'52052401','1','Incapacidades Casinos','5','D',0,1,0,0,1,'520524',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (769,'520527','1','Auxilio De Transporte','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (770,'52052701','1','Auxilio De Transporte','5','D',0,1,0,0,1,'520527',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (771,'520530','1','Cesantias','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (772,'52053001','1','Cesantias','5','D',0,1,0,0,1,'520530',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (773,'520533','1','Intereses Sobre Cesantias','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (774,'52053301','1','Intereses Sore Cesantias','5','D',0,1,0,0,1,'520533',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (775,'520536','1','Prima','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (776,'52053601','1','Prima De Servicio','5','D',0,1,0,0,1,'520536',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (777,'520539','1','Vacaciones','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (778,'52053901','1','Vacaciones','5','D',0,1,0,0,0,'520539',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (779,'520548','1','Bonificaciones','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (780,'52054801','1','Bonificaciones','5','D',0,1,0,0,0,'520548',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (781,'520551','1','Dotacion Y Suministro A Trabajadores','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (782,'52055101','1','Dotacion Y Suministro A Trabajadores','5','D',0,1,0,0,1,'520551',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (783,'520560','1','Actualizar','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (784,'52056001','1','Actualizar','5','D',0,1,0,0,1,'520560',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (785,'520563','1','Capacitacion Al Personal','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (786,'52056301','1','Capacitacion Del Personal','5','D',0,1,0,0,1,'520563',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (787,'520569','1','Aporte Salud ','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (788,'52056901','1','Aporte Salud','5','D',0,1,0,0,1,'520569',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (789,'520570','1','Aporte Pension','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (790,'52057001','1','Aporte Pension','5','D',0,1,0,0,1,'520570',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (791,'520571','1','Aportes A.R.P','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (792,'52057101','1','Aportes A.R.P','5','D',0,1,0,0,1,'520571',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (793,'520572','1','Aportes Cajas De Compensacion Familiar','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (794,'52057201','1','Aportes Cajas De Compensacion Familiar','5','D',0,1,0,0,1,'520572',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (795,'520575','1','Aportes I.C.B.F. ','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (796,'52057501','1','Aportes I.C.B.F. ','5','D',0,1,0,0,0,'520575',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (797,'520578','1','Sena','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (798,'52057801','1','Sena','5','D',0,1,0,0,1,'520578',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (799,'520595','1','Otros','4','D',0,0,0,0,0,'5205',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (800,'52059501','1','Rodamiento','5','D',0,1,0,0,0,'520595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (801,'52059502','1','Examenes Medicos','5','D',0,1,0,0,1,'520595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (802,'52059595','1','Licencia Por Luto','5','D',0,1,0,0,1,'520595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (803,'5210','1','Transportes Fletes Y Acarreos','3','D',1,0,0,0,0,'52',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (804,'521052','1','Pasajes Terrestres','4','D',0,0,0,0,1,'5210',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (805,'52105204','1','Pasajes Terrestres','5','D',0,1,0,0,0,'521052',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (806,'5235','1','Servicios','3','D',1,0,0,0,1,'52',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (807,'523510','1','Servicios Temporales','4','D',0,0,0,0,0,'5235',1,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (808,'52351005','1','Servicios Temporales','5','D',0,1,0,0,0,'523510',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (809,'523535','1','Telefono','4','D',0,0,0,0,1,'5235',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (810,'52353501','1','Telefono Celular','5','D',0,1,0,0,1,'523535',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (811,'523540','1','Correos Portes Y Telegramas','4','D',0,0,0,0,0,'5235',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (812,'52354001','1','Correos , Portes Y Telegramas','5','D',0,1,0,0,0,'523540',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (813,'5245','1','Mantenimiento Y Reparaciones','3','D',1,0,0,0,1,'52',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (814,'524525','1','Equipo De Comunicacion Y Computacion','4','D',0,0,0,0,1,'5245',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (815,'52452501','1','Instalaciones Y Adecuaciones ','5','D',1,1,0,0,0,'524525',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (816,'52452502','1','Equipo De Computacion Y Comunicacion','5','D',1,1,0,0,0,'524525',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (817,'5265','1','Amortizaciones Y Agotamientos','3','D',1,0,0,0,1,'52',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (818,'526520','1','Cargos Diferidos','4','D',0,0,0,0,0,'5265',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (819,'52652001','1','Organizacion Y Preoperativos','5','D',0,1,0,0,1,'526520',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (820,'52652002','1','Diferidos Casino','5','D',0,1,0,0,0,'526520',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (821,'5295','1','Diversos','3','D',1,0,0,0,1,'52',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (822,'529525','1','Elementos De Aseo Y Cafeteria','4','D',0,0,0,0,0,'5295',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (823,'52952501','1','Elementos De Aseo Y Cafeteria','5','D',0,1,0,0,1,'529525',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (824,'529530','1','Utiles, Papeleria Y Fotocopias','4','D',0,0,0,0,0,'5295',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (825,'52953001','1','Utiles, Papeleria Y Fotocopias','5','D',0,1,0,0,1,'529530',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (826,'529545','1','Taxis Y Buses','4','D',0,0,0,0,0,'5295',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (827,'52954501','1','Taxis Y Buses','5','D',0,1,0,0,0,'529545',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (828,'529560','1','Casino Y Restaurante','4','D',0,0,0,0,0,'5295',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (829,'52956001','1','Casino Y Restaurante','5','D',0,1,0,0,0,'529560',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (830,'529595','1','Otros ','4','D',0,0,0,0,0,'5295',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (831,'52959501','1','Eventos Y Rifas','5','D',0,1,0,0,1,'529595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (832,'52959502','1','Otros Elementos Casino ','5','D',0,1,0,0,1,'529595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (833,'52959503','1','Actualizar','5','D',0,1,0,0,0,'529595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (834,'53','1','Gastos No Operacionales','2','D',0,0,0,0,1,'5',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (835,'5305','1','Gastos Financieros','3','D',1,0,0,0,0,'53',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (836,'530505','1','Gastos Bancarios','4','D',0,0,0,0,0,'5305',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (837,'53050501','1','Gastos Bancarios','5','D',0,1,0,0,0,'530505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (838,'53050502','1','Chequera','5','D',0,1,0,0,1,'530505',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (839,'530515','1','Comisiones','4','D',0,0,0,0,0,'5305',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (840,'53051501','1','Comisiones','5','D',0,1,0,0,0,'530515',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (841,'530520','1','Intereses','4','D',0,0,0,0,1,'5305',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (842,'53052001','1','De Mora','5','D',0,1,0,0,0,'530520',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (843,'53052002','1','Corrientes','5','D',0,1,0,0,0,'530520',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (844,'53052003','1','Sobregiro','5','D',0,1,0,0,1,'530520',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (845,'530550','1','Impuesto 4 X 1000','4','D',0,0,0,0,0,'5305',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (846,'53055001','1','Impuesto 4 X 1000','5','D',0,1,0,0,0,'530550',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (847,'530595','1','Otros','4','D',0,1,0,0,1,'5305',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (848,'5315','1','Gastos Extraordinario','3','D',1,0,0,0,0,'53',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (849,'531520','1','Impuestos Asumido','4','D',0,0,0,0,0,'5315',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (850,'53152005','1','Impuesto Asumido Retencion Servicios','5','D',0,1,0,0,0,'531520',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (851,'5395','1','Gastos Diversos','3','D',1,0,0,0,0,'53',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (852,'539520','1','Multas, Sanciones Y Litigios','4','D',0,0,0,0,0,'5395',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (853,'53952001','1','Sanciones Impuestos','5','D',0,1,0,0,1,'539520',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (854,'539595','1','Otros','4','D',0,0,0,0,0,'5395',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (855,'53959501','1','Otros Gastos ','5','D',0,1,0,0,0,'539595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (856,'53959502','1','Actualizar','5','D',0,1,0,0,0,'539595',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (857,'54','1','Gastos De Ejercicios Anteriores','2','D',0,0,0,0,0,'5',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (858,'5405','1','Gastos De Ejercicios Anteriores','3','D',1,0,0,0,0,'54',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (859,'540505','1','Cargos Diferidos','4','D',0,1,0,0,1,'5405',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (860,'540510','1','Gastos Asumidos Años Anteriores','4','D',0,1,0,0,0,'5405',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (861,'6','1','Costo De Venta','1','D',0,0,0,0,0,'',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (862,'61','1','Costo De Venta Y Prestacion De Servicio','2','D',0,0,0,0,1,'6',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (863,'6130','1','Construccion','3','D',1,0,0,0,0,'61',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (864,'613020','1','Terminacion De Edificaciones','4','D',0,0,0,0,1,'6130',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (865,'61302001','1','Terminacion De Edificaciones','5','D',0,1,0,0,1,'613020',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (866,'6140','1','Casino','3','D',1,0,0,0,1,'61',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (867,'614005','1','Casino','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (868,'61400501','1','Casino','5','D',0,1,0,0,1,'614005',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (869,'614006','1','Pescado','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (870,'61400601','1','Macarela','5','D',0,1,0,0,0,'614006',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (871,'61400602','1','Mojarra','5','D',0,1,0,0,1,'614006',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (872,'61400603','1','Bonito','5','D',0,1,0,0,1,'614006',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (873,'61400604','1','Pargo','5','D',0,1,0,0,1,'614006',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (874,'61400605','1','Rubia','5','D',0,1,0,0,1,'614006',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (875,'61400606','1','Jurel','5','D',0,1,0,0,1,'614006',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (876,'614007','1','Carnes','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (877,'61400700','1','Esmechar','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (878,'61400701','1','Primera','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (879,'61400702','1','Higado','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (880,'61400703','1','Sobrebarriga','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (881,'61400704','1','Lengua','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (882,'61400705','1','Rabo','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (883,'61400706','1','Costilla Especial','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (884,'61400707','1','Capon','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (885,'61400708','1','Hueso','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (886,'61400709','1','Morro','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (887,'61400710','1','Molida','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (888,'61400711','1','Bofe','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (889,'61400712','1','Mondongo','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (890,'61400713','1','Carnero','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (891,'61400714','1','Corazon','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (892,'61400715','1','Mico','5','D',0,1,0,0,0,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (893,'61400716','1','Carne De Segunda','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (894,'61400717','1','Batata','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (895,'61400718','1','Pecho','5','D',0,1,0,0,0,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (896,'61400719','1','Atravesado','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (897,'61400720','1','Salada','5','D',0,1,0,0,1,'614007',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (898,'614008','1','Pollo','4','D',0,0,0,0,0,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (899,'61400801','1','Pollo','5','D',0,1,0,0,1,'614008',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (900,'61400802','1','Huevos','5','D',0,1,0,0,1,'614008',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (901,'614009','1','Verduras','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (902,'61400901','1','Verduras','5','D',0,1,0,0,1,'614009',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (903,'61400902','1','Hortalizas','5','D',0,1,0,0,1,'614009',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (904,'614010','1','Bebidas','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (905,'61401001','1','Gaseosas','5','D',0,1,0,0,1,'614010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (906,'61401002','1','Frutiño Limon','5','D',0,1,0,0,1,'614010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (907,'61401003','1','Milo','5','D',0,1,0,0,1,'614010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (908,'61401004','1','Panela','5','D',0,1,0,0,1,'614010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (909,'61401005','1','Cafe','5','D',0,1,0,0,1,'614010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (910,'61401006','1','Leche','5','D',0,1,0,0,0,'614010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (911,'61401007','1','Chocolate','5','D',0,1,0,0,1,'614010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (912,'61401008','1','Sun Tea','5','D',0,1,0,0,1,'614010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (913,'61401009','1','Hielo','5','D',0,1,0,0,1,'614010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (914,'61401010','1','Avena','5','D',0,1,0,0,1,'614010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (915,'61401011','1','7 15 Energy Drink','5','D',0,1,0,0,1,'614010',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (916,'614011','1','Granos','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (917,'61401101','1','Arroz','5','D',0,1,0,0,1,'614011',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (918,'61401102','1','Frijol Rojo','5','D',0,1,0,0,1,'614011',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (919,'61401103','1','Lentejas','5','D',0,1,0,0,0,'614011',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (920,'61401104','1','Frijol Cabeza Negra','5','D',0,1,0,0,1,'614011',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (921,'61401105','1','Azucar','5','D',0,1,0,0,1,'614011',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (922,'61401106','1','Garbanzos','5','D',0,1,0,0,0,'614011',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (923,'61401107','1','Palomito','5','D',0,1,0,0,1,'614011',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (924,'61401108','1','Arverjas','5','D',0,1,0,0,1,'614011',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (925,'614012','1','Aceites','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (926,'61401201','1','Aceite','5','D',0,1,0,0,1,'614012',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (927,'61401202','1','Aceite Oliva','5','D',0,1,0,0,1,'614012',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (928,'614013','1','Salsas','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (929,'61401301','1','Salsa De Tomate','5','D',0,1,0,0,1,'614013',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (930,'61401302','1','Mostaza','5','D',0,1,0,0,1,'614013',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (931,'61401303','1','Salsa Negra','5','D',0,1,0,0,1,'614013',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (932,'61401304','1','Salsa De Soya','5','D',0,1,0,0,1,'614013',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (933,'61401305','1','Vinagre','5','D',0,1,0,0,0,'614013',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (934,'61401306','1','Mayonesa','5','D',0,1,0,0,1,'614013',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (935,'61401307','1','Mermeladas','5','D',0,1,0,0,1,'614013',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (936,'61401308','1','Tartara','5','D',0,1,0,0,1,'614013',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (937,'61401309','1','Vino De Adobo','5','D',0,1,0,0,0,'614013',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (938,'61401310','1','Crema De Leche','5','D',0,1,0,0,1,'614013',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (939,'614014','1','Servilletas','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (940,'61401401','1','Servilletas','5','D',0,1,0,0,1,'614014',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (941,'61401402','1','Paños Multiusos','5','D',0,1,0,0,1,'614014',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (942,'61401403','1','Tapabocas Y Guantes','5','D',0,1,0,0,1,'614014',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (943,'614015','1','Desechables','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (944,'61401501','1','Contenedor Sopero','5','D',0,1,0,0,1,'614015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (945,'61401502','1','Cucharas','5','D',0,1,0,0,1,'614015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (946,'61401503','1','Tenedores','5','D',0,1,0,0,1,'614015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (947,'61401504','1','Cuchillos','5','D',0,1,0,0,0,'614015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (948,'61401505','1','Vasos De 9 Onzas','5','D',0,1,0,0,1,'614015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (949,'61401506','1','Pitillos','5','D',0,1,0,0,1,'614015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (950,'61401507','1','Portacomidas','5','D',0,1,0,0,1,'614015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (951,'61401508','1','Papel Transparente','5','D',0,1,0,0,1,'614015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (952,'61401509','1','Papel Aluminio','5','D',0,1,0,0,1,'614015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (953,'614016','1','Condimentos','4','D',0,0,0,0,0,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (954,'61401601','1','Maggi','5','D',0,1,0,0,1,'614016',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (955,'61401602','1','Tricompleto','5','D',0,1,0,0,1,'614016',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (956,'61401603','1','Comino - Color - Tomillo','5','D',0,1,0,0,1,'614016',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (957,'61401604','1','Sazonatodo','5','D',0,1,0,0,0,'614016',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (958,'61401605','1','Sal','5','D',0,1,0,0,1,'614016',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (959,'614017','1','Harinas','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (960,'61401701','1','Harina Pan','5','D',0,1,0,0,1,'614017',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (961,'61401702','1','Fideos','5','D',0,1,0,0,1,'614017',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (962,'61401703','1','Panes','5','D',0,1,0,0,1,'614017',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (963,'614018','1','Elementos Aseo','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (964,'61401801','1','Axion','5','D',0,1,0,0,1,'614018',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (965,'61401802','1','Limpido','5','D',0,1,0,0,1,'614018',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (966,'61401803','1','Fabuloso','5','D',0,1,0,0,1,'614018',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (967,'61401804','1','Brillo','5','D',0,1,0,0,1,'614018',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (968,'61401805','1','Bolsa Basura','5','D',0,1,0,0,0,'614018',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (969,'61401806','1','Bolsa Hielo','5','D',0,1,0,0,1,'614018',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (970,'61401807','1','Fab','5','D',0,1,0,0,1,'614018',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (971,'61401808','1','Jabon','5','D',0,1,0,0,1,'614018',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (972,'61401809','1','Curitas','5','D',0,1,0,0,1,'614018',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (973,'61401810','1','Traperos Y Escobas','5','D',0,1,0,0,1,'614018',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (974,'614019','1','Frutas','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (975,'61401901','1','Tomate De Arbol','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (976,'61401902','1','Limon','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (977,'61401903','1','Lulo','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (978,'61401904','1','Mora','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (979,'61401905','1','Melon','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (980,'61401906','1','Papaya','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (981,'61401907','1','Patilla','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (982,'61401908','1','Piña','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (983,'61401909','1','Curuba','5','D',0,1,0,0,0,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (984,'61401910','1','Maracuya','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (985,'61401911','1','Tamarindo','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (986,'61401912','1','Guayabas','5','D',0,1,0,0,0,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (987,'61401913','1','Fresa','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (988,'61401914','1','Naranjas','5','D',0,1,0,0,1,'614019',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (989,'614020','1','Fletes','4','D',0,0,0,0,0,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (990,'61402001','1','Flete Carnes','5','D',0,1,0,0,1,'614020',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (991,'61402002','1','Flete Compras Casino','5','D',0,1,0,0,1,'614020',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (992,'614021','1','Cerdo','4','D',0,0,0,0,0,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (993,'61402101','1','Cerdo','5','D',0,1,0,0,1,'614021',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (994,'61402102','1','Pulpa De Cerdo','5','D',0,1,0,0,1,'614021',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (995,'614022','1','Queso','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (996,'61402201','1','Queso','5','D',0,1,0,0,1,'614022',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (997,'61402202','1','Mantequilla','5','D',0,1,0,0,0,'614022',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (998,'614023','1','Fritos','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (999,'61402301','1','Deditos','5','D',0,1,0,0,1,'614023',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1000,'61402302','1','Perros','5','D',0,1,0,0,0,'614023',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1001,'61402303','1','Empanadas De Pollo','5','D',0,1,0,0,1,'614023',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1002,'61402304','1','Buñuelos','5','D',0,1,0,0,1,'614023',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1003,'614024','1','Mecatos','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1004,'61402401','1','Papas Surtidas','5','D',0,1,0,0,1,'614024',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1005,'61402402','1','Detoditos','5','D',0,1,0,0,0,'614024',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1006,'614025','1','Embutidos','4','D',0,0,0,0,1,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1007,'61402501','1','Chorizo','5','D',0,1,0,0,1,'614025',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1008,'61402502','1','Jamon','5','D',0,1,0,0,1,'614025',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1009,'61402503','1','Butifarra','5','D',0,1,0,0,0,'614025',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1010,'61402504','1','Salchicha','5','D',0,1,0,0,0,'614025',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1011,'614026','1','Postres','4','D',0,0,0,0,0,'6140',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1012,'61402601','1','Helados','5','D',0,1,0,0,0,'614026',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1013,'61402602','1','Gelatinas','5','D',0,1,0,0,0,'614026',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1014,'61402603','1','Yogourt','5','D',0,1,0,0,0,'614026',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1015,'6150','1','Actividad Financiera','3','D',1,0,0,0,0,'61',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1016,'615015','1','Intereses Ahorro Contractual','4','D',0,0,0,0,0,'6150',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1017,'61501501','1','Ahorro Programado','5','D',0,1,0,0,0,'615015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1018,'61501502','1','Ahorro Vacacional','5','D',0,1,0,0,0,'615015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1019,'61501503','1','Ahorro Navideño','5','D',0,1,0,0,1,'615015',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1020,'6160','1','Enseñanza','3','D',1,0,0,0,0,'61',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1021,'616095','1','Actividades Conexas','4','D',0,0,0,0,0,'6160',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1022,'61609501','1','Kit Escolares','5','D',0,1,0,0,0,'616095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1023,'6170','1','Otras Actividades De Servicios Comunes, ','3','D',1,0,0,0,0,'61',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1024,'617095','1','Actividades Conexas','4','D',0,0,0,0,0,'6170',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1025,'61709501','1','Servicios A Los Asociados','5','D',0,1,0,0,1,'617095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1026,'61709502','1','Eventos Y Rifas','5','D',0,1,0,0,1,'617095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1027,'61709503','1','Atencion  A Los Asociados','5','D',0,1,0,0,1,'617095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1028,'61709504','1','Kit Compras ','5','D',0,1,0,0,1,'617095',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1029,'8','1','Cuentas De Orden Deudoras','1','D',0,0,0,0,1,'',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1030,'81','1','Deudoras Contingentes','2','D',0,0,0,0,0,'8',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1031,'8120','1','Intereses Cartera De Credito','3','D',1,0,0,0,0,'81',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1032,'812001','1','Multas Sanciones E Indemnizaci','4','D',0,1,0,0,0,'8120',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1033,'812026','1','Categoria C Riesgo Apreciable, Consumo','4','D',0,1,0,0,0,'8120',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1034,'812028','1','Categoria D Riesgo Significativo, Consum','4','D',0,1,0,0,0,'8120',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1035,'812030','1','Categoria E Riesgo De Incobrabilidad, Co','4','D',0,1,0,0,0,'8120',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1036,'812034','1','Comercio Categoria D Riesgo Significativo','4','D',0,1,0,0,0,'8120',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1037,'812038','1','Categoria C Comercio','4','D',0,1,0,0,0,'8120',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1038,'812042','1','Categoria Ecomercio','4','D',0,1,0,0,0,'8120',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1039,'83','1','Deudoras De Control','2','D',0,0,0,0,0,'8',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1040,'8305','1','Acreedoras Contingentes Por Contra','3','D',1,0,0,0,0,'83',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1041,'830501','1','Acreedoras Contingentes Por Co','4','D',0,1,0,0,0,'8305',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1042,'8310','1','Activos Castigados','3','D',1,0,0,0,0,'83',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1043,'831015','1','Cartera De Credito','4','D',0,0,0,0,0,'8310',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1044,'831025','1','Cuentas Por Pagar','4','D',0,1,0,0,0,'8310',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1045,'8385','1','Otras Deudas De Control','3','D',1,0,0,0,0,'83',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1046,'838585','1','Otras','4','D',0,1,0,0,0,'8385',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1047,'86','1','Deudoras Contingentes Por Contra','2','C',0,0,0,0,0,'8',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1048,'8605','1','Deudoras Contingentes Por Contra (Cr)','3','C',1,0,0,0,0,'86',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1049,'860501','1','Deudoras Contingentes Por Contra','4','C',0,1,0,0,0,'8605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1050,'860505','1','Deudoras Contingentes Por Contra (Cr)','4','C',0,0,0,0,0,'8605',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1051,'88','1','Deudoras De Control Por Contra','2','C',0,0,0,0,0,'8',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1052,'8805','1','Deudoras De Control Por Contra (Cr)','3','C',1,0,0,0,0,'88',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1053,'880501','1','Deudoras Contingentes','4','C',0,1,0,0,0,'8805',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1054,'880505','1','Deudoras De Control Por Contra (Cr)','4','C',0,0,0,0,0,'8805',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1055,'9','1','Cuentas De Orden Acreedoras','1','C',0,0,0,0,0,'',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1056,'91','1','Acreedoras Contingentes','2','C',0,0,0,0,0,'9',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1057,'9125','1','Creditos Aprobados No Desembolsados','3','C',1,0,0,0,0,'91',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1058,'912505','1','Creditos Aprobados No Desembolsados','4','C',0,1,0,0,0,'9125',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1059,'98','1','Acreedoras De Control Por Contra','2','D',0,0,0,0,0,'9',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1060,'9805','1','Acreedoras De Control Por Contra','3','D',1,0,0,0,0,'98',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-    INSERT INTO pucs (id, puc, grupo, descripcion, nivel, naturaleza, mayor_rep, movimiento, subcentro, bancaria, tercero, puc_padre, base_gravable, mueve_modulo, codigo_dian, created_at, updated_at) VALUES (1061,'980505','1','Acreedoras De Control Por Contra','4','D',0,1,0,0,0,'9805',0,0,0,'2023-02-03 15:16:00','2023-02-03 15:16:00');
-        ");
+INSERT INTO `pucs` (`id`, `puc`, `grupo`, `descripcion`, `nivel`, `naturaleza`, `mayor_rep`, `movimiento`, `subcentro`, `bancaria`, `tercero`, `puc_padre`, `pucs_id`, `base_gravable`, `mueve_modulo`, `codigo_dian`, `created_at`, `updated_at`) VALUES
+(1, '1', '1', 'A C T I V O', '1', 'D', 0, 0, 0, 0, 0, NULL, NULL, 0, 0, 0, NULL, NULL),
+(2, '11', '1', 'Efectivo Y Equivalente Al Efectivo', '2', 'D', 0, 0, 0, 0, 0, '1', NULL, 0, 0, 0, NULL, NULL),
+(3, '1105', '1', 'Caja', '3', 'D', 1, 0, 0, 0, 0, '11', NULL, 0, 0, 0, NULL, NULL),
+(4, '110505', '1', 'Caja General', '4', 'D', 0, 0, 0, 0, 0, '1105', NULL, 0, 0, 0, NULL, NULL),
+(5, '11050501', '1', 'Caja General', '5', 'D', 0, 1, 0, 0, 1, '110505', NULL, 0, 0, 0, NULL, NULL),
+(6, '11050503', '1', 'Caja Cheques', '5', 'D', 0, 1, 0, 0, 1, '110505', NULL, 0, 0, 0, NULL, NULL),
+(7, '110510', '1', 'Caja Menor', '4', 'D', 0, 0, 0, 0, 0, '1105', NULL, 0, 0, 0, NULL, NULL),
+(8, '11051001', '1', 'Caja Menor', '5', 'D', 0, 1, 0, 0, 1, '110510', NULL, 0, 0, 0, NULL, NULL),
+(9, '1110', '1', 'Bancos Y Otras Entidades', '3', 'D', 1, 0, 0, 0, 0, '11', NULL, 0, 0, 0, NULL, NULL),
+(10, '111005', '1', 'Bancos Comerciales', '4', 'D', 0, 0, 0, 0, 0, '1110', NULL, 0, 0, 0, NULL, NULL),
+(11, '11100501', '1', 'Banco Colombia N 237-95538001', '5', 'D', 0, 1, 0, 1, 1, '111005', NULL, 0, 0, 0, NULL, NULL),
+(12, '11100502', '1', 'Banco Colombia Girardot 403-01023730', '5', 'D', 0, 1, 0, 1, 0, '111005', NULL, 0, 0, 0, NULL, NULL),
+(13, '11100503', '1', 'Megabanco Girardot N 7-050-701659', '5', 'D', 0, 1, 0, 1, 1, '111005', NULL, 0, 0, 0, NULL, NULL),
+(14, '11100504', '1', 'Megabanco Girardot N 7-258-700729', '5', 'D', 0, 1, 0, 1, 1, '111005', NULL, 0, 0, 0, NULL, NULL),
+(15, '11100505', '1', 'Banco De Bogota  033408329', '5', 'D', 0, 1, 0, 1, 1, '111005', NULL, 0, 0, 0, NULL, NULL),
+(16, '11100506', '1', 'Banco Ganadero', '5', 'D', 0, 1, 0, 1, 1, '111005', NULL, 0, 0, 0, NULL, NULL),
+(17, '11100507', '1', 'Banco Bogota  399017623', '5', 'D', 0, 1, 0, 1, 1, '111005', NULL, 0, 0, 0, NULL, NULL),
+(18, '111010', '1', 'Bancos Cooperativos', '4', 'D', 0, 0, 0, 0, 0, '1110', NULL, 0, 0, 0, NULL, NULL),
+(19, '11101001', '1', 'Coopcentral Crecediario 419-00753-4', '5', 'D', 0, 1, 0, 1, 1, '111010', NULL, 0, 0, 0, NULL, NULL),
+(20, '11101002', '1', 'Comeva 051000134706', '5', 'D', 0, 1, 0, 1, 1, '111010', NULL, 0, 0, 0, NULL, NULL),
+(21, '11101003', '1', 'Coopcentral-Crecediario 419-00753-4', '5', 'D', 0, 1, 0, 1, 1, '111010', NULL, 0, 0, 0, NULL, NULL),
+(22, '11101004', '1', 'Coopcentral Cta Corriente ', '5', 'D', 0, 1, 0, 1, 1, '111010', NULL, 0, 0, 0, NULL, NULL),
+(23, '1120', '1', 'Efectivo Restringido ', '3', 'D', 1, 0, 0, 0, 0, '11', NULL, 0, 0, 0, NULL, NULL),
+(24, '112005', '1', 'Dpto De Ahorro ', '4', 'D', 0, 0, 0, 0, 0, '1120', NULL, 0, 0, 0, NULL, NULL),
+(25, '11200501', '1', 'Coopcentral ', '5', 'D', 0, 1, 0, 0, 1, '112005', NULL, 0, 0, 0, NULL, NULL),
+(26, '11200502', '1', 'Coomeva', '5', 'D', 0, 1, 0, 0, 1, '112005', NULL, 0, 0, 0, NULL, NULL),
+(27, '11200503', '1', 'Bancolombia', '5', 'D', 0, 1, 0, 0, 1, '112005', NULL, 0, 0, 0, NULL, NULL),
+(28, '11200507', '1', 'Cdt Coopcentral', '5', 'D', 0, 1, 0, 0, 1, '112005', NULL, 0, 0, 0, NULL, NULL),
+(29, '12', '1', 'Inversiones', '2', 'D', 0, 0, 0, 0, 0, '1', NULL, 0, 0, 0, NULL, NULL),
+(30, '1203', '1', 'Fondo De Liquidez ', '3', 'D', 1, 0, 0, 0, 0, '12', NULL, 0, 0, 0, NULL, NULL),
+(31, '120310', '1', 'Fondo De Liquidez Cdt', '4', 'D', 0, 0, 0, 0, 0, '1203', NULL, 0, 0, 0, NULL, NULL),
+(32, '12031001', '1', 'Cdt Coopcentral ', '5', 'D', 0, 1, 0, 0, 1, '120310', NULL, 0, 0, 0, NULL, NULL),
+(33, '12031002', '1', 'Cdt Coomeva', '5', 'D', 0, 1, 0, 0, 1, '120310', NULL, 0, 0, 0, NULL, NULL),
+(34, '12031003', '1', 'Bancolombia', '5', 'D', 0, 1, 0, 0, 1, '120310', NULL, 0, 0, 0, NULL, NULL),
+(35, '1208', '1', 'Inversiones Para Mantener Hasta Su Vencimiento ', '3', 'D', 1, 0, 0, 0, 0, '12', NULL, 0, 0, 0, NULL, NULL),
+(36, '120811', '1', 'Titulos Emitidos ', '4', 'D', 0, 0, 0, 0, 0, '1208', NULL, 0, 0, 0, NULL, NULL),
+(37, '12081101', '1', 'Banco Del Estado-Uconal', '5', 'D', 0, 1, 0, 0, 1, '120811', NULL, 0, 0, 0, NULL, NULL),
+(38, '12081102', '1', 'Colpatria ', '5', 'D', 0, 1, 0, 0, 1, '120811', NULL, 0, 0, 0, NULL, NULL),
+(39, '120899', '1', 'Deterioro Inversiones Para Mantener Hasta Su Vencimiento', '4', 'D', 0, 0, 0, 0, 0, '1208', NULL, 0, 0, 0, NULL, NULL),
+(40, '12089901', '1', 'Banco Del Estado-Uconal', '5', 'D', 0, 1, 0, 0, 1, '120899', NULL, 0, 0, 0, NULL, NULL),
+(41, '12089902', '1', 'Colpatria ', '5', 'D', 0, 1, 0, 0, 1, '120899', NULL, 0, 0, 0, NULL, NULL),
+(42, '1226', '1', 'Inversiones En Instrumentos De Patrimonio', '3', 'D', 1, 0, 0, 0, 0, '12', NULL, 0, 0, 0, NULL, NULL),
+(43, '122602', '1', 'Aportes Sociales En Entidades Economia Solidaria', '4', 'D', 0, 0, 0, 0, 0, '1226', NULL, 0, 0, 0, NULL, NULL),
+(44, '12260201', '1', 'Coopcentral', '5', 'D', 0, 1, 0, 0, 1, '122602', NULL, 0, 0, 0, NULL, NULL),
+(45, '12260202', '1', 'Coomeva ', '5', 'D', 0, 1, 0, 0, 1, '122602', NULL, 0, 0, 0, NULL, NULL),
+(46, '12260203', '1', 'Analfe', '5', 'D', 0, 1, 0, 0, 1, '122602', NULL, 0, 0, 0, NULL, NULL),
+(47, '122604', '1', 'Aportes En Otras Entidades ', '4', 'D', 0, 0, 0, 0, 0, '1226', NULL, 0, 0, 0, NULL, NULL),
+(48, '12260401', '1', 'Analfe', '5', 'D', 0, 1, 0, 0, 1, '122604', NULL, 0, 0, 0, NULL, NULL),
+(49, '12260402', '1', 'Financiafondos ', '5', 'D', 0, 1, 0, 0, 1, '122604', NULL, 0, 0, 0, NULL, NULL),
+(50, '12260403', '1', 'Otras Valorizaciones Analfe', '5', 'D', 0, 1, 0, 0, 1, '122604', NULL, 0, 0, 0, NULL, NULL),
+(51, '1230', '1', 'Inversiones Contabilizadas A Valor Razon', '3', 'D', 1, 0, 0, 0, 0, '12', NULL, 0, 0, 0, NULL, NULL),
+(52, '123003', '1', 'Acciones Con Baja Y Minima Liquidez Burs', '4', 'D', 0, 0, 0, 0, 0, '1230', NULL, 0, 0, 0, NULL, NULL),
+(53, '12300301', '1', 'Colpatria', '5', 'D', 0, 1, 0, 0, 1, '123003', NULL, 0, 0, 0, NULL, NULL),
+(54, '14', '1', 'Cartera De Creditos Asociados', '2', 'D', 0, 0, 0, 0, 0, '1', NULL, 0, 0, 0, NULL, NULL),
+(55, '1411', '1', 'Creditos Garantia Admisible Con Libranza', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(56, '141105', '1', 'Categoria A Riesgo Normal', '4', 'D', 0, 0, 0, 0, 0, '1411', NULL, 0, 0, 0, NULL, NULL),
+(57, '14110501', '1', 'Categoria A Riesgo Normal ', '5', 'D', 0, 1, 0, 0, 1, '141105', NULL, 0, 0, 0, NULL, NULL),
+(58, '141110', '1', 'Categoria B Riesgo Aceptable', '4', 'D', 0, 0, 0, 0, 0, '1411', NULL, 0, 0, 0, NULL, NULL),
+(59, '14111001', '1', 'Categoria B Riesgo Aceptable ', '5', 'D', 0, 1, 0, 0, 1, '141110', NULL, 0, 0, 0, NULL, NULL),
+(60, '141115', '1', 'Categoria C Riesgo Apreciable', '4', 'D', 0, 0, 0, 0, 0, '1411', NULL, 0, 0, 0, NULL, NULL),
+(61, '14111501', '1', 'Categoria C Riesgo Aceptable ', '5', 'D', 0, 1, 0, 0, 1, '141115', NULL, 0, 0, 0, NULL, NULL),
+(62, '141120', '1', 'Categoria D Riesgo Significativo', '4', 'D', 0, 0, 0, 0, 0, '1411', NULL, 0, 0, 0, NULL, NULL),
+(63, '14112001', '1', 'Categoria D Riesgo Significativo ', '5', 'D', 0, 1, 0, 0, 1, '141120', NULL, 0, 0, 0, NULL, NULL),
+(64, '141125', '1', 'Categoria E Riesgo De Incobrabilidad', '4', 'D', 0, 0, 0, 0, 0, '1411', NULL, 0, 0, 0, NULL, NULL),
+(65, '14112501', '1', 'Categoria E Riesgo De Incbrabilidad ', '5', 'D', 0, 1, 0, 0, 1, '141125', NULL, 0, 0, 0, NULL, NULL),
+(66, '1412', '1', 'Creditos Garantia Admisible Sin Libranza', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(67, '141205', '1', 'Categoria A Riesgo Normal', '4', 'D', 0, 0, 0, 0, 0, '1412', NULL, 0, 0, 0, NULL, NULL),
+(68, '14120501', '1', 'Categoria A Riesgo Normal ', '5', 'D', 0, 1, 0, 0, 1, '141205', NULL, 0, 0, 0, NULL, NULL),
+(69, '141210', '1', 'Categoria B Riesgo Aceptable', '4', 'D', 0, 0, 0, 0, 0, '1412', NULL, 0, 0, 0, NULL, NULL),
+(70, '14121001', '1', 'Categoria B Riesgo Aceptable ', '5', 'D', 0, 1, 0, 0, 1, '141210', NULL, 0, 0, 0, NULL, NULL),
+(71, '141215', '1', 'Categoria C Riesgo Apreciable', '4', 'D', 0, 0, 0, 0, 0, '1412', NULL, 0, 0, 0, NULL, NULL),
+(72, '14121501', '1', 'Categoria C Riesgo Apreciable ', '5', 'D', 0, 1, 0, 0, 1, '141215', NULL, 0, 0, 0, NULL, NULL),
+(73, '141220', '1', 'Categoria D Riesgo Significativo', '4', 'D', 0, 0, 0, 0, 0, '1412', NULL, 0, 0, 0, NULL, NULL),
+(74, '14122001', '1', 'Categoria D Riesgo Significativo ', '5', 'D', 0, 1, 0, 0, 1, '141220', NULL, 0, 0, 0, NULL, NULL),
+(75, '141225', '1', 'Categoria E Riesgo De Incobrabilidad', '4', 'D', 0, 0, 0, 0, 0, '1412', NULL, 0, 0, 0, NULL, NULL),
+(76, '14122501', '1', 'Categoria E Riesgo De Incobrabilidad ', '5', 'D', 0, 1, 0, 0, 1, '141225', NULL, 0, 0, 0, NULL, NULL),
+(77, '1441', '1', 'Consumo Otras Garantías-Libranza', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(78, '144105', '1', 'Categoria A Riesgo Normal', '4', 'D', 0, 0, 0, 0, 0, '1441', NULL, 0, 0, 0, NULL, NULL),
+(79, '14410501', '1', 'Categoria A Riesgo Normal ', '5', 'D', 0, 1, 0, 0, 1, '144105', NULL, 0, 0, 0, NULL, NULL),
+(80, '144110', '1', 'Categoria B Riesgo Aceptable', '4', 'D', 0, 0, 0, 0, 0, '1441', NULL, 0, 0, 0, NULL, NULL),
+(81, '14411001', '1', 'Categoria B Riesgo Aceptable ', '5', 'D', 0, 1, 0, 0, 1, '144110', NULL, 0, 0, 0, NULL, NULL),
+(82, '144115', '1', 'Categoria C Riesgo Apreciable', '4', 'D', 0, 0, 0, 0, 0, '1441', NULL, 0, 0, 0, NULL, NULL),
+(83, '14411501', '1', 'Categoria C Riesgo Apreciable ', '5', 'D', 0, 1, 0, 0, 1, '144115', NULL, 0, 0, 0, NULL, NULL),
+(84, '144120', '1', 'Categoria D Riesgo Significativo', '4', 'D', 0, 0, 0, 0, 0, '1441', NULL, 0, 0, 0, NULL, NULL),
+(85, '14412001', '1', 'Categoria D Riesgo Significativo ', '5', 'D', 0, 1, 0, 0, 1, '144120', NULL, 0, 0, 0, NULL, NULL),
+(86, '144125', '1', 'Categoria E Riesgo De Incobrabilidad', '4', 'D', 0, 0, 0, 0, 0, '1441', NULL, 0, 0, 0, NULL, NULL),
+(87, '14412501', '1', 'Categoria E Riesgo De Incobrabilidad ', '5', 'D', 0, 1, 0, 0, 1, '144125', NULL, 0, 0, 0, NULL, NULL),
+(88, '1442', '1', 'Consumo Otras Garantías-Sin Libranza ', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(89, '144205', '1', 'Categoria A Riesgo Normal', '4', 'D', 0, 0, 0, 0, 0, '1442', NULL, 0, 0, 0, NULL, NULL),
+(90, '14420501', '1', 'Categoria A Riesgo Normal ', '5', 'D', 0, 1, 0, 0, 1, '144205', NULL, 0, 0, 0, NULL, NULL),
+(91, '144210', '1', 'Categoria B Riesgo Aceptable', '4', 'D', 0, 0, 0, 0, 0, '1442', NULL, 0, 0, 0, NULL, NULL),
+(92, '14421001', '1', 'Categoria B Riesgo Aceptable ', '5', 'D', 0, 1, 0, 0, 1, '144210', NULL, 0, 0, 0, NULL, NULL),
+(93, '144215', '1', 'Categoria C Riesgo Apreciable', '4', 'D', 0, 0, 0, 0, 0, '1442', NULL, 0, 0, 0, NULL, NULL),
+(94, '14421501', '1', 'Categoria C Riesgo Apreciable ', '5', 'D', 0, 1, 0, 0, 1, '144215', NULL, 0, 0, 0, NULL, NULL),
+(95, '144220', '1', 'Categoria D Riesgo Significativo', '4', 'D', 0, 0, 0, 0, 0, '1442', NULL, 0, 0, 0, NULL, NULL),
+(96, '14422001', '1', 'Categoria D Riesgo Significativo ', '5', 'D', 0, 1, 0, 0, 1, '144220', NULL, 0, 0, 0, NULL, NULL),
+(97, '144225', '1', 'Categoria E Riesgo De Incobrabilidad', '4', 'D', 0, 0, 0, 0, 0, '1442', NULL, 0, 0, 0, NULL, NULL),
+(98, '14422501', '1', 'Categoria E Riesgo De Incobrabilidad', '5', 'D', 0, 1, 0, 0, 1, '144225', NULL, 0, 0, 0, NULL, NULL),
+(99, '1443', '1', 'Interes Credito De Consumo ', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(100, '144305', '1', 'Categoria A Riesgo Normal', '4', 'D', 0, 0, 0, 0, 0, '1443', NULL, 0, 0, 0, NULL, NULL),
+(101, '14430501', '1', 'Categoria A Riesgo Normal ', '5', 'D', 0, 1, 0, 0, 1, '144305', NULL, 0, 0, 0, NULL, NULL),
+(102, '144310', '1', 'Categoria B Riesgo Aceptable', '4', 'D', 0, 0, 0, 0, 0, '1443', NULL, 0, 0, 0, NULL, NULL),
+(103, '14431001', '1', 'Categoria B Riesgo Aceptable ', '5', 'D', 0, 1, 0, 0, 1, '144310', NULL, 0, 0, 0, NULL, NULL),
+(104, '144315', '1', 'Categoria C Riesgo Apreciable', '4', 'D', 0, 0, 0, 0, 0, '1443', NULL, 0, 0, 0, NULL, NULL),
+(105, '14431501', '1', 'Categoria C Riesgo Apreciable ', '5', 'D', 0, 1, 0, 0, 1, '144315', NULL, 0, 0, 0, NULL, NULL),
+(106, '144320', '1', 'Categoria D Riesgo Significativo', '4', 'D', 0, 0, 0, 0, 0, '1443', NULL, 0, 0, 0, NULL, NULL),
+(107, '14432001', '1', 'Categoria D Riesgo Significativo ', '5', 'D', 0, 1, 0, 0, 1, '144320', NULL, 0, 0, 0, NULL, NULL),
+(108, '144325', '1', 'Categoria E Riesgo De Incobrabilidad', '4', 'D', 0, 0, 0, 0, 0, '1443', NULL, 0, 0, 0, NULL, NULL),
+(109, '14432501', '1', 'Categoria E Riesgo De Incobrabilidad ', '5', 'D', 0, 1, 0, 0, 1, '144325', NULL, 0, 0, 0, NULL, NULL),
+(110, '144330', '1', 'Intereses Credito Con Periodos De Gracia', '4', 'D', 0, 0, 0, 0, 1, '1443', NULL, 0, 0, 0, NULL, NULL),
+(111, '14433001', '1', 'Intereses Credito Con Periodos De Gracia', '5', 'D', 0, 1, 0, 0, 1, '144330', NULL, 0, 0, 0, NULL, NULL),
+(112, '1444', '1', 'Otros Conceptos Causados Por Periodos De Gracias', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(113, '144430', '1', 'Otros Conceptos Causados Por Periodos De Gracias', '4', 'D', 0, 0, 0, 0, 1, '1444', NULL, 0, 0, 0, NULL, NULL),
+(114, '14443001', '1', 'Otros Conceptos Causados Por Periodos De Gracias', '5', 'D', 0, 1, 0, 0, 1, '144430', NULL, 0, 0, 0, NULL, NULL),
+(115, '1445', '1', 'Deterioro Créditos De Consumo', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(116, '144505', '1', 'Categoria A Riesgo Aceptable Garantia Admisible', '4', 'D', 0, 0, 0, 0, 0, '1445', NULL, 0, 0, 0, NULL, NULL),
+(117, '14450501', '1', 'Categoria A Riesgo Acetable ', '5', 'D', 0, 1, 0, 0, 1, '144505', NULL, 0, 0, 0, NULL, NULL),
+(118, '144510', '1', 'Categoria A Riesgo Aceptable Otras Garantias', '4', 'D', 0, 0, 0, 0, 0, '1445', NULL, 0, 0, 0, NULL, NULL),
+(119, '14451001', '1', 'Categoria A Riesgo Acetable ', '5', 'D', 0, 1, 0, 0, 1, '144510', NULL, 0, 0, 0, NULL, NULL),
+(120, '144515', '1', 'Categoria B Riesgo Aceptable Garantia Admisible', '4', 'D', 0, 0, 0, 0, 0, '1445', NULL, 0, 0, 0, NULL, NULL),
+(121, '14451501', '1', 'Categoria B Riesgo Acetable ', '5', 'D', 0, 1, 0, 0, 1, '144515', NULL, 0, 0, 0, NULL, NULL),
+(122, '144520', '1', 'Categoria B Riesgo Aceptable Otras Garantias', '4', 'D', 0, 0, 0, 0, 0, '1445', NULL, 0, 0, 0, NULL, NULL),
+(123, '14452001', '1', 'Categoria B Riesgo Acetable ', '5', 'D', 0, 1, 0, 0, 1, '144520', NULL, 0, 0, 0, NULL, NULL),
+(124, '144525', '1', 'Categoria C Riesgo Apreciable Garantia Admisible', '4', 'D', 0, 0, 0, 0, 0, '1445', NULL, 0, 0, 0, NULL, NULL),
+(125, '14452501', '1', 'Categoria C Riesgo Apreciable ', '5', 'D', 0, 1, 0, 0, 1, '144525', NULL, 0, 0, 0, NULL, NULL),
+(126, '144530', '1', 'Categoria C Riesgo Significativo Otras Garantias', '4', 'D', 0, 0, 0, 0, 0, '1445', NULL, 0, 0, 0, NULL, NULL),
+(127, '14453001', '1', 'Categoria C Riesgo Significativo ', '5', 'D', 0, 1, 0, 0, 1, '144530', NULL, 0, 0, 0, NULL, NULL),
+(128, '144535', '1', 'Categoria D Riesgo Significativo Garantia Admisible', '4', 'D', 0, 0, 0, 0, 0, '1445', NULL, 0, 0, 0, NULL, NULL),
+(129, '14453501', '1', 'Categoria D Riesgo Significativo ', '5', 'D', 0, 1, 0, 0, 1, '144535', NULL, 0, 0, 0, NULL, NULL),
+(130, '144540', '1', 'Categoria D Riesgo De Incobrabilidad Otras Garantias', '4', 'D', 0, 0, 0, 0, 0, '1445', NULL, 0, 0, 0, NULL, NULL),
+(131, '14454001', '1', 'Categoria D Riesgo De Incobrabilidad ', '5', 'D', 0, 1, 0, 0, 1, '144540', NULL, 0, 0, 0, NULL, NULL),
+(132, '144545', '1', 'Categoria E Riesgo De Incobrabilidad Garantia Admisible', '4', 'D', 0, 0, 0, 0, 0, '1445', NULL, 0, 0, 0, NULL, NULL),
+(133, '14454501', '1', 'Categoria E Riesgo De Incobrabilidad ', '5', 'D', 0, 1, 0, 0, 1, '144545', NULL, 0, 0, 0, NULL, NULL),
+(134, '144550', '1', 'Categoria E Riesgo De Incobrabilidad Otras Garantias', '4', 'D', 0, 0, 0, 0, 0, '1445', NULL, 0, 0, 0, NULL, NULL),
+(135, '14455001', '1', 'Categoria E Riesgo De Incobrabilidad ', '5', 'D', 0, 1, 0, 0, 1, '144550', NULL, 0, 0, 0, NULL, NULL),
+(136, '1446', '1', 'Deterioro Intereses Creditos De Consumo  (Cr)', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(137, '144610', '1', 'Provision Categoria A Interes', '4', 'D', 0, 0, 0, 0, 0, '1446', NULL, 0, 0, 0, NULL, NULL),
+(138, '14461001', '1', 'Provision Categoria A Interes', '5', 'D', 0, 1, 0, 0, 1, '144610', NULL, 0, 0, 0, NULL, NULL),
+(139, '144615', '1', 'Categoria C Riesgo Apreciable', '4', 'D', 0, 0, 0, 0, 0, '1446', NULL, 0, 0, 0, NULL, NULL),
+(140, '14461501', '1', 'Categoria C Riesgo Apreciable ', '5', 'D', 0, 1, 0, 0, 1, '144615', NULL, 0, 0, 0, NULL, NULL),
+(141, '144620', '1', 'Categoria D Riesgo Significativo', '4', 'D', 0, 0, 0, 0, 0, '1446', NULL, 0, 0, 0, NULL, NULL),
+(142, '14462001', '1', 'Ctegoria D Riesgo Significativo ', '5', 'D', 0, 1, 0, 0, 1, '144620', NULL, 0, 0, 0, NULL, NULL),
+(143, '144625', '1', 'Categoria E Riesgo De Incobrabilidad', '4', 'D', 0, 0, 0, 0, 0, '1446', NULL, 0, 0, 0, NULL, NULL),
+(144, '14462501', '1', 'Categoria E Riesgo De Incobrabilidad ', '5', 'D', 0, 1, 0, 0, 1, '144625', NULL, 0, 0, 0, NULL, NULL),
+(145, '144630', '1', 'Interes Creditos Con Periodo De Gracia', '4', 'D', 0, 0, 0, 0, 0, '1446', NULL, 0, 0, 0, NULL, NULL),
+(146, '14463001', '1', 'Interes Creditos Con Periodo De Gracia', '5', 'D', 0, 1, 0, 0, 1, '144630', NULL, 0, 0, 0, NULL, NULL),
+(147, '1447', '1', 'Otros Conceptos Causados Por Periodos De Gracia', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(148, '144730', '1', 'Otros Conceptos Causados Por Periodos De Gracia', '4', 'D', 0, 0, 0, 0, 0, '1447', NULL, 0, 0, 0, NULL, NULL),
+(149, '14473001', '1', 'Otros Conceptos Causados Por Periodos De Gracia', '5', 'D', 0, 1, 0, 0, 1, '144730', NULL, 0, 0, 0, NULL, NULL),
+(150, '1468', '1', 'Deterioro General De Cartera ', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(151, '146805', '1', 'Deterioro General De Cartera Creditos (Cr)', '4', 'D', 0, 0, 0, 0, 0, '1468', NULL, 0, 0, 0, NULL, NULL),
+(152, '14680501', '1', 'Deterioro General De Cartera De Creditos', '5', 'D', 0, 1, 0, 0, 0, '146805', NULL, 0, 0, 0, NULL, NULL),
+(153, '146810', '1', 'Deterioro General Adicional Cartera Creditos (Cr', '4', 'D', 0, 0, 0, 0, 0, '1468', NULL, 0, 0, 0, NULL, NULL),
+(154, '14681001', '1', 'Deterioro General Adicional Cartera De Creditos', '5', 'D', 0, 1, 0, 0, 1, '146810', NULL, 0, 0, 0, NULL, NULL),
+(155, '1473', '1', 'Convenios Por Cobrar', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(156, '147320', '1', 'Servicios Funerarios ', '4', 'D', 0, 0, 0, 0, 1, '1473', NULL, 0, 0, 0, NULL, NULL),
+(157, '14732001', '1', 'Aseguradora Solidaria Olivos ', '5', 'D', 0, 1, 0, 0, 1, '147320', NULL, 0, 0, 0, NULL, NULL),
+(158, '14732002', '1', 'Evaristo Aroca Lozano', '5', 'D', 0, 1, 0, 0, 1, '147320', NULL, 0, 0, 0, NULL, NULL),
+(159, '14732003', '1', 'Serfuncoop Ltda', '5', 'D', 0, 1, 0, 0, 1, '147320', NULL, 0, 0, 0, NULL, NULL),
+(160, '14732004', '1', 'Liberty Seguros', '5', 'D', 0, 1, 0, 0, 1, '147320', NULL, 0, 0, 0, NULL, NULL),
+(161, '14732005', '1', 'Alianz Seguros ', '5', 'D', 0, 1, 0, 0, 1, '147320', NULL, 0, 0, 0, NULL, NULL),
+(162, '14732006', '1', 'Emermedica', '5', 'D', 0, 1, 0, 0, 1, '147320', NULL, 0, 0, 0, NULL, NULL),
+(163, '147395', '1', 'Otros Convenios', '4', 'D', 0, 0, 0, 0, 0, '1473', NULL, 0, 0, 0, NULL, NULL),
+(164, '14739501', '1', 'Otros Servicios Comcel ', '5', 'D', 0, 1, 0, 0, 1, '147395', NULL, 0, 0, 0, NULL, NULL),
+(165, '14739502', '1', 'Interes-Gustavo Mosquera', '5', 'D', 0, 1, 0, 0, 1, '147395', NULL, 0, 0, 0, NULL, NULL),
+(166, '1474', '1', 'Seguros Maphre', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(167, '147401', '1', 'Seguros Vida Cartera', '4', 'D', 0, 0, 0, 0, 0, '1474', NULL, 0, 0, 0, NULL, NULL),
+(168, '14740101', '1', 'Seguros De Vida  Cartera', '5', 'D', 0, 1, 0, 0, 1, '147401', NULL, 0, 0, 0, NULL, NULL),
+(169, '1498', '1', 'Deterioro General ', '3', 'D', 1, 0, 0, 0, 0, '14', NULL, 0, 0, 0, NULL, NULL),
+(170, '149805', '1', 'Deterioro Creditos Con Libranza', '4', 'D', 0, 0, 0, 0, 0, '1498', NULL, 0, 0, 0, NULL, NULL),
+(171, '14980501', '1', 'Deterioro Credito Con Libranza ', '5', 'D', 0, 1, 0, 0, 1, '149805', NULL, 0, 0, 0, NULL, NULL),
+(172, '149810', '1', 'Deterioro Credito Sin Libranza ', '4', 'D', 0, 0, 0, 0, 0, '1498', NULL, 0, 0, 0, NULL, NULL),
+(173, '14981001', '1', 'Deterioro Credito Sin Libranza ', '5', 'D', 0, 1, 0, 0, 1, '149810', NULL, 0, 0, 0, NULL, NULL),
+(174, '16', '1', 'Cuentas Por Cobrar Y Otras', '2', 'D', 0, 0, 0, 0, 0, '1', NULL, 0, 0, 0, NULL, NULL),
+(175, '1630', '1', 'Anticipos', '3', 'D', 1, 0, 0, 0, 0, '16', NULL, 0, 0, 0, NULL, NULL),
+(176, '163005', '1', 'Anticipo De Contratos   ', '4', 'D', 0, 0, 0, 0, 0, '1630', NULL, 0, 0, 0, NULL, NULL),
+(177, '16300501', '1', 'Claudia Lorena Roman Gaviria', '5', 'D', 0, 1, 0, 0, 1, '163005', NULL, 0, 0, 0, NULL, NULL),
+(178, '16300502', '1', 'Sergio Hernando Perez Bonilla', '5', 'D', 0, 1, 0, 0, 1, '163005', NULL, 0, 0, 0, NULL, NULL),
+(179, '16300503', '1', 'Lote Tabaco Walter Fabian', '5', 'D', 0, 1, 0, 0, 1, '163005', NULL, 0, 0, 0, NULL, NULL),
+(180, '163015', '1', 'Proveedores', '4', 'D', 0, 0, 0, 0, 0, '1630', NULL, 0, 0, 0, NULL, NULL),
+(181, '16301501', '1', 'Emermedica', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(182, '16301502', '1', 'Sarmiento Antonio Jose ', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(183, '16301503', '1', 'Cooperativa Correr', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(184, '16301504', '1', 'Cooperativa Correr-Motos', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(185, '16301505', '1', 'Madarriaga Efraim', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(186, '16301506', '1', 'Proveedores - Ordonez German', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(187, '16301507', '1', 'Rojas Helbert', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(188, '16301508', '1', 'Proveedores - Dinamica Digital', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(189, '16301509', '1', 'Proveedores Reinoso Vicente', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(190, '16301510', '1', 'Cuentas Por Cobrar Nominas Adpostal', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(191, '16301511', '1', 'Anticipo Horelsa', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(192, '16301512', '1', 'Anticipo Juan Gaviria Restrepo Y Cia', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(193, '16301513', '1', 'Anticipo Jhon Borrero', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(194, '16301514', '1', 'Anticipo Hector Paniagua', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(195, '16301515', '1', 'Luz Enith Molina Osorio ', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(196, '16301516', '1', 'Danilo Salazar-Arriendo', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(197, '16301517', '1', 'Vasquez Serrano Nestor Alfonso', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(198, '16301518', '1', 'Arias Alirio', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(199, '16301519', '1', 'Hotel Dann Colonial Ltda', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(200, '16301520', '1', 'Lucrecia Monroy', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(201, '16301521', '1', 'Bustos Herlendy', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(202, '16301524', '1', 'Anticipo Navas Ballesteros Nelson', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(203, '16301526', '1', 'Anticipo Oscar Mauricio Quintero', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(204, '16301527', '1', 'Anticipo Mogollon Arlez', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(205, '16301528', '1', 'Anticipo Carlos Triana', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(206, '16301529', '1', 'Asopostal', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(207, '16301530', '1', 'Carlos Rubiano', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(208, '16301531', '1', 'Mauricio Rodriguez Espinosa', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(209, '16301532', '1', 'Omar Cabezas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(210, '16301533', '1', 'David Ivan Rocha Calderon', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(211, '16301534', '1', 'Factoty Trance Ltda', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(212, '16301535', '1', 'Orbis Technology Corporation Ltda', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(213, '16301536', '1', 'Melquisedec Rico', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(214, '16301537', '1', 'Jesus Javier Arrieta Ruiz ', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(215, '16301538', '1', 'Construplan Ltda', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(216, '16301539', '1', 'Nicolas Bernal Rojas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(217, '16301540', '1', 'Natalia Andrea Porras Martin ', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(218, '16301541', '1', 'Carlos Z Baquero', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(219, '16301542', '1', 'Cadena Hotelera El Virrey Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(220, '16301543', '1', 'Ergo Office Colombia Y Suministros ', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(221, '16301544', '1', 'Robinson Yepes', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(222, '16301545', '1', 'Luz Fanny Ome Claros ', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(223, '16301546', '1', 'Wilmer Alberto Puentes', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(224, '16301547', '1', 'Inversiones Cema Ltda', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(225, '16301548', '1', 'Carlos Arturo Leyes Ortiz', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(226, '16301549', '1', 'Malua Eventos Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(227, '16301550', '1', 'Arvut HotelesS Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(228, '16301551', '1', 'Javier Ramirez ', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(229, '16301552', '1', 'Logoprinter', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(230, '16301553', '1', 'Villareal Torres Maria Gladys', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(231, '16301554', '1', 'Abansys De Colombia Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(232, '16301555', '1', 'Velasquez Gomez Carlos Andres', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(233, '16301556', '1', 'Jose Fernando Millan', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(234, '16301557', '1', 'Globaltic & Services Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(235, '16301558', '1', 'Rigueros Cepeda Pedro Alexander', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(236, '16301559', '1', 'Mora Perafan Hector Fabio', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(237, '16301560', '1', 'Renancense Hbcc Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(238, '16301561', '1', 'Grupo Tr3S Arquitectos Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(239, '16301562', '1', 'Galindo Galindo Siervo De Jesus', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(240, '16301563', '1', 'Casallas Mora Magda Carolina', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(241, '16301564', '1', 'Mancipe Ostos Cesar Augusto', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(242, '16301565', '1', 'Forero Martinez Edilberto', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(243, '16301566', '1', 'Garcia Castro Cristina Mercedes', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(244, '16301567', '1', 'Gonzalez Gutierrez Ruben', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(245, '16301568', '1', 'Carlos Rubiano', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(246, '16301569', '1', 'Fernando Antonio Ramirez Jimenez', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(247, '16301570', '1', 'Comercializadora Tc Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(248, '16301571', '1', 'Hotel Boutique City Center', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(249, '16301572', '1', 'Continental Eventos Y Logistica Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(250, '16301573', '1', 'Emi Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(251, '16301574', '1', 'Permoli Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(252, '16301575', '1', 'Import De Colombia Sas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(253, '16301576', '1', 'Panamericana', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(254, '16301577', '1', 'Facol', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(255, '16301578', '1', 'Mosquera Gustavo', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(256, '16301579', '1', 'Jefferson Calderon Vivas', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(257, '16301580', '1', 'Advanced Protection International Api Sa', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(258, '16301581', '1', 'Castro Bernal Juan Sebastian', '5', 'D', 0, 1, 0, 0, 1, '163015', NULL, 0, 0, 0, NULL, NULL),
+(259, '163099', '1', 'Deterioro Anticipos (Cr)', '4', 'D', 0, 0, 0, 0, 0, '1630', NULL, 0, 0, 0, NULL, NULL),
+(260, '16309901', '1', 'Exasociados - Prov Cuentas Por Cobrar ', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(261, '16309902', '1', 'Dificil Cobro - Prov Cuentas Por Cobrar', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(262, '16309903', '1', 'Rojas Helbert', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(263, '16309904', '1', 'Sarmiento Antonio Jose ', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(264, '16309905', '1', 'Quintero Oscar Mauricio', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(265, '16309906', '1', 'Sergio H Perez', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(266, '16309907', '1', 'Juan Gaviria Restrepo', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(267, '16309908', '1', 'Cooperativa Correr', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(268, '16309909', '1', 'Coopserfun', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(269, '16309914', '1', 'Fondep', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(270, '16309915', '1', 'Natalia Andrea Porras Martin ', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(271, '16309916', '1', 'Sociedad De Activos Especiales Sas', '5', 'D', 0, 1, 0, 0, 1, '163099', NULL, 0, 0, 0, NULL, NULL),
+(272, '1660', '1', 'Ingresos Por Cobrar', '3', 'D', 1, 0, 0, 0, 0, '16', NULL, 0, 0, 0, NULL, NULL),
+(273, '166015', '1', 'Arrendamientos', '4', 'D', 0, 0, 0, 0, 0, '1660', NULL, 0, 0, 0, NULL, NULL),
+(274, '16601501', '1', 'Salazar Danilo', '5', 'D', 0, 1, 0, 0, 1, '166015', NULL, 0, 0, 0, NULL, NULL),
+(275, '16601502', '1', 'Molina Osorio Ana Beiba', '5', 'D', 0, 1, 0, 0, 1, '166015', NULL, 0, 0, 0, NULL, NULL),
+(276, '16601503', '1', 'Perez Rodriguez Miguel Angel', '5', 'D', 0, 1, 0, 0, 1, '166015', NULL, 0, 0, 0, NULL, NULL),
+(277, '16601504', '1', 'Suarez Cuevas Doris', '5', 'D', 0, 1, 0, 0, 1, '166015', NULL, 0, 0, 0, NULL, NULL),
+(278, '16601505', '1', 'Robinson Yepes Molina', '5', 'D', 0, 1, 0, 0, 1, '166015', NULL, 0, 0, 0, NULL, NULL),
+(279, '166030', '1', 'Reclamos Aseguradora', '4', 'D', 0, 0, 0, 0, 0, '1660', NULL, 0, 0, 0, NULL, NULL),
+(280, '16603001', '1', 'Martinez Rozo Fidel', '5', 'D', 0, 1, 0, 0, 1, '166030', NULL, 0, 0, 0, NULL, NULL),
+(281, '16603002', '1', 'Castillo Pardo Luis Antonio', '5', 'D', 0, 1, 0, 0, 1, '166030', NULL, 0, 0, 0, NULL, NULL),
+(282, '16603003', '1', 'Bravo Rodriguez Leovigildo', '5', 'D', 0, 1, 0, 0, 1, '166030', NULL, 0, 0, 0, NULL, NULL),
+(283, '16603004', '1', 'Mogollon Zuniga Arlez Donelly', '5', 'D', 0, 1, 0, 0, 1, '166030', NULL, 0, 0, 0, NULL, NULL),
+(284, '16603005', '1', 'Poveda Avila Samuel', '5', 'D', 0, 1, 0, 0, 1, '166030', NULL, 0, 0, 0, NULL, NULL),
+(285, '16603006', '1', 'Gomez Orozco Martha Isabel', '5', 'D', 0, 1, 0, 0, 1, '166030', NULL, 0, 0, 0, NULL, NULL),
+(286, '16603007', '1', 'Porras Tovar German', '5', 'D', 0, 1, 0, 0, 1, '166030', NULL, 0, 0, 0, NULL, NULL),
+(287, '16603008', '1', 'Quijano Gonzalo', '5', 'D', 0, 1, 0, 0, 1, '166030', NULL, 0, 0, 0, NULL, NULL),
+(288, '166050', '1', 'Otros', '4', 'D', 0, 0, 0, 0, 0, '1660', NULL, 0, 0, 0, NULL, NULL),
+(289, '16605001', '1', 'Cuentas Por Cobrar-Provisional', '5', 'D', 0, 1, 0, 0, 1, '166050', NULL, 0, 0, 0, NULL, NULL),
+(290, '16605002', '1', 'Grupo Colcasa', '5', 'D', 0, 1, 0, 0, 1, '166050', NULL, 0, 0, 0, NULL, NULL),
+(291, '16605003', '1', 'Colpatria', '5', 'D', 0, 1, 0, 0, 1, '166050', NULL, 0, 0, 0, NULL, NULL),
+(292, '166099', '1', 'Deterioro Otras Cuentas Por Cobrar (Cr)', '4', 'D', 0, 0, 0, 0, 0, '1660', NULL, 0, 0, 0, NULL, NULL),
+(293, '16609902', '1', 'Grupo Colcasa', '5', 'D', 0, 1, 0, 0, 1, '166099', NULL, 0, 0, 0, NULL, NULL),
+(294, '16609903', '1', 'Mogollon Arlex', '5', 'D', 0, 1, 0, 0, 1, '166099', NULL, 0, 0, 0, NULL, NULL),
+(295, '16609904', '1', 'Casallas Mora Magda Carolina', '5', 'D', 0, 1, 0, 0, 1, '166099', NULL, 0, 0, 0, NULL, NULL),
+(296, '1690', '1', 'Otras Cuentas Por Cobrar', '3', 'D', 1, 0, 0, 0, 0, '16', NULL, 0, 0, 0, NULL, NULL),
+(297, '169025', '1', 'Cuentas Por Cobrar  De Terceros', '4', 'D', 0, 0, 0, 0, 0, '1690', NULL, 0, 0, 0, NULL, NULL),
+(298, '16902501', '1', 'Cuentas Por Cobrar Dificil Cobro', '5', 'D', 0, 1, 0, 0, 1, '169025', NULL, 0, 0, 0, NULL, NULL),
+(299, '16902502', '1', 'Cuentas Por Cobrar - Ex-Asociados', '5', 'D', 0, 1, 0, 0, 1, '169025', NULL, 0, 0, 0, NULL, NULL),
+(300, '16902503', '1', 'Depositos Seguros Del Estado', '5', 'D', 0, 1, 0, 0, 1, '169025', NULL, 0, 0, 0, NULL, NULL),
+(301, '16902504', '1', 'Cuentas Por Cobrar - Provisional', '5', 'D', 0, 1, 0, 0, 1, '169025', NULL, 0, 0, 0, NULL, NULL),
+(302, '16902505', '1', 'Grupo Colcasa', '5', 'D', 0, 1, 0, 0, 1, '169025', NULL, 0, 0, 0, NULL, NULL),
+(303, '16902506', '1', 'Colpatria', '5', 'D', 0, 1, 0, 0, 1, '169025', NULL, 0, 0, 0, NULL, NULL),
+(304, '1698', '1', 'Provision Otras Cuentas Por Cobrar', '3', 'D', 1, 0, 0, 0, 0, '16', NULL, 0, 0, 0, NULL, NULL),
+(305, '169815', '1', 'Anticipo Contrato Y Proveedores', '4', 'D', 0, 0, 0, 0, 0, '1698', NULL, 0, 0, 0, NULL, NULL),
+(306, '16981501', '1', 'Anticipo Juan Gaviria Restrepo', '5', 'D', 0, 1, 0, 0, 1, '169815', NULL, 0, 0, 0, NULL, NULL),
+(307, '16981502', '1', 'Perez Sergio H', '5', 'D', 0, 1, 0, 0, 1, '169815', NULL, 0, 0, 0, NULL, NULL),
+(308, '16981503', '1', 'Rojas Helbert', '5', 'D', 0, 1, 0, 0, 1, '169815', NULL, 0, 0, 0, NULL, NULL),
+(309, '16981504', '1', 'Sarmiento Antonio Jose', '5', 'D', 0, 1, 0, 0, 1, '169815', NULL, 0, 0, 0, NULL, NULL),
+(310, '16981505', '1', 'Quintero Oscar Mauricio', '5', 'D', 0, 1, 0, 0, 1, '169815', NULL, 0, 0, 0, NULL, NULL),
+(311, '16981506', '1', 'Grupo Colcasa', '5', 'D', 0, 1, 0, 0, 1, '169815', NULL, 0, 0, 0, NULL, NULL),
+(312, '17', '1', 'Activos Materiales ', '2', 'D', 0, 0, 0, 0, 0, '1', NULL, 0, 0, 0, NULL, NULL),
+(313, '1705', '1', 'Propiedad Planta Y Equipo ', '3', 'D', 1, 0, 0, 0, 0, '17', NULL, 0, 0, 0, NULL, NULL),
+(314, '170502', '1', 'Terrenos', '4', 'D', 0, 0, 0, 0, 0, '1705', NULL, 0, 0, 0, NULL, NULL),
+(315, '17050201', '1', 'Cl 24Dbis 73C-48', '5', 'D', 0, 1, 0, 0, 1, '170502', NULL, 0, 0, 0, NULL, NULL),
+(316, '170504', '1', 'Edificaciones', '4', 'D', 0, 0, 0, 0, 0, '1705', NULL, 0, 0, 0, NULL, NULL),
+(317, '17050401', '1', 'Cl 24Dbis 73C-48', '5', 'D', 0, 1, 0, 0, 1, '170504', NULL, 0, 0, 0, NULL, NULL),
+(318, '170505', '1', 'Muebles Eq. Oficina', '4', 'D', 0, 0, 0, 0, 0, '1705', NULL, 0, 0, 0, NULL, NULL),
+(319, '17050501', '1', 'Equipo De Oficina', '5', 'D', 0, 1, 0, 0, 1, '170505', NULL, 0, 0, 0, NULL, NULL),
+(320, '17050502', '1', 'Cl 24D Bis 73C-48', '5', 'D', 0, 1, 0, 0, 1, '170505', NULL, 0, 0, 0, NULL, NULL),
+(321, '170520', '1', 'Comp Eq De Comunicación', '4', 'D', 0, 0, 0, 0, 1, '1705', NULL, 0, 0, 0, NULL, NULL),
+(322, '17052001', '1', 'Eq Computo Y Comunicacion', '5', 'D', 0, 1, 0, 0, 1, '170520', NULL, 0, 0, 0, NULL, NULL),
+(323, '170595', '1', 'Depreciacion, Propiedad Planta Y Equipo ', '4', 'C', 0, 0, 0, 0, 1, '1705', NULL, 0, 0, 0, NULL, NULL),
+(324, '17059501', '1', 'Edificaciones', '5', 'C', 0, 1, 0, 0, 1, '170595', NULL, 0, 0, 0, NULL, NULL),
+(325, '17059502', '1', 'Equipo De Oficina', '5', 'C', 0, 1, 0, 0, 1, '170595', NULL, 0, 0, 0, NULL, NULL),
+(326, '17059503', '1', 'Eq Computo Y Comunicacion', '5', 'C', 0, 1, 0, 0, 1, '170595', NULL, 0, 0, 0, NULL, NULL),
+(327, '1715', '1', 'Edificaciones', '3', 'D', 1, 0, 0, 0, 0, '17', NULL, 0, 0, 0, NULL, NULL),
+(328, '171525', '1', 'Instalaciones Agropecuarias', '4', 'D', 0, 0, 0, 0, 0, '1715', NULL, 0, 0, 0, NULL, NULL),
+(329, '17152501', '1', 'Colonia Vacacional', '5', 'D', 0, 1, 0, 0, 1, '171525', NULL, 0, 0, 0, NULL, NULL),
+(330, '17152502', '1', 'Casa Cl 24Dbis 73C-48', '5', 'D', 0, 1, 0, 0, 0, '171525', NULL, 0, 0, 0, NULL, NULL),
+(331, '1725', '1', 'Computadores Y Equipo De Comunicacion ', '3', 'D', 1, 0, 0, 0, 0, '17', NULL, 0, 0, 0, NULL, NULL),
+(332, '172505', '1', 'Computadores Y Equipo De Comunicaciòn ', '4', 'D', 0, 0, 0, 0, 0, '1725', NULL, 0, 0, 0, NULL, NULL),
+(333, '17250501', '1', 'Computadores Y Equipo De Comunicacion ', '5', 'D', 0, 1, 0, 0, 1, '172505', NULL, 0, 0, 0, NULL, NULL),
+(334, '1755', '1', 'Semovientes', '3', 'D', 1, 0, 0, 0, 0, '17', NULL, 0, 0, 0, NULL, NULL),
+(335, '175510', '1', 'Semovientes', '4', 'D', 0, 0, 0, 0, 0, '1755', NULL, 0, 0, 0, NULL, NULL),
+(336, '17551001', '1', 'Semovientes En Servicio', '5', 'D', 0, 1, 0, 0, 1, '175510', NULL, 0, 0, 0, NULL, NULL),
+(337, '18', '1', 'Activos No Corrientes Mantenidos Para La Venta ', '2', 'D', 0, 0, 0, 0, 0, '1', NULL, 0, 0, 0, NULL, NULL),
+(338, '1810', '1', 'Gastos Anticipados', '3', 'D', 1, 0, 0, 0, 0, '18', NULL, 0, 0, 0, NULL, NULL),
+(339, '181005', '1', 'Interes', '4', 'D', 0, 0, 0, 0, 0, '1810', NULL, 0, 0, 0, NULL, NULL),
+(340, '18100501', '1', 'Interes Gustavo Mosquera', '5', 'D', 0, 1, 0, 0, 1, '181005', NULL, 0, 0, 0, NULL, NULL),
+(341, '181010', '1', 'Seguros', '4', 'D', 0, 0, 0, 0, 0, '1810', NULL, 0, 0, 0, NULL, NULL),
+(342, '18101001', '1', 'Seguros Mapfre', '5', 'D', 0, 1, 0, 0, 1, '181010', NULL, 0, 0, 0, NULL, NULL),
+(343, '18101002', '1', 'Rojas Helbert', '5', 'D', 0, 1, 0, 0, 1, '181010', NULL, 0, 0, 0, NULL, NULL),
+(344, '18101003', '1', 'Alllianz Seguros Sa', '5', 'D', 0, 1, 0, 0, 1, '181010', NULL, 0, 0, 0, NULL, NULL),
+(345, '181025', '1', 'Honorarios', '4', 'D', 0, 0, 0, 0, 0, '1810', NULL, 0, 0, 0, NULL, NULL),
+(346, '18102501', '1', 'Claudia Lorena Roman Gaviria', '5', 'D', 0, 1, 0, 0, 1, '181025', NULL, 0, 0, 0, NULL, NULL),
+(347, '181095', '1', 'Gastos Asamblea', '4', 'D', 0, 0, 0, 0, 0, '1810', NULL, 0, 0, 0, NULL, NULL),
+(348, '18109501', '1', 'Baquero Carlos Z', '5', 'D', 0, 1, 0, 0, 1, '181095', NULL, 0, 0, 0, NULL, NULL),
+(349, '18109502', '1', 'Olma Barahona Pardo', '5', 'D', 0, 1, 0, 0, 1, '181095', NULL, 0, 0, 0, NULL, NULL),
+(350, '1815', '1', 'Propiedad Planta Y Equipo ', '3', 'D', 1, 0, 0, 0, 0, '18', NULL, 0, 0, 0, NULL, NULL),
+(351, '181501', '1', 'Colonia Vacacional ', '4', 'D', 0, 0, 0, 0, 0, '1815', NULL, 0, 0, 0, NULL, NULL),
+(352, '18150101', '1', 'Terrenos ', '5', 'D', 0, 1, 0, 0, 1, '181501', NULL, 0, 0, 0, NULL, NULL),
+(353, '1820', '1', 'Cargos Diferidos', '3', 'D', 1, 0, 0, 0, 0, '18', NULL, 0, 0, 0, NULL, NULL),
+(354, '182040', '1', 'Publicidad Y Propaganda', '4', 'D', 0, 0, 0, 0, 0, '1820', NULL, 0, 0, 0, NULL, NULL),
+(355, '18204001', '1', 'Baquero Carlos Z', '5', 'D', 0, 1, 0, 0, 1, '182040', NULL, 0, 0, 0, NULL, NULL),
+(356, '182095', '1', 'Otros Colonia', '4', 'D', 0, 0, 0, 0, 0, '1820', NULL, 0, 0, 0, NULL, NULL),
+(357, '18209501', '1', 'Otros Colonia', '5', 'D', 0, 1, 0, 0, 1, '182095', NULL, 0, 0, 0, NULL, NULL),
+(358, '2', '2', 'P A S I V O', '1', 'C', 0, 0, 0, 0, 0, NULL, NULL, 0, 0, 0, NULL, NULL),
+(359, '21', '2', 'Depositos ', '2', 'C', 0, 0, 0, 0, 0, '2', NULL, 0, 0, 0, NULL, NULL),
+(360, '2110', '2', 'Certificado Deposito De Ahorro Termino ', '3', 'C', 1, 0, 0, 0, 0, '21', NULL, 0, 0, 0, NULL, NULL),
+(361, '211005', '2', 'Cdats Inferior A Seis Meses ', '4', 'C', 0, 0, 0, 0, 0, '2110', NULL, 0, 0, 0, NULL, NULL),
+(362, '21100501', '2', 'Cdats Inferior A Seis Meses ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(363, '21100502', '2', 'Mosquera Gustavo   ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(364, '21100503', '2', 'Sosa Sierra Yolanda  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(365, '21100504', '2', 'Portela Ramiro   ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(366, '21100505', '2', 'Mayorga De Manriquedora Ines ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(367, '21100506', '2', 'Acosta Castillo  Elias', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(368, '21100507', '2', 'Morantes De Leiva Josefina', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(369, '21100508', '2', 'Ruiz Carrillo Carmen Julia ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(370, '21100509', '2', ' Mosquera Fabiola Alexandra ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(371, '21100510', '2', 'Israel Lozano Forero  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(372, '21100511', '2', 'Baron Rodriguez  Miguel', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(373, '21100512', '2', 'Perez  Jesus Antonio ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(374, '21100513', '2', 'Sanchez Ocasiones  Jaime', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(375, '21100514', '2', 'Botia Florez Victor Hugo ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(376, '21100515', '2', 'Ramirez Vanegas Luis Javier ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(377, '21100516', '2', 'Machacon Samaca Rayner David ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(378, '21100517', '2', 'Ramirez Vanegas Judy Constanza ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(379, '21100518', '2', 'Zuluaga Ortiz Jose Nabor ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(380, '21100519', '2', 'Camargo  Luis Alberto ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(381, '21100520', '2', 'Sanchez Molano Clara Yaneth', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(382, '21100521', '2', 'Montealegre Escobar Maria Del Pilar', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(383, '21100522', '2', 'Tovar Garzón Marco Tulio ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(384, '21100523', '2', 'Molina Osorio Luz Enith ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(385, '21100524', '2', 'Forero Gomez  Flamingo', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(386, '21100525', '2', 'Hernandez Palma Carlos Olinder ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(387, '21100526', '2', 'Hernandez Leon Enith Mercedes', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(388, '21100527', '2', 'Benavides Ortega Fabio Andres ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(389, '21100528', '2', 'Muïoz Pardo Maria Esned ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(390, '21100529', '2', 'Ramirez   Alexander', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(391, '21100530', '2', 'Muïoz   Guillermo', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(392, '21100531', '2', 'Diaz Vergara  Rafaelino', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(393, '21100532', '2', 'Camargo Godoy Ivan Dario ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(394, '21100533', '2', 'Medellin   Teresita', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(395, '21100534', '2', 'Zuluaga  Maria Stella ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(396, '21100535', '2', 'Espinoza Yate Marta Lucia ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(397, '21100536', '2', 'Portela Perez Daniel Mauricio ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(398, '21100537', '2', 'Rocha Gonzalez Martha Lucia ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(399, '21100538', '2', 'Parra De Grau Yolanda', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(400, '21100539', '2', 'Gonzalez Rocha Lady Marcela ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(401, '21100540', '2', 'Rodriguez Gomez Alberto  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(402, '21100541', '2', 'Ramirez Aristizabal Ines  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(403, '21100542', '2', 'Campos Cojin Edith Jhoana ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(404, '21100543', '2', 'Rodriguez Pena Alfonso  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(405, '21100544', '2', 'Martinez Pena Victor  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(406, '21100545', '2', 'Gomez Orozco Luz Stella ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(407, '21100546', '2', 'Linares Flor Maria  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(408, '21100547', '2', 'Cuellar Esparza Efrain  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(409, '21100548', '2', 'Torres Olaya Gladyz Maria ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(410, '21100549', '2', 'Maquillon Lugo Ruben Dario ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(411, '21100550', '2', 'Angarita Villareal Dora Helena ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(412, '21100551', '2', 'Lopez De Ardila Ana Teresa', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(413, '21100552', '2', 'Mejia Gomez  Bernarda', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(414, '21100553', '2', 'Benavides   Fabio', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(415, '21100554', '2', 'Franco Hernandez  Guillermo', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(416, '21100555', '2', 'Hernandez Leon Enith Mercedes ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(417, '21100556', '2', 'Tocora Yaneth Rocio  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(418, '21100557', '2', 'Mora Rodriguez Luz Marina ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(419, '21100558', '2', 'Arcos Angarita Franklin Daniel ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(420, '21100559', '2', 'Arcos Alvear Urso Guillermo ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(421, '21100560', '2', 'Barreto Rodriguez  Libardo', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(422, '21100561', '2', 'Camargo  Luis Alberto ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(423, '21100562', '2', 'Tobar Munoz Marco Tulio ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(424, '21100563', '2', 'Moreno Vargas Luz Edilma ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(425, '21100564', '2', 'Tellez Quiroga Luis Orlando ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(426, '21100565', '2', 'Torres  Luis Oswaldo ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(427, '21100566', '2', 'Torres Mancipe Ana Edelmira ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(428, '21100567', '2', 'Hernandez Leon Enith Mercedes ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(429, '21100568', '2', 'Riascos De Aguirre Libia', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(430, '21100569', '2', 'Riascos De Aguirre Libia', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(431, '21100570', '2', 'Mosquera Elizabeth   ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(432, '21100571', '2', 'Fonseca Molina Leidy  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(433, '21100572', '2', 'Rodriguez Pena Alfonso  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(434, '21100573', '2', 'Arcos Alvear Urso Guillermo ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(435, '21100574', '2', 'Torres Olaya Gladys Maria ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(436, '21100575', '2', 'Arcos Alvear Urso Guillermo ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(437, '21100576', '2', 'Hernandez Palma Carlos Olinder ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(438, '21100577', '2', 'Maldonado Ladino Maira Daniela ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(439, '21100578', '2', 'Tobar Munoz Marco Tulio ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(440, '21100579', '2', 'Cardenas Cobos Pedro  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(441, '21100580', '2', 'Rodriguez Borbon Jose Isaias ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(442, '21100581', '2', 'Tocora Yaneth Rocio  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(443, '21100582', '2', 'Maldonado Ladino Mayra Daniela ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(444, '21100583', '2', 'Mosquera Elizabeth   ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(445, '21100584', '2', 'Poveda Pineros Maria Ligia ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(446, '21100585', '2', 'Maldonado Ladino Maira Daniela ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL);
+INSERT INTO `pucs` (`id`, `puc`, `grupo`, `descripcion`, `nivel`, `naturaleza`, `mayor_rep`, `movimiento`, `subcentro`, `bancaria`, `tercero`, `puc_padre`, `pucs_id`, `base_gravable`, `mueve_modulo`, `codigo_dian`, `created_at`, `updated_at`) VALUES
+(447, '21100586', '2', 'Toscano Mora Edison David ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(448, '21100587', '2', 'Rigueros Cepeda Pedro Alexander ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(449, '21100588', '2', 'Ramirez Ramirez Alexander  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(450, '21100589', '2', 'Rangel Marinez Martha Ines ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(451, '21100590', '2', 'Arango Moreno Juan David ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(452, '21100591', '2', 'Manrique Vasquez Hector Francisco ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(453, '21100592', '2', 'Cardenas Hoyuela Daniel Alejandro ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(454, '21100593', '2', 'Rangel Martinez Martha Ines ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(455, '21100594', '2', 'Ramos De Penuela Maria Roselina', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(456, '21100595', '2', 'Diaz De Lopez Judit ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(457, '21100596', '2', 'Maldonado Ladino Mayra Daniela ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(458, '21100597', '2', 'Vivas Moreno Manuel Alfonso ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(459, '21100598', '2', 'Cardenas Cobos Pedro  ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(460, '21100599', '2', 'Diaz De Lopez Judith ', '5', 'C', 0, 1, 0, 0, 1, '211005', NULL, 0, 0, 0, NULL, NULL),
+(461, '211006', '2', 'Cdats Inferior A Seis Meses ', '4', 'C', 0, 0, 0, 0, 0, '2110', NULL, 0, 0, 0, NULL, NULL),
+(462, '21100600', '2', 'Rodriguez Mosquera Nathaly', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(463, '21100601', '2', 'Gonzalez Rocha Lady Marcela', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(464, '21100602', '2', 'Naranjo De Prada Helia Mercedes', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(465, '21100603', '2', 'Mora Rodriguez Luz Marina', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(466, '21100604', '2', 'Hernandez Herrera Sandra Milena', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(467, '21100605', '2', 'Mora Rodriguez Luz Marina', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(468, '21100606', '2', 'Acosta Restrepo Sonia Sofia', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(469, '21100607', '2', 'Acosta Restrepo Lily', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(470, '21100608', '2', 'Acosta Restrepo Lily', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(471, '21100609', '2', 'Mora Rodriguez Luz Marina', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(472, '21100610', '2', 'Ramirez Aristizabal Ines', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(473, '21100611', '2', 'Mora Rodriguez Luz Marina', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(474, '21100612', '2', 'Gomez Mejia Gilma Aidee', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(475, '21100613', '2', 'Bermudez Gomez Yeimy Andrea', '5', 'C', 0, 1, 0, 0, 1, '211006', NULL, 0, 0, 0, NULL, NULL),
+(476, '211010', '2', 'Cdats 6 Meses A 12 Meses', '4', 'C', 0, 0, 0, 0, 1, '2110', NULL, 0, 0, 0, NULL, NULL),
+(477, '21101001', '2', 'Cdats 6 Meses A 12 Meses', '5', 'C', 0, 1, 0, 0, 1, '211010', NULL, 0, 0, 0, NULL, NULL),
+(478, '211015', '2', 'Cdat 12 A 18 Meses', '4', 'C', 0, 0, 0, 0, 0, '2110', NULL, 0, 0, 0, NULL, NULL),
+(479, '211020', '2', 'Cdat 18 Meses En Adelante', '4', 'C', 0, 0, 0, 0, 0, '2110', NULL, 0, 0, 0, NULL, NULL),
+(480, '211095', '2', 'Intereses Certificados Depositos De Ahor', '4', 'C', 0, 0, 0, 0, 0, '2110', NULL, 0, 0, 0, NULL, NULL),
+(481, '21109501', '2', 'Intereses Certificados Depositos De Ahorro', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(482, '21109502', '2', 'Mosquera Gustavo   ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(483, '21109503', '2', 'Sosa Sierra Yolanda  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(484, '21109504', '2', 'Portela Ramiro   ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(485, '21109505', '2', 'Mayorga De Manriquedora Ines ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(486, '21109506', '2', 'Acosta Castillo  Elias', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(487, '21109507', '2', 'Morantes De Leiva Josefina', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(488, '21109508', '2', 'Ruiz Carrillo Carmen Julia ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(489, '21109509', '2', 'Mosquera  Fabiola Alexandra ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(490, '21109510', '2', 'Lozano Forero  Israel', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(491, '21109511', '2', 'Rodriguez  Miguel Baron ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(492, '21109512', '2', 'Perez  Jesus Antonio ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(493, '21109513', '2', 'Sanchez Ocasiones  Jaime', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(494, '21109514', '2', 'Botia Florez Victor Hugo ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(495, '21109515', '2', 'Ramirez Vanegas Luis Javier ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(496, '21109516', '2', 'Machacon Samaca Rayner David ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(497, '21109517', '2', 'Ramirez Vanegas Judy Constanza ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(498, '21109518', '2', 'Zuluaga Ortiz Jose Nabor ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(499, '21109519', '2', 'Camargo  Luis Alberto ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(500, '21109520', '2', 'Sanchez Molano Clara Yaneth', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(501, '21109521', '2', 'Montealegre Escobarmaria Del Pilar', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(502, '21109522', '2', 'Tovar Garz½N Marco Tulio ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(503, '21109523', '2', 'Molina Osorio Luz Enith ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(504, '21109524', '2', 'Forero Gomez  Flamingo', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(505, '21109525', '2', 'Hernandez Leon Carlos Olinder ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(506, '21109526', '2', 'Hernandez Leon Enith Mercedes ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(507, '21109527', '2', 'Benavides Ortega Fabio Andres ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(508, '21109528', '2', 'Muïoz Pardo Maria Esned ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(509, '21109529', '2', 'Ramirez   Alexander', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(510, '21109530', '2', 'Rodriguez Mosquera Nataly', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(511, '21109531', '2', 'Diaz Vergara  Rafaelino', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(512, '21109532', '2', 'Camargo Godoy Ivan Dario ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(513, '21109533', '2', 'Medellin   Teresita', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(514, '21109534', '2', 'Zuluaga  Maria Stella ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(515, '21109535', '2', 'Espinoza Yate Marta Lucia ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(516, '21109536', '2', 'Portela Perez Daniel Mauricio ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(517, '21109537', '2', 'Rocha Gonzalez Martha Lucia ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(518, '21109538', '2', 'Parra De Grau Yolanda', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(519, '21109539', '2', 'Gonzalez Rocha Lady Marcela ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(520, '21109540', '2', 'Rodriguez Gomez Alberto  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(521, '21109541', '2', 'Ramirez Aristizabal Ines  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(522, '21109542', '2', 'Campos Cojin Edith Jhoana ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(523, '21109543', '2', 'Rodriguez Pena Alfonso  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(524, '21109544', '2', 'Martinez Pena Victor  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(525, '21109545', '2', 'Gomez Orozco Luz Stella ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(526, '21109546', '2', 'Linares Flor Maria  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(527, '21109547', '2', 'Cuellar Esparza Efrain  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(528, '21109548', '2', 'Torres Olaya Gladyz Maria ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(529, '21109549', '2', 'Maquillon Lugo Ruben Dario ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(530, '21109550', '2', 'Angarita Villareal Dora Helena ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(531, '21109551', '2', 'Lopez De Ardila Ana Teresa', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(532, '21109552', '2', 'Mejia Gomez  Bernarda', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(533, '21109553', '2', 'Benavides   Fabio', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(534, '21109554', '2', 'Franco Hernandez  Guillermo', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(535, '21109555', '2', 'Hernandez Leon Enith Mercedes ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(536, '21109556', '2', 'Tocora Yaneth Rocio  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(537, '21109557', '2', 'Mora Rodriguez Luz Marina ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(538, '21109558', '2', 'Arcos Angarita Franklin Daniel ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(539, '21109559', '2', 'Arcos Alvear Urso Guillermo ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(540, '21109560', '2', 'Barreto Rodriguez  Libardo', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(541, '21109561', '2', 'Camargo  Luis Alberto ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(542, '21109562', '2', 'Tobar Munoz Marco Tulio ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(543, '21109563', '2', 'Moreno Vargas Luz Edilma ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(544, '21109564', '2', 'Tellez Quiroga Luis Orlando ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(545, '21109565', '2', 'Torres  Luis Oswaldo ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(546, '21109566', '2', 'Torres Mancipe Ana Edelmira ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(547, '21109567', '2', 'Hernandez Leon Enith Mercedes ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(548, '21109568', '2', 'Riascos De Aguirre Libia', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(549, '21109569', '2', 'Riascos De Aguirre Libia', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(550, '21109570', '2', 'Mosquera Elizabeth   ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(551, '21109571', '2', 'Fonseca Molina Leidy  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(552, '21109572', '2', 'Rodriguez Pena Alfonso  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(553, '21109573', '2', 'Arcos Alvear Urso Guillermo ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(554, '21109574', '2', 'Torres Olaya Gladys Maria ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(555, '21109575', '2', 'Arcos Alvear Urso Guillermo ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(556, '21109576', '2', 'Hernandez Palma Carlos Olinder ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(557, '21109577', '2', 'Maldonado Ladino Maira Daniela ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(558, '21109578', '2', 'Tobar Munoz Marco Tulio ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(559, '21109579', '2', 'Cardenas Cobos Pedro  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(560, '21109580', '2', 'Rodriguez Borbon Jose Isaias ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(561, '21109581', '2', 'Tocora Yaneth Rocio  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(562, '21109582', '2', 'Maldonado Ladino Mayra Daniela ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(563, '21109583', '2', 'Mosquera Elizabeth   ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(564, '21109584', '2', 'Poveda Pineros Maria Ligia ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(565, '21109585', '2', 'Maldonado Ladino Maira Daniela ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(566, '21109586', '2', 'Toscano Mora Edison David ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(567, '21109587', '2', 'Rigueros Cepeda Pedro Alexander ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(568, '21109588', '2', 'Ramirez Ramirez Alexander  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(569, '21109589', '2', 'Rangel Marinez Martha Ines ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(570, '21109590', '2', 'Arango Moreno Juan David ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(571, '21109591', '2', 'Manrique Vasquez Hector Francisco ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(572, '21109592', '2', 'Cardenas Hoyuela Daniel Alejandro ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(573, '21109593', '2', 'Rangel Martinez Martha Ines ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(574, '21109594', '2', 'Ramos De Penuela Maria Roselina', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(575, '21109595', '2', 'Diaz De Lopez Judit ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(576, '21109596', '2', 'Maldonado Ladino Mayra Daniela ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(577, '21109597', '2', 'Vivas Moreno Manuel Alfonso ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(578, '21109598', '2', 'Cardenas Cobos Pedro  ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(579, '21109599', '2', 'Diaz De Lopez Judith ', '5', 'C', 0, 1, 0, 0, 1, '211095', NULL, 0, 0, 0, NULL, NULL),
+(580, '211096', '2', 'Intereses Certificados Depositos De Ahor', '4', 'C', 0, 0, 0, 0, 0, '2110', NULL, 0, 0, 0, NULL, NULL),
+(581, '21109600', '2', 'Rodriguez Mosquera Nathalie', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(582, '21109601', '2', 'Gonzalez Rocha Lady Marcela', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(583, '21109602', '2', 'Naranjo De Prada Helia Mercedes', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(584, '21109603', '2', 'Mora Rodriguez Luz Marina', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(585, '21109604', '2', 'Hernandez Herrera Sandra Milena', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(586, '21109605', '2', 'Mora Rodriguez Luz Marina', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(587, '21109606', '2', 'Acosta Restrepo Onia Sofia', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(588, '21109607', '2', 'Acosta Restrepo Lily', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(589, '21109608', '2', 'Acosta Restrepo Lily', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(590, '21109609', '2', 'Mora Rodriguez Luz Marina', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(591, '21109610', '2', 'Ramirez Aristizabal Ines', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(592, '21109611', '2', 'Mora Rodriguez Luz Marina', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(593, '21109612', '2', 'Gomez Mejia Gilma Aidee', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(594, '21109613', '2', 'Bermudez Gomez Yeimy Andrea', '5', 'C', 0, 1, 0, 0, 1, '211096', NULL, 0, 0, 0, NULL, NULL),
+(595, '2130', '2', 'Depositos De Ahorro Permanente ', '3', 'C', 1, 0, 0, 0, 0, '21', NULL, 0, 0, 0, NULL, NULL),
+(596, '213010', '2', 'Depositos A Largo Plazo ', '4', 'C', 0, 0, 0, 0, 0, '2130', NULL, 0, 0, 0, NULL, NULL),
+(597, '21301001', '2', 'Ahorro Permanentes ', '5', 'C', 0, 1, 0, 0, 1, '213010', NULL, 0, 0, 0, NULL, NULL),
+(598, '213095', '2', 'Intereses Depositos De Ahorro Permanente', '4', 'C', 0, 1, 0, 0, 1, '2130', NULL, 0, 0, 0, NULL, NULL),
+(599, '23', '2', 'Créditos De Bancos Y Otras Obligaciones Financieras', '2', 'C', 0, 0, 0, 0, 0, '2', NULL, 0, 0, 0, NULL, NULL),
+(600, '2305', '2', 'Creditos Ordinarios Corto Plazo', '3', 'C', 1, 0, 0, 0, 0, '23', NULL, 0, 0, 0, NULL, NULL),
+(601, '230505', '2', 'Bancos Comerciales', '4', 'C', 0, 0, 0, 0, 0, '2305', NULL, 0, 0, 0, NULL, NULL),
+(602, '23050501', '2', 'Megabanco', '5', 'C', 0, 1, 0, 0, 1, '230505', NULL, 0, 0, 0, NULL, NULL),
+(603, '23050502', '2', 'Banco Bogota', '5', 'C', 0, 1, 0, 0, 1, '230505', NULL, 0, 0, 0, NULL, NULL),
+(604, '230510', '2', 'Bancos Cooperativos', '4', 'C', 0, 0, 0, 0, 0, '2305', NULL, 0, 0, 0, NULL, NULL),
+(605, '23051001', '2', 'Coopcentral 6011-0', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(606, '23051002', '2', 'Coopcentral 6014-0', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(607, '23051003', '2', 'Coopcentral 3045-0', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(608, '23051004', '2', 'Coopcentral 4004-0', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(609, '23051005', '2', 'Coopcentral 4055-0', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(610, '23051006', '2', 'Coopcentral 70240', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(611, '23051007', '2', 'Coopcentral-', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(612, '23051008', '2', 'Coopcentral -10084-0', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(613, '23051009', '2', 'Coopcentral-001830', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(614, '23051010', '2', 'Coopcentral 02310', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(615, '23051011', '2', 'Coopcentral 00408-0', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(616, '23051012', '2', 'Coopcentral  0749', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(617, '23051013', '2', 'Coopcentral  7500', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(618, '23051014', '2', 'Coopcentral -16810', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(619, '23051015', '2', 'Coopcentral- 16820', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(620, '23051016', '2', 'Coopcentral - 190880019710', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(621, '23051017', '2', 'Coopcentral - 190880021530', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(622, '23051018', '2', 'Coopcentral - 190880021780', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(623, '23051019', '2', 'Coopcentral - 190880021839', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(624, '23051020', '2', 'Financiafondos 4039', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(625, '23051021', '2', 'Coopcentral - 190880022417-0', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(626, '23051022', '2', 'Coopcentral - 19088002418-0', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(627, '23051023', '2', 'Coopcentral - 190880024920', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(628, '23051024', '2', 'Coopcentral - 190880026000', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(629, '23051025', '2', 'Coppcentral - 190880026680', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(630, '23051026', '2', 'Coopcentral - 190880027730', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(631, '23051027', '2', 'Coopcentral - 190880028430', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(632, '23051028', '2', 'Coopcentral 190880031420', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(633, '23051029', '2', 'Coopcentral 190880032440', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(634, '23051030', '2', 'Coopcentral 32780', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(635, '23051031', '2', 'Coopcentral 190880033790', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(636, '23051032', '2', 'Financiafondos', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(637, '23051033', '2', 'Coopcentral 190880037790', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(638, '23051034', '2', 'Coopcentral 190880038840', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(639, '23051035', '2', 'Coopcentral 190880039140', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(640, '23051036', '2', 'Financiafondos', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(641, '23051037', '2', 'Coopcentral  190880040190', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(642, '23051038', '2', 'Coopcentral 190880041150', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(643, '23051039', '2', 'Coopcentral 190880042370', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(644, '23051040', '2', 'Coopcentral 192180044620', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(645, '23051041', '2', 'Coopcentral 19088004621', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(646, '23051042', '2', 'Coopcentral  190880046490', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(647, '23051043', '2', 'Coopcentral 190880046740', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(648, '23051044', '2', 'Coopcentral 190880047050', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(649, '23051045', '2', 'Coopcentral 19218004767', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(650, '23051046', '2', 'Coopcentral 19088004868', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(651, '23051047', '2', 'Coopcentral  190880049220', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(652, '23051048', '2', 'Coopcentral 190880049220', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(653, '23051049', '2', 'Coopcentral 190880049760', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(654, '23051050', '2', 'Coopcentral 19088005018', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(655, '23051051', '2', 'Coopcentral 190880050530', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(656, '23051052', '2', 'Coopcentral 190880051010', '5', 'C', 0, 1, 0, 0, 0, '230510', NULL, 0, 0, 0, NULL, NULL),
+(657, '23051053', '2', 'Coopcentral 190880051470', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(658, '23051054', '2', 'Coopcentral 190880051740', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(659, '23051055', '2', 'Coopcentral 190880051780', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(660, '23051056', '2', 'Coopcentral 19088005238', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(661, '23051057', '2', 'Coopcentral 190880053080', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(662, '23051058', '2', 'Coopcentral 190880053980', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(663, '23051059', '2', 'Coopcentral 190880054010', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(664, '23051060', '2', 'Coopcentral 190880054870', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(665, '23051061', '2', 'Coopcentral 19088005576', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(666, '23051062', '2', 'Coopcentral 19088005753', '5', 'C', 0, 1, 0, 0, 1, '230510', NULL, 0, 0, 0, NULL, NULL),
+(667, '230515', '2', 'Entidades Cooperativas ', '4', 'C', 0, 0, 0, 0, 0, '2305', NULL, 0, 0, 0, NULL, NULL),
+(668, '23051501', '2', 'Analfe 00479', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(669, '23051502', '2', 'Analfe 00553', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(670, '23051503', '2', 'Analfe 00485', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(671, '23051504', '2', 'Analfe 00472', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(672, '23051505', '2', 'Analfe 00539', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(673, '23051506', '2', 'Analfe 00505', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(674, '23051507', '2', 'Coomeva 52801', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(675, '23051508', '2', 'Analfe 0758', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(676, '23051509', '2', 'Financiafondos No 1095', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(677, '23051510', '2', 'Financiafondos No', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(678, '23051511', '2', 'Financiafondos-Aportes', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(679, '23051512', '2', 'Financiafondos', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(680, '23051513', '2', 'Financiafondos', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(681, '23051514', '2', 'Coomeva - 639600', '5', 'C', 0, 1, 0, 0, 1, '230515', NULL, 0, 0, 0, NULL, NULL),
+(682, '230525', '2', 'Sobregiros', '4', 'C', 0, 0, 0, 0, 0, '2305', NULL, 0, 0, 0, NULL, NULL),
+(683, '23052501', '2', 'Banco De Colombia ', '5', 'C', 0, 1, 0, 0, 1, '230525', NULL, 0, 0, 0, NULL, NULL),
+(684, '23052502', '2', 'Megabanco', '5', 'C', 0, 1, 0, 0, 1, '230525', NULL, 0, 0, 0, NULL, NULL),
+(685, '23052503', '2', 'Banco De Bogotÿ ', '5', 'C', 0, 1, 0, 0, 1, '230525', NULL, 0, 0, 0, NULL, NULL),
+(686, '23052504', '2', 'Coomeva', '5', 'C', 0, 1, 0, 0, 1, '230525', NULL, 0, 0, 0, NULL, NULL),
+(687, '23052505', '2', 'Banco Bogota  399017623', '5', 'C', 0, 1, 0, 0, 1, '230525', NULL, 0, 0, 0, NULL, NULL),
+(688, '23052506', '2', 'Banco De Colombia Girardot ', '5', 'C', 0, 1, 0, 0, 1, '230525', NULL, 0, 0, 0, NULL, NULL),
+(689, '2308', '2', 'Creditos Ordinarios  Largo Plazo', '3', 'C', 1, 0, 0, 0, 0, '23', NULL, 0, 0, 0, NULL, NULL),
+(690, '230805', '2', 'Bancos Comerciales', '4', 'C', 0, 0, 0, 0, 0, '2308', NULL, 0, 0, 0, NULL, NULL),
+(691, '23080501', '2', 'Megabanco 44865', '5', 'C', 0, 1, 0, 0, 1, '230805', NULL, 0, 0, 0, NULL, NULL),
+(692, '23080502', '2', 'Banco De Bogota 6201-2', '5', 'C', 0, 1, 0, 0, 1, '230805', NULL, 0, 0, 0, NULL, NULL),
+(693, '230810', '2', 'Bancos Cooperativos', '4', 'C', 0, 0, 0, 0, 0, '2308', NULL, 0, 0, 0, NULL, NULL),
+(694, '23081001', '2', 'Coopcentral 04055-0', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(695, '23081002', '2', 'Coopcentral 6011-0', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(696, '23081003', '2', 'Coopcentral 70240', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(697, '23081004', '2', 'Coopcentral-10084-0', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(698, '23081005', '2', 'Coopcentral-001830', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(699, '23081006', '2', 'Coopcentral 02310', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(700, '23081007', '2', 'Coopcentral 00500', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(701, '23081008', '2', 'Coopcentral 00408-0', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(702, '23081009', '2', 'Coopcentral  0749', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(703, '23081010', '2', 'Coopcentral  7500', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(704, '23081011', '2', 'Coopcentral  No 16810', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(705, '23081012', '2', 'Coopcentral No 16820', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(706, '23081013', '2', 'Coopcentral - 190880019710', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(707, '23081014', '2', 'Coopcentral - 190880021530', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(708, '23081015', '2', 'Coopcentral - 190880021780', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(709, '23081016', '2', 'Coopcentral - 190880021830', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(710, '23081017', '2', 'Coopcentral - 19088002417-0', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(711, '23081018', '2', 'Coopcentral - 19088002418-0', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(712, '23081019', '2', 'Coopcentral - 190880024920', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(713, '23081020', '2', 'Coopcentral - 190880026000', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(714, '23081021', '2', 'Coopcentral - 190880026680', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(715, '23081022', '2', 'Coopcentral - 190880027730', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(716, '23081023', '2', 'Coopcentral - 190880028430', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(717, '23081024', '2', 'Coopcentral 190880031420', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(718, '23081025', '2', 'Coopcentral 190880032440', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(719, '23081026', '2', 'Coopcentral 32780', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(720, '23081027', '2', 'Coopcentral 190880033790', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(721, '23081028', '2', 'Financiafondos', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(722, '23081029', '2', 'Coopcentral 190880037790', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(723, '23081030', '2', 'Coopcentral 190880038840', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(724, '23081031', '2', 'Coopcentral 190880039140', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(725, '23081032', '2', 'Coopcentral 190880040190', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(726, '23081033', '2', 'Coopcentral 190880041150', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(727, '23081034', '2', 'Coopcentral 190880042370', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(728, '23081035', '2', 'Coopcentral 192180044620', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(729, '23081036', '2', 'Coopcentral 19088004621', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(730, '23081037', '2', 'Coopcentral 190880046490', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(731, '23081038', '2', 'Coopcentral 190880046740', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(732, '23081039', '2', 'Coopcentral 190880047050', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(733, '23081040', '2', 'Coopcentral 19218004767', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(734, '23081041', '2', 'Coopcentral 19088004868', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(735, '23081042', '2', 'Coopcentral  190880049220', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(736, '23081043', '2', 'Coopcentral 190880049760', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(737, '23081044', '2', 'Coopcentral 19088005018', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(738, '23081045', '2', 'Coopcentral 190880050530', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(739, '23081046', '2', 'Coopcentral 190880051010', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(740, '23081047', '2', 'Coopcentral 190880051470', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(741, '23081048', '2', 'Coopcentral 190880051740', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(742, '23081049', '2', 'Coopcentral 190880051780', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(743, '23081050', '2', 'Coopcentral 19088005238', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(744, '23081051', '2', 'Coopcentral 190880053080', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(745, '23081052', '2', 'Coopcentral 190880053980', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(746, '23081053', '2', 'Coopcentral 190880054010', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(747, '23081054', '2', 'Coopcentral 190880054870', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(748, '23081055', '2', 'Coopcentral 19088005576', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(749, '23081056', '2', 'Coopcentral 19088005753', '5', 'C', 0, 1, 0, 0, 1, '230810', NULL, 0, 0, 0, NULL, NULL),
+(750, '230815', '2', 'Entidades Cooperativas ', '4', 'C', 0, 0, 0, 0, 0, '2308', NULL, 0, 0, 0, NULL, NULL),
+(751, '23081501', '2', 'Analfe 0472', '5', 'C', 0, 1, 0, 0, 1, '230815', NULL, 0, 0, 0, NULL, NULL),
+(752, '23081502', '2', 'Analfe 0479', '5', 'C', 0, 1, 0, 0, 1, '230815', NULL, 0, 0, 0, NULL, NULL),
+(753, '23081503', '2', 'Analfe 0485', '5', 'C', 0, 1, 0, 0, 1, '230815', NULL, 0, 0, 0, NULL, NULL),
+(754, '23081504', '2', 'Analfe 0758', '5', 'C', 0, 1, 0, 0, 1, '230815', NULL, 0, 0, 0, NULL, NULL),
+(755, '23081505', '2', ' Coomeva 52801', '5', 'C', 0, 1, 0, 0, 1, '230815', NULL, 0, 0, 0, NULL, NULL),
+(756, '23081506', '2', 'Coopcentral 70240', '5', 'C', 0, 1, 0, 0, 1, '230815', NULL, 0, 0, 0, NULL, NULL),
+(757, '23081507', '2', 'Financiafondos  1314', '5', 'C', 0, 1, 0, 0, 1, '230815', NULL, 0, 0, 0, NULL, NULL),
+(758, '23081508', '2', 'Financiafondos 1519', '5', 'C', 0, 1, 0, 0, 1, '230815', NULL, 0, 0, 0, NULL, NULL),
+(759, '23081509', '2', 'Coomeva 639600', '5', 'C', 0, 1, 0, 0, 1, '230815', NULL, 0, 0, 0, NULL, NULL),
+(760, '230895', '2', 'Otras Entidades', '4', 'C', 0, 0, 0, 0, 0, '2308', NULL, 0, 0, 0, NULL, NULL),
+(761, '23089501', '2', 'Otros Particulares', '5', 'C', 0, 1, 0, 0, 1, '230895', NULL, 0, 0, 0, NULL, NULL),
+(762, '24', '2', 'Cuentas Por Pagar Y Otras', '2', 'C', 0, 0, 0, 0, 0, '2', NULL, 0, 0, 0, NULL, NULL),
+(763, '2405', '2', 'Comisiones Y Honorarios ', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(764, '240505', '2', 'Honorarios', '4', 'C', 0, 0, 0, 0, 0, '2405', NULL, 0, 0, 0, NULL, NULL),
+(765, '24050501', '2', 'Opine Sas', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(766, '24050502', '2', 'Hernandez Edgar', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(767, '24050503', '2', 'Silva Pataquiva Luis Jorge', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(768, '24050504', '2', 'Soporte Tecnico Open Bank', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(769, '24050505', '2', 'Hernando Gomez Pinilla', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(770, '24050506', '2', 'Waldo Tacha Diaz', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(771, '24050507', '2', 'Claudia Lorena Roman Gaviria', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(772, '24050508', '2', 'Opine Asesoria Empresarial', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(773, '24050509', '2', 'Cxp Honorarios Alexander Ramirez', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(774, '24050510', '2', 'Cxp Honorarios Mogollon Zuniga Arlez D', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(775, '24050511', '2', 'Gustavo Mosquera', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(776, '24050512', '2', 'Jairo Bejarano Wallens', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(777, '24050513', '2', 'Coral Delgado & Asociados', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(778, '24050514', '2', 'Reyes Pulido Carolina', '5', 'C', 0, 1, 0, 0, 1, '240505', NULL, 0, 0, 0, NULL, NULL),
+(779, '2410', '2', 'Costos Y Gastos Por Pagar', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(780, '241095', '2', 'Otros ', '4', 'C', 0, 0, 0, 0, 0, '2410', NULL, 0, 0, 0, NULL, NULL),
+(781, '24109501', '2', 'Servicios ', '5', 'C', 0, 1, 0, 0, 1, '241095', NULL, 0, 0, 0, NULL, NULL),
+(782, '24109502', '2', 'Financiafondos', '5', 'C', 0, 1, 0, 0, 1, '241095', NULL, 0, 0, 0, NULL, NULL),
+(783, '24109503', '2', 'Mogollon Elles Julieth Melissa', '5', 'C', 0, 1, 0, 0, 1, '241095', NULL, 0, 0, 0, NULL, NULL),
+(784, '24109504', '2', 'Reyes Pulido Carolina', '5', 'C', 0, 1, 0, 0, 1, '241095', NULL, 0, 0, 0, NULL, NULL),
+(785, '2415', '2', 'Prometientes Compradores ', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(786, '2420', '2', 'Proveedores', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(787, '242005', '2', 'Nacionales ', '4', 'C', 0, 0, 0, 0, 0, '2420', NULL, 0, 0, 0, NULL, NULL),
+(788, '24200501', '2', 'Cia Agricola De Seguros', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(789, '24200502', '2', 'Ayala Alvaro', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(790, '24200503', '2', 'Velandia German', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(791, '24200504', '2', 'Liberty Seguros', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(792, '24200505', '2', 'Emermedica', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(793, '24200506', '2', 'Liga Deportiva Adpostal', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(794, '24200507', '2', 'Baquero Carlos Z', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(795, '24200508', '2', 'Panche Cooper Jose Antonio', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(796, '24200509', '2', 'Rodriguez Pena Alfonso', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(797, '24200510', '2', 'Hernandez Castaneda Edgar', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(798, '24200511', '2', 'Orbis Technology ', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(799, '24200512', '2', 'Rangel Esperanza', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(800, '24200513', '2', 'Integratur Ltda', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(801, '24200514', '2', 'Dinamica Digital Eu', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(802, '24200515', '2', 'Analfe', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(803, '24200516', '2', 'Orozco Carmen', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(804, '24200517', '2', 'Martinez Celedon Martha Leticia', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(805, '24200518', '2', 'Horelsa Ltda', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(806, '24200519', '2', 'Mapfre Seguros', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(807, '24200520', '2', 'Cooupis', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(808, '24200521', '2', 'Pacheco Rodriguez Ana Milena', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(809, '24200522', '2', 'Rodriguez Castaneda Luis Francisco', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(810, '24200523', '2', 'Liliana Bastidas Linares', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(811, '24200525', '2', 'Melo Pedro Pablo', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(812, '24200526', '2', 'Comcel', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(813, '24200527', '2', 'Bernardo Gonzalez', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(814, '24200528', '2', '|Cooperativa Correr', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(815, '24200529', '2', 'Monroy Medina Lucrecia', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(816, '24200530', '2', 'Luis Hernando Rojas', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(817, '24200531', '2', 'Logoprinter Ltda', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(818, '24200532', '2', 'Karen Lorena Lozada', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(819, '24200533', '2', 'Nicolas Bernal Rojas', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(820, '24200534', '2', 'Vimarco Ltda', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(821, '24200535', '2', 'Logoprinter Ltda', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(822, '24200536', '2', 'Jaime Augusto Hernandez Martinez', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(823, '24200537', '2', 'Gonzalez Morales Alvaro', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(824, '24200538', '2', 'Rodolfo Antonio Ramirez Aguirre', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(825, '24200539', '2', 'Efrain Sanchez', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(826, '24200540', '2', 'Olma Barahona Pardo', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(827, '24200541', '2', 'Operadores Hoteleros A Y S Sas', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(828, '24200542', '2', 'Rodrigo Barragan Lozano', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(829, '24200543', '2', 'Paniagua Nieto Hector Antonio', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(830, '24200544', '2', 'Prosegur Ltda ', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(831, '24200545', '2', 'Representaciones Comerciales Byl Ltda', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(832, '24200546', '2', 'Casa De Espana', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(833, '24200547', '2', 'Factory Trance Ltda', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(834, '24200548', '2', 'Lozano Lozano Fernando ', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(835, '24200549', '2', 'Granados & Condecoraciones Sas', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(836, '24200550', '2', 'Hernandez Cortez Pedro Ignacio ', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(837, '24200551', '2', 'Arvut HotelesS Sas', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(838, '24200552', '2', 'Legal Services Corporation ', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(839, '24200553', '2', 'Chacon Hernandez Asociados Sas', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(840, '24200554', '2', 'Villareal Torres Maria', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(841, '24200555', '2', 'Suarez Crespo Jose', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(842, '24200556', '2', 'Inversiones Granvivienda Sa', '5', 'C', 0, 1, 0, 0, 1, '242005', NULL, 0, 0, 0, NULL, NULL),
+(843, '24200557', '2', 'Martinez Cruz Rodrigo', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(844, '24200558', '2', 'Alexander Rigueros', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(845, '24200559', '2', 'Galindo Jesus', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(846, '24200560', '2', 'Casallas Mora Magda Carolina', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(847, '24200561', '2', 'Alx Digital Nova Sas', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(848, '24200562', '2', 'Grupo Tr3S Arquitectos Sas', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(849, '24200563', '2', 'Permoli Sas', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(850, '24200564', '2', 'Garcia Castro Cristina Mercedes', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(851, '24200565', '2', '5 Max Sas', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(852, '24200566', '2', 'Ramirez Fernando', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(853, '24200567', '2', 'Betancour Palacios Diego Fernando', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(854, '24200568', '2', 'Emi Sas', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(855, '24200569', '2', 'Balor Sas', '5', 'C', 0, 1, 0, 0, 0, '242005', NULL, 0, 0, 0, NULL, NULL),
+(856, '2430', '2', 'Gravamen De Los Movimientos Financieros ', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(857, '243020', '2', 'Sobre Depositos De Ahorro Permanente ', '4', 'C', 0, 0, 0, 0, 1, '2430', NULL, 0, 0, 0, NULL, NULL),
+(858, '24302001', '2', 'Sobre Depositos De Ahorro Permanente ', '5', 'C', 0, 1, 0, 0, 1, '243020', NULL, 0, 0, 0, NULL, NULL),
+(859, '2435', '2', 'Retenci…N En La Fuente ', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(860, '24350558', '2', 'Alexander Rigueros', '5', 'C', 0, 1, 0, 0, 0, '243505', NULL, 0, 0, 0, NULL, NULL),
+(861, '243515', '2', 'Honorarios', '4', 'C', 0, 0, 0, 0, 0, '2435', NULL, 0, 0, 0, NULL, NULL),
+(862, '24351501', '2', 'Honorarios', '5', 'C', 0, 1, 0, 0, 1, '243515', NULL, 0, 0, 0, NULL, NULL),
+(863, '243525', '2', 'Servicios', '4', 'C', 0, 0, 0, 0, 0, '2435', NULL, 0, 0, 0, NULL, NULL),
+(864, '24352501', '2', 'Servicios ', '5', 'C', 0, 1, 0, 0, 1, '243525', NULL, 0, 0, 0, NULL, NULL),
+(865, '243530', '2', 'Arrendamientos', '4', 'C', 0, 0, 0, 0, 0, '2435', NULL, 0, 0, 0, NULL, NULL),
+(866, '24353001', '2', 'Arrendamientos', '5', 'C', 0, 1, 0, 0, 1, '243530', NULL, 0, 0, 0, NULL, NULL),
+(867, '243535', '2', 'Rendimientos Financieros ', '4', 'C', 0, 0, 0, 0, 0, '2435', NULL, 0, 0, 0, NULL, NULL),
+(868, '24353501', '2', 'Rendimientos Financieros ', '5', 'C', 0, 1, 0, 0, 1, '243535', NULL, 0, 0, 0, NULL, NULL),
+(869, '243540', '2', 'Compras', '4', 'C', 0, 0, 0, 0, 0, '2435', NULL, 0, 0, 0, NULL, NULL),
+(870, '24354001', '2', 'Compras', '5', 'C', 0, 1, 0, 0, 1, '243540', NULL, 0, 0, 0, NULL, NULL),
+(871, '243575', '2', 'Retencion De Ica ', '4', 'C', 0, 0, 0, 0, 0, '2435', NULL, 0, 0, 0, NULL, NULL),
+(872, '24357501', '2', 'Retencion De Ica', '5', 'C', 0, 1, 0, 0, 1, '243575', NULL, 0, 0, 0, NULL, NULL),
+(873, '2440', '2', 'Impuestos Gravamenes Y Tasas Por Pagar ', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(874, '244005', '2', 'Iva Retenido', '4', 'C', 0, 0, 0, 0, 0, '2440', NULL, 0, 0, 0, NULL, NULL),
+(875, '24400501', '2', 'Iva Retenido Regimen Simplificado', '5', 'C', 0, 1, 0, 0, 1, '244005', NULL, 0, 0, 0, NULL, NULL),
+(876, '244010', '2', 'Impuesto A Las Ventas Por Pagar ', '4', 'C', 0, 0, 0, 0, 0, '2440', NULL, 0, 0, 0, NULL, NULL),
+(877, '24401001', '2', 'Impoventas - Arriendo ', '5', 'C', 0, 1, 0, 0, 1, '244010', NULL, 0, 0, 0, NULL, NULL),
+(878, '244015', '2', 'Industria Y Comercio ', '4', 'C', 0, 0, 0, 0, 0, '2440', NULL, 0, 0, 0, NULL, NULL),
+(879, '24401501', '2', 'Secretaria De Hacienda Distrital', '5', 'C', 0, 1, 0, 0, 1, '244015', NULL, 0, 0, 0, NULL, NULL),
+(880, '2445', '2', 'Valores Por Reintegrar ', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(881, '244505', '2', 'Salarios Por Pagar', '4', 'C', 0, 0, 0, 0, 0, '2445', NULL, 0, 0, 0, NULL, NULL),
+(882, '24450501', '2', 'Retefuente Salarios', '5', 'C', 0, 1, 0, 0, 1, '244505', NULL, 0, 0, 0, NULL, NULL),
+(883, '244510', '2', 'Mayor Descuento', '4', 'C', 0, 0, 0, 0, 0, '2445', NULL, 0, 0, 0, NULL, NULL),
+(884, '24451001', '2', 'Valores Por Reintegrar Mayor Descuento ', '5', 'C', 0, 1, 0, 0, 1, '244510', NULL, 0, 0, 0, NULL, NULL),
+(885, '244515', '2', 'Mayor Valor Descontado Olivos', '4', 'C', 0, 0, 0, 0, 0, '2445', NULL, 0, 0, 0, NULL, NULL),
+(886, '24451501', '2', 'Mayor Valor Descontado Olivos', '5', 'C', 0, 1, 0, 0, 1, '244515', NULL, 0, 0, 0, NULL, NULL),
+(887, '244520', '2', 'Comisiones', '4', 'C', 0, 0, 0, 0, 0, '2445', NULL, 0, 0, 0, NULL, NULL),
+(888, '24452001', '2', 'Comisiones', '5', 'C', 0, 1, 0, 0, 1, '244520', NULL, 0, 0, 0, NULL, NULL),
+(889, '244530', '2', 'Arrendamientos', '4', 'C', 0, 0, 0, 0, 0, '2445', NULL, 0, 0, 0, NULL, NULL),
+(890, '24453001', '2', 'Arrendamientos', '5', 'C', 0, 1, 0, 0, 1, '244530', NULL, 0, 0, 0, NULL, NULL),
+(891, '244580', '2', 'Retencion De Iva', '4', 'C', 0, 0, 0, 0, 0, '2445', NULL, 0, 0, 0, NULL, NULL),
+(892, '24458001', '2', 'Retencion De Iva Regimen Simplificado', '5', 'C', 0, 1, 0, 0, 1, '244580', NULL, 0, 0, 0, NULL, NULL),
+(893, '244595', '2', 'Otros ', '4', 'C', 0, 0, 0, 0, 0, '2445', NULL, 0, 0, 0, NULL, NULL),
+(894, '24459501', '2', 'Aseguradora Solidaria Olivos', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(895, '24459502', '2', 'Tovar Marco Tulio', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(896, '24459503', '2', 'Hernandez Edgar', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(897, '24459504', '2', 'Molina Luz Enith', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(898, '24459505', '2', 'Cooperativa Correr', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL);
+INSERT INTO `pucs` (`id`, `puc`, `grupo`, `descripcion`, `nivel`, `naturaleza`, `mayor_rep`, `movimiento`, `subcentro`, `bancaria`, `tercero`, `puc_padre`, `pucs_id`, `base_gravable`, `mueve_modulo`, `codigo_dian`, `created_at`, `updated_at`) VALUES
+(899, '24459506', '2', 'Luz Aida Molina Osorio', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(900, '24459507', '2', 'Cuentas Por Pagar Devoluciones De Aportes ', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(901, '24459508', '2', 'Mosquera Gustavo', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(902, '24459509', '2', 'Ctas Por Pagar Danilo Salazar', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(903, '24459510', '2', 'Ctas X Pagar Alexander Ramirez', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(904, '24459511', '2', 'Ctas X Pagar Ana Beiba Molina Osorio', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(905, '24459512', '2', 'Ctas X Pagar Sosa Sierra Yolanda', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(906, '24459513', '2', 'Ctas X Pagar  Portela Ramiro', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(907, '24459514', '2', 'Transporte Paseo Luz Stella Gomez', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(908, '24459515', '2', 'Ctas X Pagar Martha Gomez Orozco', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(909, '24459516', '2', 'Cxp Dora Ines Mayorga De Manrique', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(910, '24459517', '2', 'Coopserfun', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(911, '24459518', '2', 'Jhon Molina-Mantenimiento Cabanas', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(912, '24459519', '2', 'Elias Acosta Castillo', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(913, '24459520', '2', 'Jesus Antonio Perez', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(914, '24459521', '2', 'Josefina Morantes De Leiva', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(915, '24459522', '2', 'Carmen Julia Ruiz Carrillo', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(916, '24459523', '2', 'Israel Lozano Forero', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(917, '24459524', '2', 'Miguel Angel Perez Rodriguez', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(918, '24459525', '2', 'Miguel Baron Rodriguez', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(919, '24459526', '2', 'Doris Suarez Cuevas', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(920, '24459527', '2', 'Robinson Yepes Molina', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(921, '24459528', '2', 'Allianz Seguros', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(922, '24459529', '2', 'Partidas Conciliatorias', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(923, '24459530', '2', 'Suarez Luis Alfonso', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(924, '24459531', '2', 'Ramirez Luis Javier', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(925, '24459532', '2', 'Emermedica', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(926, '24459533', '2', 'Torres Oswaldo', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(927, '24459534', '2', 'Bancolombia Bta', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(928, '24459535', '2', 'Bancolombia Girardot', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(929, '24459536', '2', 'Banco De Bogota', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(930, '24459537', '2', 'Millan Camacho Jose Fernando', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(931, '24459538', '2', 'Morantes De Leiva Josefina', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(932, '24459539', '2', 'Malaver Rocha Edison Javier', '5', 'C', 0, 1, 0, 0, 1, '244595', NULL, 0, 0, 0, NULL, NULL),
+(933, '2447', '2', 'Impuesto A La Ventas Retenido ', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(934, '244700', '2', 'Impuesto A Las Ventas Retenido', '4', 'C', 0, 1, 0, 0, 1, '2447', NULL, 0, 0, 0, NULL, NULL),
+(935, '2449', '2', 'Rtefte Impto Cree', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(936, '244980', '2', 'Retencion Impuesto Cree', '4', 'C', 0, 0, 0, 0, 0, '2449', NULL, 0, 0, 0, NULL, NULL),
+(937, '24498001', '2', 'Rtefte Impto Cree 030%', '5', 'C', 0, 1, 0, 0, 1, '244980', NULL, 0, 0, 0, NULL, NULL),
+(938, '24498002', '2', 'Rtefte Impto Cree 060%', '5', 'C', 0, 1, 0, 0, 1, '244980', NULL, 0, 0, 0, NULL, NULL),
+(939, '24498003', '2', 'Rtefte Impto Cree 150%', '5', 'C', 0, 1, 0, 0, 1, '244980', NULL, 0, 0, 0, NULL, NULL),
+(940, '2450', '2', 'Retenciones Y Aportes De Nomina', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(941, '245005', '2', 'Aportes A Bienestar Promotoras De Salud Eps', '4', 'C', 0, 0, 0, 0, 0, '2450', NULL, 0, 0, 0, NULL, NULL),
+(942, '24500501', '2', 'Iss', '5', 'C', 0, 1, 0, 0, 1, '245005', NULL, 0, 0, 0, NULL, NULL),
+(943, '24500502', '2', 'Famisanar', '5', 'C', 0, 1, 0, 0, 1, '245005', NULL, 0, 0, 0, NULL, NULL),
+(944, '24500503', '2', 'Saludcoop', '5', 'C', 0, 1, 0, 0, 1, '245005', NULL, 0, 0, 0, NULL, NULL),
+(945, '24500504', '2', 'Eps Sura', '5', 'C', 0, 1, 0, 0, 0, '245005', NULL, 0, 0, 0, NULL, NULL),
+(946, '24500505', '2', 'Salud Total', '5', 'C', 0, 1, 0, 0, 0, '245005', NULL, 0, 0, 0, NULL, NULL),
+(947, '245010', '2', 'Aportes A Bienestar  Promotoras De Pension', '4', 'C', 0, 0, 0, 0, 0, '2450', NULL, 0, 0, 0, NULL, NULL),
+(948, '24501001', '2', 'Iss', '5', 'C', 0, 1, 0, 0, 1, '245010', NULL, 0, 0, 0, NULL, NULL),
+(949, '24501002', '2', 'Proteccion', '5', 'C', 0, 1, 0, 0, 1, '245010', NULL, 0, 0, 0, NULL, NULL),
+(950, '24501003', '2', 'Colpensiones', '5', 'C', 0, 1, 0, 0, 0, '245010', NULL, 0, 0, 0, NULL, NULL),
+(951, '24501004', '2', 'Porvenir', '5', 'C', 0, 1, 0, 0, 0, '245010', NULL, 0, 0, 0, NULL, NULL),
+(952, '245015', '2', 'Aportes Riesgos Profesionales Arp', '4', 'C', 0, 0, 0, 0, 0, '2450', NULL, 0, 0, 0, NULL, NULL),
+(953, '24501501', '2', 'Aportes Arp-Iss', '5', 'C', 0, 1, 0, 0, 1, '245015', NULL, 0, 0, 0, NULL, NULL),
+(954, '245020', '2', 'Aportes Al Icbf', '4', 'C', 0, 0, 0, 0, 0, '2450', NULL, 0, 0, 0, NULL, NULL),
+(955, '24502001', '2', 'Caja De Compensacion-Sena-Icbf', '5', 'C', 0, 1, 0, 0, 1, '245020', NULL, 0, 0, 0, NULL, NULL),
+(956, '2465', '2', 'Remanentes Por Pagar', '3', 'C', 1, 0, 0, 0, 0, '24', NULL, 0, 0, 0, NULL, NULL),
+(957, '246505', '2', 'De Aportes  Exasociados', '4', 'C', 0, 0, 0, 0, 0, '2465', NULL, 0, 0, 0, NULL, NULL),
+(958, '24650501', '2', 'Aportes-Ahorros Exasociados(Cruce Ctas)', '5', 'C', 0, 1, 0, 0, 1, '246505', NULL, 0, 0, 0, NULL, NULL),
+(959, '246510', '2', 'De Depositos Exasociados', '4', 'C', 0, 0, 0, 0, 0, '2465', NULL, 0, 0, 0, NULL, NULL),
+(960, '24651001', '2', 'Depositos Exasociados', '5', 'C', 0, 1, 0, 0, 1, '246510', NULL, 0, 0, 0, NULL, NULL),
+(961, '246515', '2', 'Ahorro-Aportes Sobrantes Devolucion', '4', 'C', 0, 0, 0, 0, 0, '2465', NULL, 0, 0, 0, NULL, NULL),
+(962, '24651501', '2', 'Ahorro-Aportes Sobrantes Devolucion', '5', 'C', 0, 1, 0, 0, 1, '246515', NULL, 0, 0, 0, NULL, NULL),
+(963, '25', '2', 'Impuestos Gravamenes Y Tasas ', '2', 'C', 0, 0, 0, 0, 0, '2', NULL, 0, 0, 0, NULL, NULL),
+(964, '2595', '2', 'Otros', '3', 'C', 1, 0, 0, 0, 0, '25', NULL, 0, 0, 0, NULL, NULL),
+(965, '259502', '2', 'Impuesto Al Consumo', '4', 'C', 0, 1, 0, 0, 1, '2595', NULL, 0, 0, 0, NULL, NULL),
+(966, '26', '2', 'Fondos Sociales ', '2', 'C', 0, 0, 0, 0, 0, '2', NULL, 0, 0, 0, NULL, NULL),
+(967, '2605', '2', 'Fondo Social De Educacion', '3', 'C', 1, 0, 0, 0, 0, '26', NULL, 0, 0, 0, NULL, NULL),
+(968, '260505', '2', 'Fondo Socail De Educacion ', '4', 'C', 0, 0, 0, 0, 0, '2605', NULL, 0, 0, 0, NULL, NULL),
+(969, '26050501', '2', 'Fondo Para Educacion ', '5', 'C', 0, 1, 0, 0, 1, '260505', NULL, 0, 0, 0, NULL, NULL),
+(970, '2610', '2', 'Fondo Social De  Solidaridad', '3', 'C', 1, 0, 0, 0, 0, '26', NULL, 0, 0, 0, NULL, NULL),
+(971, '261005', '2', 'Fondo Social De Solidaridad', '4', 'C', 0, 0, 0, 0, 0, '2610', NULL, 0, 0, 0, NULL, NULL),
+(972, '26100501', '2', 'Fondo Social De Solidaridad', '5', 'C', 0, 1, 0, 0, 1, '261005', NULL, 0, 0, 0, NULL, NULL),
+(973, '2615', '2', 'Fondo Bienestar Social  Social', '3', 'C', 1, 0, 0, 0, 0, '26', NULL, 0, 0, 0, NULL, NULL),
+(974, '261505', '2', 'Fondo Bienestar Social', '4', 'C', 0, 0, 0, 0, 0, '2615', NULL, 0, 0, 0, NULL, NULL),
+(975, '26150501', '2', 'Fondo Bienestar Social', '5', 'C', 0, 1, 0, 0, 1, '261505', NULL, 0, 0, 0, NULL, NULL),
+(976, '2620', '2', 'Fondos Para Imprevistos', '3', 'C', 1, 0, 0, 0, 0, '26', NULL, 0, 0, 0, NULL, NULL),
+(977, '262005', '2', 'Otras', '4', 'C', 0, 0, 0, 0, 0, '2620', NULL, 0, 0, 0, NULL, NULL),
+(978, '26200501', '2', ' Fondo Imprevistos-Seguro Robo', '5', 'C', 0, 1, 0, 0, 1, '262005', NULL, 0, 0, 0, NULL, NULL),
+(979, '2625', '2', 'Fondo De Bienestar  Social', '3', 'C', 1, 0, 0, 0, 0, '26', NULL, 0, 0, 0, NULL, NULL),
+(980, '262505', '2', 'Otras', '4', 'C', 0, 0, 0, 0, 0, '2625', NULL, 0, 0, 0, NULL, NULL),
+(981, '26250501', '2', 'Fondo Para Bienestar Social', '5', 'C', 0, 1, 0, 0, 1, '262505', NULL, 0, 0, 0, NULL, NULL),
+(982, '2648', '2', 'Fondo Social Para Otros Fines', '3', 'C', 1, 0, 0, 0, 0, '26', NULL, 0, 0, 0, NULL, NULL),
+(983, '264805', '2', 'Otras', '4', 'C', 0, 0, 0, 0, 0, '2648', NULL, 0, 0, 0, NULL, NULL),
+(984, '26480501', '2', 'Fondo Para Otros Fines Especificos', '5', 'C', 0, 1, 0, 0, 1, '264805', NULL, 0, 0, 0, NULL, NULL),
+(985, '2652', '2', 'Fondo Desarrollo Empresarial', '3', 'C', 1, 0, 0, 0, 0, '26', NULL, 0, 0, 0, NULL, NULL),
+(986, '265205', '2', 'Fondo Desarrollo Empresarial', '4', 'C', 0, 0, 0, 0, 0, '2652', NULL, 0, 0, 0, NULL, NULL),
+(987, '26520501', '2', 'Fondo Desarrollo Empresarial', '5', 'C', 0, 1, 0, 0, 1, '265205', NULL, 0, 0, 0, NULL, NULL),
+(988, '2655', '2', 'Fondo Mutual De Prevision', '3', 'C', 1, 0, 0, 0, 0, '26', NULL, 0, 0, 0, NULL, NULL),
+(989, '265505', '2', 'Fondo Mutual De Previsi½N ', '4', 'C', 0, 0, 0, 0, 0, '2655', NULL, 0, 0, 0, NULL, NULL),
+(990, '26550501', '2', 'Seguro Cartera Vida', '5', 'C', 0, 1, 0, 0, 1, '265505', NULL, 0, 0, 0, NULL, NULL),
+(991, '26550502', '2', 'Fondo Mutual De Proteccion Solidaria', '5', 'C', 0, 1, 0, 0, 1, '265505', NULL, 0, 0, 0, NULL, NULL),
+(992, '27', '2', 'Otros Pasivos', '2', 'C', 0, 0, 0, 0, 0, '2', NULL, 0, 0, 0, NULL, NULL),
+(993, '2710', '2', 'Obligaciones Laborales', '3', 'C', 1, 0, 0, 0, 0, '27', NULL, 0, 0, 0, NULL, NULL),
+(994, '271005', '2', 'Beneficios A Empleados', '4', 'C', 0, 0, 0, 0, 0, '2710', NULL, 0, 0, 0, NULL, NULL),
+(995, '27100501', '2', 'Cesantias', '5', 'C', 0, 1, 0, 0, 1, '271005', NULL, 0, 0, 0, NULL, NULL),
+(996, '27100502', '2', 'Interes', '5', 'C', 0, 1, 0, 0, 1, '271005', NULL, 0, 0, 0, NULL, NULL),
+(997, '27100503', '2', 'Primas', '5', 'C', 0, 1, 0, 0, 1, '271005', NULL, 0, 0, 0, NULL, NULL),
+(998, '27100504', '2', 'Vacaciones', '5', 'C', 0, 1, 0, 0, 1, '271005', NULL, 0, 0, 0, NULL, NULL),
+(999, '271010', '2', 'Cesantias Consolidadas', '4', 'C', 0, 0, 0, 0, 0, '2710', NULL, 0, 0, 0, NULL, NULL),
+(1000, '27101001', '2', 'Sosa Yolanda', '5', 'C', 0, 1, 0, 0, 1, '271010', NULL, 0, 0, 0, NULL, NULL),
+(1001, '27101002', '2', 'Mosquera Gustavo', '5', 'C', 0, 1, 0, 0, 1, '271010', NULL, 0, 0, 0, NULL, NULL),
+(1002, '27101003', '2', 'Rodriguez Pena Alfonso', '5', 'C', 0, 1, 0, 0, 1, '271010', NULL, 0, 0, 0, NULL, NULL),
+(1003, '27101004', '2', 'Bejarano Wallens Jairo', '5', 'C', 0, 1, 0, 0, 1, '271010', NULL, 0, 0, 0, NULL, NULL),
+(1004, '271015', '2', 'Interes Sobre Cesantia', '4', 'C', 0, 0, 0, 0, 0, '2710', NULL, 0, 0, 0, NULL, NULL),
+(1005, '27101501', '2', 'Sosa Yolanda', '5', 'C', 0, 1, 0, 0, 1, '271015', NULL, 0, 0, 0, NULL, NULL),
+(1006, '27101502', '2', 'Mosquera Gustavo', '5', 'C', 0, 1, 0, 0, 1, '271015', NULL, 0, 0, 0, NULL, NULL),
+(1007, '27101503', '2', 'Rodriguez Pena Alfonso', '5', 'C', 0, 1, 0, 0, 1, '271015', NULL, 0, 0, 0, NULL, NULL),
+(1008, '27101504', '2', 'Bejarano Wallens Jairo', '5', 'C', 0, 1, 0, 0, 1, '271015', NULL, 0, 0, 0, NULL, NULL),
+(1009, '271025', '2', 'Vacaciones Consolidadas', '4', 'C', 0, 0, 0, 0, 0, '2710', NULL, 0, 0, 0, NULL, NULL),
+(1010, '27102501', '2', 'Sosa Yolanda', '5', 'C', 0, 1, 0, 0, 1, '271025', NULL, 0, 0, 0, NULL, NULL),
+(1011, '27102502', '2', 'Ramirez Alexander', '5', 'C', 0, 1, 0, 0, 1, '271025', NULL, 0, 0, 0, NULL, NULL),
+(1012, '27102503', '2', 'Rodriguez Alfonso', '5', 'C', 0, 1, 0, 0, 1, '271025', NULL, 0, 0, 0, NULL, NULL),
+(1013, '27102504', '2', 'Bejarano Wallens Jairo', '5', 'C', 0, 1, 0, 0, 1, '271025', NULL, 0, 0, 0, NULL, NULL),
+(1014, '27102505', '2', 'Mosquera Gustavo', '5', 'C', 0, 1, 0, 0, 1, '271025', NULL, 0, 0, 0, NULL, NULL),
+(1015, '2725', '2', 'Ingresos Anticipados', '3', 'C', 1, 0, 0, 0, 0, '27', NULL, 0, 0, 0, NULL, NULL),
+(1016, '272505', '2', 'Intereses', '4', 'C', 0, 0, 0, 0, 0, '2725', NULL, 0, 0, 0, NULL, NULL),
+(1017, '27250501', '2', 'Intereses', '5', 'C', 0, 1, 0, 0, 1, '272505', NULL, 0, 0, 0, NULL, NULL),
+(1018, '272515', '2', 'Arrendamientos', '4', 'C', 0, 0, 0, 0, 0, '2725', NULL, 0, 0, 0, NULL, NULL),
+(1019, '27251501', '2', 'Arriendos Ana B Molina Osorio', '5', 'C', 0, 1, 0, 0, 1, '272515', NULL, 0, 0, 0, NULL, NULL),
+(1020, '2730', '2', 'Pasivos En Negocios Conjuntos ', '3', 'C', 1, 0, 0, 0, 0, '27', NULL, 0, 0, 0, NULL, NULL),
+(1021, '273005', '2', 'Por Venta De Bienes ', '4', 'C', 0, 0, 0, 0, 0, '2730', NULL, 0, 0, 0, NULL, NULL),
+(1022, '27300501', '2', 'Grupo Colcasa', '5', 'C', 0, 1, 0, 0, 1, '273005', NULL, 0, 0, 0, NULL, NULL),
+(1023, '273015', '2', 'Por Venta De Bienes', '4', 'C', 0, 0, 0, 0, 0, '2730', NULL, 0, 0, 0, NULL, NULL),
+(1024, '27301501', '2', 'Grupo Colcasa', '5', 'C', 0, 1, 0, 0, 1, '273015', NULL, 0, 0, 0, NULL, NULL),
+(1025, '2740', '2', 'Ingresos Recibidos Para Terceros', '3', 'C', 1, 0, 0, 0, 0, '27', NULL, 0, 0, 0, NULL, NULL),
+(1026, '274005', '2', 'Ingresos Recibidos Para Terceros', '4', 'C', 0, 0, 0, 0, 0, '2740', NULL, 0, 0, 0, NULL, NULL),
+(1027, '27400501', '2', 'Coopcentral-3043', '5', 'C', 0, 1, 0, 0, 1, '274005', NULL, 0, 0, 0, NULL, NULL),
+(1028, '27400502', '2', 'Coopcentral-3032', '5', 'C', 0, 1, 0, 0, 1, '274005', NULL, 0, 0, 0, NULL, NULL),
+(1029, '27400503', '2', 'Coopcentral-3033', '5', 'C', 0, 1, 0, 0, 1, '274005', NULL, 0, 0, 0, NULL, NULL),
+(1030, '27400504', '2', 'Coopcentral-3037', '5', 'C', 0, 1, 0, 0, 1, '274005', NULL, 0, 0, 0, NULL, NULL),
+(1031, '27400505', '2', 'Coopcentral-3039', '5', 'C', 0, 1, 0, 0, 1, '274005', NULL, 0, 0, 0, NULL, NULL),
+(1032, '27400506', '2', 'Coopcentral-3040', '5', 'C', 0, 1, 0, 0, 1, '274005', NULL, 0, 0, 0, NULL, NULL),
+(1033, '27400507', '2', 'Coopcentral-3041', '5', 'C', 0, 1, 0, 0, 1, '274005', NULL, 0, 0, 0, NULL, NULL),
+(1034, '27400508', '2', 'Coopcentral-3042', '5', 'C', 0, 1, 0, 0, 1, '274005', NULL, 0, 0, 0, NULL, NULL),
+(1035, '27400509', '2', 'Salazar Danilo', '5', 'C', 0, 1, 0, 0, 1, '274005', NULL, 0, 0, 0, NULL, NULL),
+(1036, '27400510', '2', 'Cta Correr', '5', 'C', 0, 1, 0, 0, 1, '274005', NULL, 0, 0, 0, NULL, NULL),
+(1037, '28', '2', 'Pasivos Estimados Y Provisiones ', '2', 'C', 0, 0, 0, 0, 0, '2', NULL, 0, 0, 0, NULL, NULL),
+(1038, '2825', '2', 'Obligaciones Laborales', '3', 'C', 1, 0, 0, 0, 0, '28', NULL, 0, 0, 0, NULL, NULL),
+(1039, '282505', '2', 'Cesantias', '4', 'C', 0, 0, 0, 0, 0, '2825', NULL, 0, 0, 0, NULL, NULL),
+(1040, '28250501', '2', 'Cesantias', '5', 'C', 0, 1, 0, 0, 1, '282505', NULL, 0, 0, 0, NULL, NULL),
+(1041, '282510', '2', 'Intereses Sobre Cesantias', '4', 'C', 0, 0, 0, 0, 0, '2825', NULL, 0, 0, 0, NULL, NULL),
+(1042, '28251001', '2', 'Intereses De Cesantias', '5', 'C', 0, 1, 0, 0, 1, '282510', NULL, 0, 0, 0, NULL, NULL),
+(1043, '282515', '2', 'Vacaciones', '4', 'C', 0, 0, 0, 0, 0, '2825', NULL, 0, 0, 0, NULL, NULL),
+(1044, '28251501', '2', 'Vacaciones', '5', 'C', 0, 1, 0, 0, 1, '282515', NULL, 0, 0, 0, NULL, NULL),
+(1045, '282520', '2', 'Prima Legal', '4', 'C', 0, 0, 0, 0, 0, '2825', NULL, 0, 0, 0, NULL, NULL),
+(1046, '28252001', '2', 'Primas', '5', 'C', 0, 1, 0, 0, 1, '282520', NULL, 0, 0, 0, NULL, NULL),
+(1047, '2835', '2', 'Otras Provisiones ', '3', 'C', 1, 0, 0, 0, 0, '28', NULL, 0, 0, 0, NULL, NULL),
+(1048, '283505', '2', 'Provision Interes Ahorro Permanente ', '4', 'C', 0, 0, 0, 0, 0, '2835', NULL, 0, 0, 0, NULL, NULL),
+(1049, '28350503', '2', 'Provision Interes Ahorro Permanente ', '5', 'C', 0, 1, 0, 0, 1, '283505', NULL, 0, 0, 0, NULL, NULL),
+(1050, '3', '3', 'Patrimonio', '1', 'C', 0, 0, 0, 0, 0, NULL, NULL, 0, 0, 0, NULL, NULL),
+(1051, '31', '3', 'Capital Social', '2', 'C', 0, 0, 0, 0, 0, '3', NULL, 0, 0, 0, NULL, NULL),
+(1052, '3105', '3', 'Aportes Sociales Temporalmente Restringidos', '3', 'C', 1, 0, 0, 0, 0, '31', NULL, 0, 0, 0, NULL, NULL),
+(1053, '310505', '3', 'Aportes Ordinarios ', '4', 'C', 0, 0, 0, 0, 0, '3105', NULL, 0, 0, 0, NULL, NULL),
+(1054, '31050501', '3', 'Aportes Pagados ', '5', 'C', 0, 1, 0, 0, 1, '310505', NULL, 0, 0, 0, NULL, NULL),
+(1055, '31050502', '3', 'Aporte Minimo Irreducible', '5', 'C', 0, 1, 0, 0, 0, '310505', NULL, 0, 0, 0, NULL, NULL),
+(1056, '32', '3', 'Reservas', '2', 'C', 0, 0, 0, 0, 0, '3', NULL, 0, 0, 0, NULL, NULL),
+(1057, '3205', '3', 'Reserva Proteccion Aportes', '3', 'C', 1, 0, 0, 0, 0, '32', NULL, 0, 0, 0, NULL, NULL),
+(1058, '320505', '3', 'Reserva Proteccion Aportes', '4', 'C', 0, 0, 0, 0, 0, '3205', NULL, 0, 0, 0, NULL, NULL),
+(1059, '32050501', '3', 'Reserva Protecci½N Aportes Sociales ', '5', 'C', 0, 1, 0, 0, 1, '320505', NULL, 0, 0, 0, NULL, NULL),
+(1060, '3280', '3', 'Otras Reservas', '3', 'C', 1, 0, 0, 0, 0, '32', NULL, 0, 0, 0, NULL, NULL),
+(1061, '328005', '3', 'Otras Reservas', '4', 'C', 0, 0, 0, 0, 0, '3280', NULL, 0, 0, 0, NULL, NULL),
+(1062, '32800501', '3', 'Otras Reservas', '5', 'C', 0, 1, 0, 0, 1, '328005', NULL, 0, 0, 0, NULL, NULL),
+(1063, '33', '3', 'Fondos De Destinacion Especifica', '2', 'C', 0, 0, 0, 0, 0, '3', NULL, 0, 0, 0, NULL, NULL),
+(1064, '3305', '3', 'Fondo Para Amortizacion De Aportes ', '3', 'C', 1, 0, 0, 0, 0, '33', NULL, 0, 0, 0, NULL, NULL),
+(1065, '330505', '3', 'Fondo Para Amortizacion De Aportes ', '4', 'C', 0, 0, 0, 0, 0, '3305', NULL, 0, 0, 0, NULL, NULL),
+(1066, '33050501', '3', 'Fondo Para Amortizacion De Aportes ', '5', 'C', 0, 1, 0, 0, 1, '330505', NULL, 0, 0, 0, NULL, NULL),
+(1067, '33050502', '3', 'Fondo De Desarrollo Empresarial Solidario ', '5', 'C', 0, 1, 0, 0, 1, '330505', NULL, 0, 0, 0, NULL, NULL),
+(1068, '3310', '3', 'Fondo Para Revalorizacion De Aportes ', '3', 'C', 1, 0, 0, 0, 0, '33', NULL, 0, 0, 0, NULL, NULL),
+(1069, '331005', '3', 'Fondo Para Revalorizacion De Aportes ', '4', 'C', 0, 0, 0, 0, 0, '3310', NULL, 0, 0, 0, NULL, NULL),
+(1070, '33100501', '3', 'Fondo Para Revalorizaci½N De Aportes', '5', 'C', 0, 1, 0, 0, 1, '331005', NULL, 0, 0, 0, NULL, NULL),
+(1071, '3335', '3', 'Fondos De Inversion ', '3', 'C', 1, 0, 0, 0, 0, '33', NULL, 0, 0, 0, NULL, NULL),
+(1072, '333505', '3', 'Fondos De Inversion ', '4', 'C', 0, 0, 0, 0, 0, '3335', NULL, 0, 0, 0, NULL, NULL),
+(1073, '33350501', '3', 'Fondos De Inversion ', '5', 'C', 0, 1, 0, 0, 1, '333505', NULL, 0, 0, 0, NULL, NULL),
+(1074, '3340', '3', 'Fondo De Desarrollo Empresarial Solidario', '3', 'C', 1, 0, 0, 0, 0, '33', NULL, 0, 0, 0, NULL, NULL),
+(1075, '334005', '3', 'Fondo De Desarrollo Empresarial Solidario', '4', 'C', 0, 0, 0, 0, 0, '3340', NULL, 0, 0, 0, NULL, NULL),
+(1076, '33400501', '3', 'Fondo De Desarrollo Empresarial Solidario', '5', 'C', 0, 1, 0, 0, 1, '334005', NULL, 0, 0, 0, NULL, NULL),
+(1077, '3395', '3', 'Otros Fondos ', '3', 'C', 1, 0, 0, 0, 0, '33', NULL, 0, 0, 0, NULL, NULL),
+(1078, '339505', '3', 'Otros Fondos ', '4', 'C', 0, 0, 0, 0, 0, '3395', NULL, 0, 0, 0, NULL, NULL),
+(1079, '33950501', '3', 'Otros Fondos ', '5', 'C', 0, 1, 0, 0, 1, '339505', NULL, 0, 0, 0, NULL, NULL),
+(1080, '35', '3', 'Excedentes Y', '2', 'C', 0, 0, 0, 0, 0, '3', NULL, 0, 0, 0, NULL, NULL),
+(1081, '3505', '3', 'Excedentes Y', '3', 'C', 1, 0, 0, 0, 0, '35', NULL, 0, 0, 0, NULL, NULL),
+(1082, '350505', '3', 'Excedentes', '4', 'C', 0, 0, 0, 0, 0, '3505', NULL, 0, 0, 0, NULL, NULL),
+(1083, '35050501', '3', 'Excedentes Del Ejercicio ', '5', 'C', 0, 1, 0, 0, 1, '350505', NULL, 0, 0, 0, NULL, NULL),
+(1084, '350510', '3', 'Perdidas', '4', 'C', 0, 0, 0, 0, 0, '3505', NULL, 0, 0, 0, NULL, NULL),
+(1085, '35051001', '3', 'Perdidas', '5', 'C', 0, 1, 0, 0, 1, '350510', NULL, 0, 0, 0, NULL, NULL),
+(1086, '36', '3', 'Excedentes Y', '2', 'C', 0, 0, 0, 0, 0, '3', NULL, 0, 0, 0, NULL, NULL),
+(1087, '3605', '3', 'Excedentes Y', '3', 'C', 1, 0, 0, 0, 0, '36', NULL, 0, 0, 0, NULL, NULL),
+(1088, '360505', '3', 'Excedentes', '4', 'C', 0, 0, 0, 0, 0, '3605', NULL, 0, 0, 0, NULL, NULL),
+(1089, '36050501', '3', 'Excedentes ', '5', 'C', 0, 1, 0, 0, 1, '360505', NULL, 0, 0, 0, NULL, NULL),
+(1090, '36050502', '3', 'Procesos Judiciales', '5', 'C', 0, 1, 0, 0, 1, '360505', NULL, 0, 0, 0, NULL, NULL),
+(1091, '4', '4', 'Ingresos', '1', 'C', 0, 0, 0, 0, 0, NULL, NULL, 0, 0, 0, NULL, NULL),
+(1092, '41', '4', 'Ingresos Por Venta De Bienes Y Servicios', '2', 'C', 0, 0, 0, 0, 0, '4', NULL, 0, 0, 0, NULL, NULL),
+(1093, '4140', '4', 'Hoteles Y Restaurantes ', '3', 'C', 1, 0, 0, 0, 0, '41', NULL, 0, 0, 0, NULL, NULL),
+(1094, '414005', '4', 'Colonia Vacacional ', '4', 'C', 0, 0, 0, 0, 0, '4140', NULL, 0, 0, 0, NULL, NULL),
+(1095, '41400501', '4', 'Colonia Vacacional ', '5', 'C', 0, 1, 0, 0, 1, '414005', NULL, 0, 0, 0, NULL, NULL),
+(1096, '4150', '4', 'Ingresos Cartera De Creditos ', '3', 'C', 1, 0, 0, 0, 0, '41', NULL, 0, 0, 0, NULL, NULL),
+(1097, '415005', '4', 'Intereses De Creditos Comerciales', '4', 'C', 0, 0, 0, 0, 0, '4150', NULL, 0, 0, 0, NULL, NULL),
+(1098, '41500501', '4', 'Interes Inversiones Temporales', '5', 'C', 0, 1, 0, 0, 1, '415005', NULL, 0, 0, 0, NULL, NULL),
+(1099, '41500502', '4', 'Interes Fondo De Liquidez', '5', 'C', 0, 1, 0, 0, 1, '415005', NULL, 0, 0, 0, NULL, NULL),
+(1100, '415010', '4', 'Intereses De Credito Consumo ', '4', 'C', 0, 0, 0, 0, 0, '4150', NULL, 0, 0, 0, NULL, NULL),
+(1101, '41501001', '4', 'Intereses Credito Consumo ', '5', 'C', 0, 1, 0, 0, 1, '415010', NULL, 0, 0, 0, NULL, NULL),
+(1102, '41501002', '4', 'Ajuste Saldo Credito Anterior ', '5', 'C', 0, 1, 0, 0, 1, '415010', NULL, 0, 0, 0, NULL, NULL),
+(1103, '41501003', '4', 'Intereses Credito De Consumo -Motos', '5', 'C', 0, 1, 0, 0, 1, '415010', NULL, 0, 0, 0, NULL, NULL),
+(1104, '415011', '4', 'Intereses Creditos Con Periodos De Gracia', '4', 'C', 0, 0, 0, 0, 0, '4150', NULL, 0, 0, 0, NULL, NULL),
+(1105, '41501101', '4', 'Intereses Creditos Con Periodos De Gracia', '5', 'C', 0, 1, 0, 0, 1, '415011', NULL, 0, 0, 0, NULL, NULL),
+(1106, '415060', '4', 'Comisiones- Honorarios', '4', 'C', 0, 0, 0, 0, 0, '4150', NULL, 0, 0, 0, NULL, NULL),
+(1107, '41506001', '4', 'Comisiones- Honorarios', '5', 'C', 0, 1, 0, 0, 1, '415060', NULL, 0, 0, 0, NULL, NULL),
+(1108, '4180', '4', 'Recuperaciones', '3', 'C', 1, 0, 0, 0, 0, '41', NULL, 0, 0, 0, NULL, NULL),
+(1109, '418095', '4', 'Otras Recuperaciones', '4', 'C', 0, 0, 0, 0, 0, '4180', NULL, 0, 0, 0, NULL, NULL),
+(1110, '41809501', '4', 'Otras Recuperaciones-Banco Uconal', '5', 'C', 0, 1, 0, 0, 1, '418095', NULL, 0, 0, 0, NULL, NULL),
+(1111, '41809502', '4', 'Provision Coopcentral', '5', 'C', 0, 1, 0, 0, 1, '418095', NULL, 0, 0, 0, NULL, NULL),
+(1112, '4190', '4', 'Otros Ingresos', '3', 'C', 1, 0, 0, 0, 0, '41', NULL, 0, 0, 0, NULL, NULL),
+(1113, '419090', '4', 'Otros Ingresos', '4', 'C', 0, 0, 0, 0, 0, '4190', NULL, 0, 0, 0, NULL, NULL),
+(1114, '41909001', '4', 'Otros Ingresos', '5', 'C', 0, 1, 0, 0, 1, '419090', NULL, 0, 0, 0, NULL, NULL),
+(1115, '42', '4', 'Otro Ingresos', '2', 'C', 0, 0, 0, 0, 0, '4', NULL, 0, 0, 0, NULL, NULL),
+(1116, '4205', '4', 'Ingresos Por Utilidad En Venta En Bienes', '3', 'C', 1, 0, 0, 0, 0, '42', NULL, 0, 0, 0, NULL, NULL),
+(1117, '420510', '4', 'Inversiones Negociables En Titulos De De', '4', 'C', 0, 0, 0, 0, 0, '4205', NULL, 0, 0, 0, NULL, NULL),
+(1118, '42051001', '4', 'Inversiones Inversiones Temporales', '5', 'C', 0, 1, 0, 0, 0, '420510', NULL, 0, 0, 0, NULL, NULL),
+(1119, '42051002', '4', 'Interes Fondo De Liquidez', '5', 'C', 0, 1, 0, 0, 1, '420510', NULL, 0, 0, 0, NULL, NULL),
+(1120, '420560', '4', 'Propiedad Planta Y Equipo', '4', 'C', 0, 0, 0, 0, 0, '4205', NULL, 0, 0, 0, NULL, NULL),
+(1121, '42056001', '4', 'Grupo Colcasa', '5', 'C', 0, 1, 0, 0, 1, '420560', NULL, 0, 0, 0, NULL, NULL),
+(1122, '4210', '4', 'Ingresos Por Valoracion De Inversiones', '3', 'C', 1, 0, 0, 0, 0, '42', NULL, 0, 0, 0, NULL, NULL),
+(1123, '421015', '4', 'Fondo De Liquidez', '4', 'C', 0, 0, 0, 0, 0, '4210', NULL, 0, 0, 0, NULL, NULL),
+(1124, '42101501', '4', 'Fondo De Liquidez Coopcentral', '5', 'C', 0, 1, 0, 0, 1, '421015', NULL, 0, 0, 0, NULL, NULL),
+(1125, '4215', '4', 'Intereses Por Deudores Por Vta Bienes Y', '3', 'C', 1, 0, 0, 0, 0, '42', NULL, 0, 0, 0, NULL, NULL),
+(1126, '421505', '4', 'Intereses Por Deudores Por Vta De Bienes', '4', 'C', 0, 0, 0, 0, 0, '4215', NULL, 0, 0, 0, NULL, NULL),
+(1127, '42150501', '4', 'Grupo Colcasa', '5', 'C', 0, 1, 0, 0, 1, '421505', NULL, 0, 0, 0, NULL, NULL),
+(1128, '4220', '4', 'Otros Ingresos ', '3', 'C', 1, 0, 0, 0, 0, '42', NULL, 0, 0, 0, NULL, NULL),
+(1129, '422004', '4', 'Intereses De Bancos', '4', 'C', 0, 0, 0, 0, 0, '4220', NULL, 0, 0, 0, NULL, NULL),
+(1130, '42200401', '4', 'Ingresos Financieros', '5', 'C', 0, 1, 0, 0, 1, '422004', NULL, 0, 0, 0, NULL, NULL),
+(1131, '422010', '4', 'Comisiones Y', '4', 'C', 0, 0, 0, 0, 0, '4220', NULL, 0, 0, 0, NULL, NULL),
+(1132, '42201001', '4', 'Aprovechamientos ', '5', 'C', 0, 1, 0, 0, 1, '422010', NULL, 0, 0, 0, NULL, NULL),
+(1133, '42201002', '4', 'Dividendos Colpatria', '5', 'C', 0, 1, 0, 0, 1, '422010', NULL, 0, 0, 0, NULL, NULL),
+(1134, '4225', '4', 'Recuperaciones Deterioro', '3', 'C', 1, 0, 0, 0, 0, '42', NULL, 0, 0, 0, NULL, NULL),
+(1135, '422512', '4', 'De Creditos De Consumo', '4', 'C', 0, 0, 0, 0, 0, '4225', NULL, 0, 0, 0, NULL, NULL),
+(1136, '42251201', '4', 'De Creditos De Consumo', '5', 'C', 0, 1, 0, 0, 1, '422512', NULL, 0, 0, 0, NULL, NULL),
+(1137, '422513', '4', 'De Intereses Creditos De Consumo', '4', 'C', 0, 0, 0, 0, 0, '4225', NULL, 0, 0, 0, NULL, NULL),
+(1138, '42251301', '4', 'De Intereses Creditos De Consumo', '5', 'C', 0, 1, 0, 0, 1, '422513', NULL, 0, 0, 0, NULL, NULL),
+(1139, '422524', '4', 'De Deterioro General', '4', 'C', 0, 0, 0, 0, 0, '4225', NULL, 0, 0, 0, NULL, NULL),
+(1140, '42252401', '4', 'De Deterioro General', '5', 'C', 0, 1, 0, 0, 1, '422524', NULL, 0, 0, 0, NULL, NULL),
+(1141, '422540', '4', 'De Otras Cuentas Por Cobrar', '4', 'C', 0, 0, 0, 0, 0, '4225', NULL, 0, 0, 0, NULL, NULL),
+(1142, '42254001', '4', 'De Otras Cuentas Por Cobrar', '5', 'C', 0, 1, 0, 0, 1, '422540', NULL, 0, 0, 0, NULL, NULL),
+(1143, '422548', '4', 'Inversiones Contabilizadas A Valor Razonable', '4', 'C', 0, 0, 0, 0, 0, '4225', NULL, 0, 0, 0, NULL, NULL),
+(1144, '42254801', '4', 'Inversiones Contabilizadas A Valor Razonable', '5', 'C', 0, 1, 0, 0, 1, '422548', NULL, 0, 0, 0, NULL, NULL),
+(1145, '4230', '4', 'Administrativos Y Sociales ', '3', 'C', 1, 0, 0, 0, 0, '42', NULL, 0, 0, 0, NULL, NULL),
+(1146, '423010', '4', 'Cuotas De Administracion Y Sostenimiento ', '4', 'C', 0, 0, 0, 0, 0, '4230', NULL, 0, 0, 0, NULL, NULL),
+(1147, '42301001', '4', 'Fondo Solidaridad', '5', 'C', 0, 1, 0, 0, 1, '423010', NULL, 0, 0, 0, NULL, NULL),
+(1148, '42301002', '4', 'Cuotas De Administracion', '5', 'C', 0, 1, 0, 0, 1, '423010', NULL, 0, 0, 0, NULL, NULL),
+(1149, '4240', '4', 'Otros Ingresos Administrativos', '3', 'C', 1, 0, 0, 0, 0, '42', NULL, 0, 0, 0, NULL, NULL),
+(1150, '424055', '4', 'Por Contratos', '4', 'C', 0, 0, 0, 0, 0, '4240', NULL, 0, 0, 0, NULL, NULL),
+(1151, '42405501', '4', 'Danilo Salazar', '5', 'C', 0, 1, 0, 0, 1, '424055', NULL, 0, 0, 0, NULL, NULL),
+(1152, '42405502', '4', 'Molina Osorio Ana Beiba', '5', 'C', 0, 1, 0, 0, 1, '424055', NULL, 0, 0, 0, NULL, NULL),
+(1153, '42405503', '4', 'Suarez Cuevas Doris', '5', 'C', 0, 1, 0, 0, 1, '424055', NULL, 0, 0, 0, NULL, NULL),
+(1154, '42405504', '4', 'Miguel Angel Perez Rodriguez', '5', 'C', 0, 1, 0, 0, 1, '424055', NULL, 0, 0, 0, NULL, NULL),
+(1155, '42405505', '4', 'Yepes Molina Robinson', '5', 'C', 0, 1, 0, 0, 1, '424055', NULL, 0, 0, 0, NULL, NULL),
+(1156, '42405506', '4', 'Dormilandia Ltda', '5', 'C', 0, 1, 0, 0, 1, '424055', NULL, 0, 0, 0, NULL, NULL),
+(1157, '42405507', '4', 'Grupo Colcasa', '5', 'C', 0, 1, 0, 0, 1, '424055', NULL, 0, 0, 0, NULL, NULL),
+(1158, '42405508', '4', 'Galindo Jesus', '5', 'C', 0, 1, 0, 0, 1, '424055', NULL, 0, 0, 0, NULL, NULL),
+(1159, '4250', '4', 'Reintegro Provision Cxc', '3', 'C', 1, 0, 0, 0, 0, '42', NULL, 0, 0, 0, NULL, NULL),
+(1160, '425035', '4', 'Reintegro Provision Inversiones', '4', 'C', 0, 0, 0, 0, 0, '4250', NULL, 0, 0, 0, NULL, NULL),
+(1161, '42503501', '4', 'Provision Reintegro Inversiones', '5', 'C', 0, 1, 0, 0, 1, '425035', NULL, 0, 0, 0, NULL, NULL),
+(1162, '425036', '4', 'Reintegro Provision Cartera', '4', 'C', 0, 0, 0, 0, 0, '4250', NULL, 0, 0, 0, NULL, NULL),
+(1163, '42503601', '4', 'Reintegro Provision Cartera', '5', 'C', 0, 1, 0, 0, 1, '425036', NULL, 0, 0, 0, NULL, NULL),
+(1164, '425037', '4', 'Reintegro Provision Cxc', '4', 'C', 0, 0, 0, 0, 0, '4250', NULL, 0, 0, 0, NULL, NULL),
+(1165, '42503701', '4', 'Reintegro Provision Cxc', '5', 'C', 0, 1, 0, 0, 1, '425037', NULL, 0, 0, 0, NULL, NULL),
+(1166, '43', '4', 'Recuperaciones', '2', 'C', 0, 0, 0, 0, 0, '4', NULL, 0, 0, 0, NULL, NULL),
+(1167, '4305', '4', 'Recuperaciones', '3', 'C', 1, 0, 0, 0, 0, '43', NULL, 0, 0, 0, NULL, NULL),
+(1168, '430500', '4', 'Recuperaciones Ejercicios Anteriores', '4', 'C', 0, 1, 0, 0, 1, '4305', NULL, 0, 0, 0, NULL, NULL),
+(1169, '5', '5', 'Gastos', '1', 'D', 0, 0, 0, 0, 0, NULL, NULL, 0, 0, 0, NULL, NULL),
+(1170, '51', '5', 'Gastos De Administracion', '2', 'D', 0, 0, 0, 0, 0, '5', NULL, 0, 0, 0, NULL, NULL),
+(1171, '5105', '5', 'Gastos De Personal', '3', 'D', 1, 0, 0, 0, 0, '51', NULL, 0, 0, 0, NULL, NULL),
+(1172, '510503', '5', 'Sueldos', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1173, '51050301', '5', 'Sueldos Nomina Fondep', '5', 'D', 0, 1, 0, 0, 1, '510503', NULL, 0, 0, 0, NULL, NULL),
+(1174, '510506', '5', 'Sueldos', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1175, '51050601', '5', 'Gastos Nomina Fondep', '5', 'D', 0, 1, 0, 0, 1, '510506', NULL, 0, 0, 0, NULL, NULL),
+(1176, '510509', '5', 'Auxilio De Trasporte', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1177, '51050901', '5', 'Auxilio  De Trasporte', '5', 'D', 0, 1, 0, 0, 1, '510509', NULL, 0, 0, 0, NULL, NULL),
+(1178, '510510', '5', 'Cesantias', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1179, '51051001', '5', 'Cesantias', '5', 'D', 0, 1, 0, 0, 1, '510510', NULL, 0, 0, 0, NULL, NULL),
+(1180, '510511', '5', 'Interes Sobre Cesantias', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1181, '51051101', '5', 'Intereses Sobre Cesantis', '5', 'D', 0, 1, 0, 0, 1, '510511', NULL, 0, 0, 0, NULL, NULL),
+(1182, '510512', '5', 'Prima Legal', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1183, '51051201', '5', 'Prima Legal', '5', 'D', 0, 1, 0, 0, 1, '510512', NULL, 0, 0, 0, NULL, NULL),
+(1184, '510516', '5', 'Vacaciones', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1185, '51051601', '5', 'Vacaciones', '5', 'D', 0, 1, 0, 0, 1, '510516', NULL, 0, 0, 0, NULL, NULL),
+(1186, '510521', '5', 'Dotacion A Trabajadores', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1187, '51052101', '5', 'Arturo Calle', '5', 'D', 0, 1, 0, 0, 1, '510521', NULL, 0, 0, 0, NULL, NULL),
+(1188, '510523', '5', 'Aportes Salud', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1189, '51052301', '5', 'Iss', '5', 'D', 0, 1, 0, 0, 1, '510523', NULL, 0, 0, 0, NULL, NULL),
+(1190, '51052302', '5', 'Eps Sura', '5', 'D', 0, 1, 0, 0, 1, '510523', NULL, 0, 0, 0, NULL, NULL),
+(1191, '51052303', '5', 'Eps Salud Total', '5', 'D', 0, 1, 0, 0, 1, '510523', NULL, 0, 0, 0, NULL, NULL),
+(1192, '510524', '5', 'Aportes Pension', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1193, '51052401', '5', 'Colpensiones', '5', 'D', 0, 1, 0, 0, 1, '510524', NULL, 0, 0, 0, NULL, NULL),
+(1194, '510525', '5', 'Aportes Arl', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1195, '51052501', '5', 'Arl Sura', '5', 'D', 0, 1, 0, 0, 1, '510525', NULL, 0, 0, 0, NULL, NULL),
+(1196, '510526', '5', 'Aportes Cajas De Compensacion Familiar', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1197, '51052601', '5', 'Aportes Cajas De Compensacion Familiar', '5', 'D', 0, 1, 0, 0, 1, '510526', NULL, 0, 0, 0, NULL, NULL),
+(1198, '510527', '5', 'Aportes Icbf', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1199, '51052701', '5', 'Aportes Icbf', '5', 'D', 0, 1, 0, 0, 1, '510527', NULL, 0, 0, 0, NULL, NULL),
+(1200, '510528', '5', 'Aportes Sena', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1201, '51052801', '5', 'Aportes Sena', '5', 'D', 0, 1, 0, 0, 1, '510528', NULL, 0, 0, 0, NULL, NULL),
+(1202, '510530', '5', 'Cesantias', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1203, '51053001', '5', 'Cesantias', '5', 'D', 0, 1, 0, 0, 1, '510530', NULL, 0, 0, 0, NULL, NULL),
+(1204, '510533', '5', 'Intereses Sobre Cesantias', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1205, '51053301', '5', 'Intereses De Cesantias', '5', 'D', 0, 1, 0, 0, 1, '510533', NULL, 0, 0, 0, NULL, NULL),
+(1206, '510536', '5', 'Prima De Servicios', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1207, '51053601', '5', 'Prima Legal', '5', 'D', 0, 1, 0, 0, 1, '510536', NULL, 0, 0, 0, NULL, NULL),
+(1208, '510539', '5', 'Vacaciones', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1209, '51053901', '5', 'Vacaciones', '5', 'D', 0, 1, 0, 0, 1, '510539', NULL, 0, 0, 0, NULL, NULL),
+(1210, '510548', '5', 'Bonificaciones', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1211, '51054801', '5', 'Bonificaciones', '5', 'D', 0, 1, 0, 0, 1, '510548', NULL, 0, 0, 0, NULL, NULL),
+(1212, '510569', '5', 'Aportes Salud', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1213, '51056901', '5', 'Iss', '5', 'D', 0, 1, 0, 0, 1, '510569', NULL, 0, 0, 0, NULL, NULL),
+(1214, '51056902', '5', 'Famisanar', '5', 'D', 0, 1, 0, 0, 1, '510569', NULL, 0, 0, 0, NULL, NULL),
+(1215, '51056903', '5', 'Saludcoop', '5', 'D', 0, 1, 0, 0, 1, '510569', NULL, 0, 0, 0, NULL, NULL),
+(1216, '51056970', '5', 'Eps Sura', '5', 'D', 0, 1, 0, 0, 1, '510569', NULL, 0, 0, 0, NULL, NULL),
+(1217, '51056971', '5', 'Eps Salud Total', '5', 'D', 0, 1, 0, 0, 1, '510569', NULL, 0, 0, 0, NULL, NULL),
+(1218, '510570', '5', 'Aportes Pension', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1219, '51057001', '5', 'Iss', '5', 'D', 0, 1, 0, 0, 1, '510570', NULL, 0, 0, 0, NULL, NULL),
+(1220, '51057002', '5', 'Proteccion', '5', 'D', 0, 1, 0, 0, 1, '510570', NULL, 0, 0, 0, NULL, NULL),
+(1221, '51057003', '5', 'Porvenir', '5', 'D', 0, 1, 0, 0, 1, '510570', NULL, 0, 0, 0, NULL, NULL),
+(1222, '51057004', '5', 'Colpensiones', '5', 'D', 0, 1, 0, 0, 1, '510570', NULL, 0, 0, 0, NULL, NULL),
+(1223, '510571', '5', 'Aportes Arp', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1224, '51057101', '5', 'Iss', '5', 'D', 0, 1, 0, 0, 1, '510571', NULL, 0, 0, 0, NULL, NULL),
+(1225, '51057102', '5', 'Arl Sura', '5', 'D', 0, 1, 0, 0, 1, '510571', NULL, 0, 0, 0, NULL, NULL),
+(1226, '510572', '5', 'Aportes Cajas De Compensacion Familiar', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1227, '51057201', '5', 'Aportes Cajas De Compensacion Familiar', '5', 'D', 0, 1, 0, 0, 1, '510572', NULL, 0, 0, 0, NULL, NULL),
+(1228, '510575', '5', 'Aportes Icbf', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1229, '51057501', '5', 'Aportes Icbf', '5', 'D', 0, 1, 0, 0, 1, '510575', NULL, 0, 0, 0, NULL, NULL),
+(1230, '510578', '5', 'Sena', '4', 'D', 0, 0, 0, 0, 0, '5105', NULL, 0, 0, 0, NULL, NULL),
+(1231, '51057801', '5', 'Sena', '5', 'D', 0, 1, 0, 0, 1, '510578', NULL, 0, 0, 0, NULL, NULL),
+(1232, '5110', '5', 'Gastos Generales', '3', 'D', 1, 0, 0, 0, 0, '51', NULL, 0, 0, 0, NULL, NULL),
+(1233, '511001', '5', 'Honorarios', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1234, '51100101', '5', 'Gastos Honorarios ', '5', 'D', 0, 1, 0, 0, 1, '511001', NULL, 0, 0, 0, NULL, NULL),
+(1235, '511002', '5', 'Impuestos', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1236, '51100201', '5', 'Impuestos Ica', '5', 'D', 0, 1, 0, 0, 1, '511002', NULL, 0, 0, 0, NULL, NULL),
+(1237, '51100202', '5', 'Impuesto Predial ', '5', 'D', 0, 1, 0, 0, 1, '511002', NULL, 0, 0, 0, NULL, NULL),
+(1238, '51100203', '5', 'Otros', '5', 'D', 0, 1, 0, 0, 1, '511002', NULL, 0, 0, 0, NULL, NULL),
+(1239, '51100204', '5', 'Impuestos- Sayco', '5', 'D', 0, 1, 0, 0, 1, '511002', NULL, 0, 0, 0, NULL, NULL),
+(1240, '51100205', '5', 'Car-Cundinamarca', '5', 'D', 0, 1, 0, 0, 1, '511002', NULL, 0, 0, 0, NULL, NULL),
+(1241, '51100206', '5', 'Impuesto Predial Casa', '5', 'D', 0, 1, 0, 0, 1, '511002', NULL, 0, 0, 0, NULL, NULL),
+(1242, '511003', '5', 'Arrendamientos', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1243, '51100301', '5', 'Arrendamientos', '5', 'D', 0, 1, 0, 0, 1, '511003', NULL, 0, 0, 0, NULL, NULL),
+(1244, '51100302', '5', 'Gasdtos  Arrendamientos Colonia', '5', 'D', 0, 1, 0, 0, 1, '511003', NULL, 0, 0, 0, NULL, NULL),
+(1245, '51100303', '5', 'Central Comercializadora De Internet Sas', '5', 'D', 0, 1, 0, 0, 1, '511003', NULL, 0, 0, 0, NULL, NULL),
+(1246, '51100304', '5', 'Red Expertos Ltda', '5', 'D', 0, 1, 0, 0, 1, '511003', NULL, 0, 0, 0, NULL, NULL),
+(1247, '51100305', '5', 'Sociedad De Activos Especiales Sas', '5', 'D', 0, 1, 0, 0, 1, '511003', NULL, 0, 0, 0, NULL, NULL),
+(1248, '51100306', '5', 'Nuva Sas', '5', 'D', 0, 1, 0, 0, 1, '511003', NULL, 0, 0, 0, NULL, NULL),
+(1249, '51100307', '5', 'Alx Digital Nova Sas', '5', 'D', 0, 1, 0, 0, 1, '511003', NULL, 0, 0, 0, NULL, NULL),
+(1250, '511005', '5', 'Seguros', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1251, '51100501', '5', 'Seguros Mapfre', '5', 'D', 0, 1, 0, 0, 1, '511005', NULL, 0, 0, 0, NULL, NULL),
+(1252, '51100502', '5', 'Rojas Helbert', '5', 'D', 0, 1, 0, 0, 1, '511005', NULL, 0, 0, 0, NULL, NULL),
+(1253, '51100503', '5', 'Liberty Seguros Sa', '5', 'D', 0, 1, 0, 0, 1, '511005', NULL, 0, 0, 0, NULL, NULL),
+(1254, '51100504', '5', 'Allianz Seguros', '5', 'D', 0, 1, 0, 0, 1, '511005', NULL, 0, 0, 0, NULL, NULL),
+(1255, '51100505', '5', 'Afiancol Sa', '5', 'D', 0, 1, 0, 0, 1, '511005', NULL, 0, 0, 0, NULL, NULL),
+(1256, '511006', '5', 'Mantenimiento Y Reparaciones', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1257, '51100602', '5', 'Gastos Mantenimiento Colonia Vacacional ', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1258, '51100603', '5', 'Mantenimiento Dinamica Digital', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1259, '51100604', '5', 'Mantenimiento Jose Vargas', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1260, '51100605', '5', 'Mantenimiento Carlos Alberto Lozano', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1261, '51100606', '5', 'Diaz Neme Javier Ramiro ', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1262, '51100607', '5', 'Alejandro Pe¤Uela', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1263, '51100608', '5', 'Gonzalez Jose ', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1264, '51100609', '5', 'Abansys De Colombia', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1265, '51100610', '5', 'Ergooffice Colombia', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1266, '51100611', '5', 'Johny Rolando Sema', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1267, '51100612', '5', 'Martha Chacon', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1268, '51100613', '5', 'Velasquez Gomez Carlos Andres', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1269, '51100614', '5', 'Colombiana De Comercio Sa', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1270, '51100615', '5', 'Avila Arias Mike Santiago', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1271, '51100616', '5', 'Rincon Guerrero Victor Manuel', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1272, '51100617', '5', 'Gerardo Calderon', '5', 'D', 0, 1, 0, 0, 1, '511010', NULL, 0, 0, 0, NULL, NULL),
+(1273, '51100618', '5', 'Edilberto Forero Martinez', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1274, '51100619', '5', 'Silva Gomez Oscar Alberto', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1275, '51100620', '5', 'Gomez Machuca Carlos Mauricio', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1276, '51100621', '5', 'Ramirez Jimenez Fernando', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1277, '51100622', '5', 'Comercializadora Tc Sas', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1278, '51100623', '5', 'Rigueros Cepeda Pedro Alexander', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1279, '51100624', '5', 'Rubio Acero Sandra Milena', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1280, '51100625', '5', 'Torres Barragan Josefina', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1281, '51100626', '5', 'Alx Digital Nova Sas', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1282, '51100627', '5', 'Amazo Arias Jose Eusebio', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1283, '51100628', '5', 'Rubio Acero Ana Yireth', '5', 'D', 0, 1, 0, 0, 1, '511006', NULL, 0, 0, 0, NULL, NULL),
+(1284, '511010', '5', 'Aseo Y Elementos', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1285, '51101001', '5', 'Gastos Aseo Y Elementos ', '5', 'D', 0, 1, 0, 0, 1, '511010', NULL, 0, 0, 0, NULL, NULL),
+(1286, '51101011', '5', 'Johny Rolando Sema', '5', 'D', 0, 1, 0, 0, 1, '511010', NULL, 0, 0, 0, NULL, NULL),
+(1287, '51101012', '5', 'Balor Bogota', '5', 'D', 0, 1, 0, 0, 1, '511010', NULL, 0, 0, 0, NULL, NULL),
+(1288, '51101017', '5', 'Comercializadora Itc Solutions Sas', '5', 'D', 0, 1, 0, 0, 1, '511010', NULL, 0, 0, 0, NULL, NULL),
+(1289, '51101019', '5', 'Silva Gomez Oscar Alberto', '5', 'D', 0, 1, 0, 0, 1, '511010', NULL, 0, 0, 0, NULL, NULL),
+(1290, '51101020', '5', 'Arnulfo Arevalo', '5', 'D', 0, 1, 0, 0, 1, '511010', NULL, 0, 0, 0, NULL, NULL),
+(1291, '51101021', '5', '5 Max Sas', '5', 'D', 0, 1, 0, 0, 1, '511010', NULL, 0, 0, 0, NULL, NULL),
+(1292, '511011', '5', 'Cafeteria', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1293, '51101101', '5', 'Gastos Cafeteria Yolanda Sosa-Caja', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1294, '51101102', '5', 'Bastidas Linares Liliana', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1295, '51101103', '5', 'Manuel Porras', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1296, '51101104', '5', 'Maria Farid Barahona Pardo', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1297, '51101105', '5', 'Ginneth Mercedes Ospino Saavedra', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1298, '51101106', '5', 'Casa De Espa¤A', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1299, '51101107', '5', 'Natalia Porras Martin', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1300, '51101108', '5', 'Arnulfo Arevalo', '5', 'D', 0, 1, 0, 0, 1, '511018', NULL, 0, 0, 0, NULL, NULL),
+(1301, '51101109', '5', 'Qp Surtinegocios Sas', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1302, '51101110', '5', 'Colombiana De Comercio Sa', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1303, '51101111', '5', 'Pricesmart Sas', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1304, '51101112', '5', 'Corredor Rojas Luz Maritza', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1305, '51101113', '5', 'Luz Adriana Rodriguez', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1306, '51101114', '5', 'Nelly De Solina', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1307, '51101115', '5', 'Mil Empaques Bogota Sas', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1308, '51101116', '5', 'Distribuidora Vinos Y Licores Sas', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1309, '51101117', '5', 'Sanabria Casas Alvaro Richard', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1310, '51101118', '5', 'Almacenes Exito', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1311, '51101119', '5', 'Mateus Pineda Pedro', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1312, '51101120', '5', 'Fontalvo Torres Oswel De Jesus', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1313, '51101121', '5', 'Renacense Hbcc Sas', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1314, '51101122', '5', 'Castro Bernal Juan Sebastian', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1315, '51101123', '5', 'M&R Gastronomy Sas', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1316, '51101124', '5', 'Jocamar Sas', '5', 'D', 0, 1, 0, 0, 1, '511011', NULL, 0, 0, 0, NULL, NULL),
+(1317, '511012', '5', 'Servicios Publicos', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1318, '51101201', '5', 'Etb', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1319, '51101202', '5', 'Comcel', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1320, '51101204', '5', 'Empresa Telecomunicaciones-Girardot', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1321, '51101205', '5', 'Empresa De Energia Girardot', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1322, '51101206', '5', 'Gastos Serv Publicos Acueducto', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1323, '51101207', '5', 'Gastos Serv Publicos Energia Codensa ', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1324, '51101208', '5', 'Telecom ', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1325, '51101210', '5', 'Directv', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1326, '51101211', '5', 'Agrogas Sa', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1327, '51101212', '5', 'Avantel', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1328, '51101213', '5', 'Ine Epm ', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1329, '51101214', '5', 'Inversiones Glp Sas  Esp', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1330, '51101215', '5', 'Tigo', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1331, '51101216', '5', 'Vanti Sa Esp', '5', 'D', 0, 1, 0, 0, 1, '511012', NULL, 0, 0, 0, NULL, NULL),
+(1332, '511013', '5', 'Correo', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1333, '51101301', '5', 'Gastos Correo Yolanda Sosas-Caja', '5', 'D', 0, 1, 0, 0, 1, '511013', NULL, 0, 0, 0, NULL, NULL),
+(1334, '511014', '5', 'Transporte', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1335, '51101401', '5', 'Mosquera Gustavo ', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1336, '51101402', '5', 'Rodriguez Alfonso', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1337, '51101403', '5', 'Bejarano Wallens Jairo', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1338, '51101404', '5', 'Mogollon Arlez', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1339, '51101405', '5', 'Gastos Transporte Yolanda-Sosa', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1340, '51101406', '5', 'Integratur Ltda', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1341, '51101407', '5', 'Panche Cooper Jose Antonio', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1342, '51101408', '5', 'Gastos Transporte Pedro Pacheco', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1343, '51101409', '5', 'Transporte Pacheco Parra Diana Carolina', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1344, '51101410', '5', 'Transporte Ana M Pacheco Rodriguez', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1345, '51101411', '5', 'Transporte Luz Stella Gomez', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1346, '51101412', '5', 'Union Transp De Conductores Ltda', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1347, '51101413', '5', 'Transporte Sanchez Daza Sonia', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1348, '51101414', '5', 'Transporte Nelson Navas Ballesteros', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1349, '51101415', '5', 'Transporte Luz Enith Molina Osorio', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1350, '51101416', '5', 'Transporte William Vargas', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1351, '51101417', '5', 'Transporte Luis Javier Ramirez', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1352, '51101418', '5', 'Transporte Nelson Rodriguez Lopez', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1353, '51101419', '5', 'Transporte Alexander Ramirez Ramirez', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1354, '51101420', '5', 'Transporteguillermo Franco Hernandez', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1355, '51101421', '5', 'Javier Ramirez', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1356, '51101422', '5', 'Nancy Tobar Garzon', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1357, '51101423', '5', 'Price Res Sas', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1358, '51101424', '5', 'Calderon Vivas Yefferson', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1359, '51101425', '5', 'Arango Moreno Juan David', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1360, '51101426', '5', 'Despegar Colombia Sas', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL);
+INSERT INTO `pucs` (`id`, `puc`, `grupo`, `descripcion`, `nivel`, `naturaleza`, `mayor_rep`, `movimiento`, `subcentro`, `bancaria`, `tercero`, `puc_padre`, `pucs_id`, `base_gravable`, `mueve_modulo`, `codigo_dian`, `created_at`, `updated_at`) VALUES
+(1361, '51101427', '5', 'Nydia Nayibe Leon Prieto', '5', 'D', 0, 1, 0, 0, 1, '511014', NULL, 0, 0, 0, NULL, NULL),
+(1362, '511015', '5', 'Papeleria Y Utiles De Oficina', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1363, '51101502', '5', 'Velandia German', '5', 'D', 0, 1, 0, 0, 1, '511015', NULL, 0, 0, 0, NULL, NULL),
+(1364, '51101503', '5', 'Solocintas', '5', 'D', 0, 1, 0, 0, 1, '511015', NULL, 0, 0, 0, NULL, NULL),
+(1365, '51101504', '5', 'Rangel Esperanza', '5', 'D', 0, 1, 0, 0, 1, '511015', NULL, 0, 0, 0, NULL, NULL),
+(1366, '51101505', '5', 'Gastos Papeleria Yolanda Sosa-Caja', '5', 'D', 0, 1, 0, 0, 1, '511015', NULL, 0, 0, 0, NULL, NULL),
+(1367, '51101506', '5', 'Papeleria David Triana', '5', 'D', 0, 1, 0, 0, 1, '511015', NULL, 0, 0, 0, NULL, NULL),
+(1368, '51101507', '5', 'Logoprinter Ltda', '5', 'D', 0, 1, 0, 0, 1, '511015', NULL, 0, 0, 0, NULL, NULL),
+(1369, '51101508', '5', 'Orbis Corporation', '5', 'D', 0, 1, 0, 0, 1, '511015', NULL, 0, 0, 0, NULL, NULL),
+(1370, '51101509', '5', 'Ofix Suministros Y Logistica Sas', '5', 'D', 0, 1, 0, 0, 1, '511015', NULL, 0, 0, 0, NULL, NULL),
+(1371, '511016', '5', 'Fotocopias', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1372, '51101601', '5', 'Rojas Robinson', '5', 'D', 0, 1, 0, 0, 1, '511016', NULL, 0, 0, 0, NULL, NULL),
+(1373, '51101602', '5', 'Fotocopias Sosa Yolanda', '5', 'D', 0, 1, 0, 0, 1, '511016', NULL, 0, 0, 0, NULL, NULL),
+(1374, '51101603', '5', 'Jose Edison Suarez', '5', 'D', 0, 1, 0, 0, 1, '511016', NULL, 0, 0, 0, NULL, NULL),
+(1375, '51101604', '5', 'Castillo Castillo David Alberto', '5', 'D', 0, 1, 0, 0, 1, '511016', NULL, 0, 0, 0, NULL, NULL),
+(1376, '51101605', '5', 'Auros Copias Sas', '5', 'D', 0, 1, 0, 0, 1, '511016', NULL, 0, 0, 0, NULL, NULL),
+(1377, '511019', '5', 'Contribuciones Y Afiliaciones', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1378, '51101901', '5', 'Analfe', '5', 'D', 0, 1, 0, 0, 1, '511019', NULL, 0, 0, 0, NULL, NULL),
+(1379, '51101902', '5', 'Adpostal', '5', 'D', 0, 1, 0, 0, 1, '511019', NULL, 0, 0, 0, NULL, NULL),
+(1380, '51101903', '5', 'Superintendencia De Economia Solidaria ', '5', 'D', 0, 1, 0, 0, 1, '511019', NULL, 0, 0, 0, NULL, NULL),
+(1381, '51101904', '5', 'Lexcom', '5', 'D', 0, 1, 0, 0, 1, '511019', NULL, 0, 0, 0, NULL, NULL),
+(1382, '51101905', '5', 'Legis Informacion Profesional Sas', '5', 'D', 0, 1, 0, 0, 1, '511019', NULL, 0, 0, 0, NULL, NULL),
+(1383, '511021', '5', 'Gastos De Directivos ', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1384, '51102101', '5', 'Baron Orlando ', '5', 'D', 0, 1, 0, 0, 1, '511021', NULL, 0, 0, 0, NULL, NULL),
+(1385, '51102102', '5', 'Tovar Marco Tulio', '5', 'D', 0, 1, 0, 0, 1, '511021', NULL, 0, 0, 0, NULL, NULL),
+(1386, '51102103', '5', 'Junta Directiva', '5', 'D', 0, 1, 0, 0, 1, '511021', NULL, 0, 0, 0, NULL, NULL),
+(1387, '51102104', '5', 'Luis Camargo', '5', 'D', 0, 1, 0, 0, 1, '511021', NULL, 0, 0, 0, NULL, NULL),
+(1388, '511022', '5', 'Gastos De Comit ', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1389, '51102201', '5', 'Liberty Seguros Sa', '5', 'D', 0, 1, 0, 0, 1, '511022', NULL, 0, 0, 0, NULL, NULL),
+(1390, '51102202', '5', 'Afiancol', '5', 'D', 0, 1, 0, 0, 1, '511022', NULL, 0, 0, 0, NULL, NULL),
+(1391, '51102203', '5', 'Coopserfun', '5', 'D', 0, 1, 0, 0, 1, '511022', NULL, 0, 0, 0, NULL, NULL),
+(1392, '511023', '5', 'Reuniones Y Conferencias', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1393, '51102301', '5', 'Horelsa Ltda', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1394, '51102302', '5', 'Rojas Robinson', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1395, '51102303', '5', 'Mendoza Nedys E', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1396, '51102304', '5', 'Ramirez Alexander', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1397, '51102305', '5', 'Baquero Carlos Z', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1398, '51102306', '5', 'Gastos Asamblea - Faditex Eu', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1399, '51102307', '5', 'Gastos Asamblea - Alfonso Rodriguez', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1400, '51102308', '5', 'Gastos Asamblea-Di Bello B Giselle', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1401, '51102309', '5', 'Gastos Asamblea Monroy Medina Lucrecia', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1402, '51102310', '5', 'Gastos Asamblea Tellez Morales Luis ', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1403, '51102311', '5', 'Gtos Asamblea Bernardo Gonzalez', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1404, '51102312', '5', 'Gastos Asamble Luz Gomez', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1405, '51102313', '5', 'Gtos Asamblea Heredia De Jimenez Flor', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1406, '51102314', '5', 'Gastos Asamblea Factory Trance Ltda', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1407, '51102315', '5', 'Gastos Asamblea-Olma Barahona Pardo', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1408, '51102316', '5', 'Operadores Hoteleros Ays Sas', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1409, '51102317', '5', 'Cadena Hotelera El Virrey Sas', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1410, '51102318', '5', 'Wed & Co Ltda', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1411, '51102319', '5', 'Carlos Mario Gutierrez Ocampo', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1412, '51102320', '5', 'Arca Publicidad Eu', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1413, '51102321', '5', 'Hotel Dann Colonial Ltda', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1414, '51102322', '5', 'Logoprinter Ltda', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1415, '51102323', '5', 'Luz Fanny Ome Claros', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1416, '51102324', '5', 'Inversiones Cema Ltda', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1417, '51102325', '5', 'Arvut Hoteles', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1418, '51102326', '5', 'Aero Impresiones', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1419, '51102327', '5', 'Molina Osorio Yamileth', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1420, '51102328', '5', 'Villareal Torres Maria Gladys', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1421, '51102329', '5', 'Suarez Crespo Jose Edison', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1422, '51102330', '5', 'Molina Luz Enith', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1423, '51102331', '5', 'Santos Alvarez Orlando', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1424, '51102332', '5', 'Renacense Hbcc Sas', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1425, '51102333', '5', 'Permoli Sas', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1426, '51102334', '5', 'Continental Eventos Y Logistica Sas', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1427, '51102335', '5', '5 Max Sas', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1428, '51102336', '5', 'Lara Garzon Andrea Carolina', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1429, '51102337', '5', 'Import De Colombia Sas', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1430, '51102338', '5', 'Sanabria Casas Alvaro Richard', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1431, '51102339', '5', 'Ramirez Vanegas Luis Javier', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1432, '51102340', '5', 'Panamericana', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1433, '51102341', '5', 'Facol', '5', 'D', 0, 1, 0, 0, 1, '511023', NULL, 0, 0, 0, NULL, NULL),
+(1434, '511024', '5', 'Gastos Legales', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1435, '51102401', '5', 'Camara De Comercio ', '5', 'D', 0, 1, 0, 0, 1, '511024', NULL, 0, 0, 0, NULL, NULL),
+(1436, '51102402', '5', 'Yolanda Sosa Caja', '5', 'D', 0, 1, 0, 0, 1, '511024', NULL, 0, 0, 0, NULL, NULL),
+(1437, '51102403', '5', 'Fondo Nal De Garantias', '5', 'D', 0, 1, 0, 0, 1, '511024', NULL, 0, 0, 0, NULL, NULL),
+(1438, '51102404', '5', 'Samper Rodriguez Gustavo-Not 26', '5', 'D', 0, 1, 0, 0, 1, '511024', NULL, 0, 0, 0, NULL, NULL),
+(1439, '51102405', '5', 'Mogollon Arlex-Tramites', '5', 'D', 0, 1, 0, 0, 1, '511024', NULL, 0, 0, 0, NULL, NULL),
+(1440, '51102407', '5', 'Superint Notariado Y Registro', '5', 'D', 0, 1, 0, 0, 1, '511024', NULL, 0, 0, 0, NULL, NULL),
+(1441, '51102408', '5', 'Certicamara S.A.', '5', 'D', 0, 1, 0, 0, 1, '511024', NULL, 0, 0, 0, NULL, NULL),
+(1442, '51102409', '5', 'Galvis Martinez Julio Cesar', '5', 'D', 0, 1, 0, 0, 1, '511024', NULL, 0, 0, 0, NULL, NULL),
+(1443, '511025', '5', 'Informacion Comercial ', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1444, '51102501', '5', 'Unad', '5', 'D', 0, 1, 0, 0, 1, '511025', NULL, 0, 0, 0, NULL, NULL),
+(1445, '51102502', '5', 'Robinson Yepes Molina', '5', 'D', 0, 1, 0, 0, 1, '511025', NULL, 0, 0, 0, NULL, NULL),
+(1446, '51102503', '5', 'Analfe', '5', 'D', 0, 1, 0, 0, 1, '511025', NULL, 0, 0, 0, NULL, NULL),
+(1447, '51102504', '5', 'Colonia Vacacional', '5', 'D', 0, 1, 0, 0, 1, '511025', NULL, 0, 0, 0, NULL, NULL),
+(1448, '51102505', '5', 'America Empresarial Ltda', '5', 'D', 0, 1, 0, 0, 1, '511025', NULL, 0, 0, 0, NULL, NULL),
+(1449, '51102506', '5', 'Iden Corp Sas', '5', 'D', 0, 1, 0, 0, 1, '511025', NULL, 0, 0, 0, NULL, NULL),
+(1450, '51102507', '5', 'Lifespring International Sa', '5', 'D', 0, 1, 0, 0, 1, '511025', NULL, 0, 0, 0, NULL, NULL),
+(1451, '511028', '5', 'Servicios Temporales', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1452, '51102801', '5', 'Gastos Servicios Fondep ', '5', 'D', 0, 1, 0, 0, 1, '511028', NULL, 0, 0, 0, NULL, NULL),
+(1453, '511032', '5', 'Suscripciones Y Publicaciones', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1454, '51103201', '5', 'La Republica', '5', 'D', 0, 1, 0, 0, 1, '511032', NULL, 0, 0, 0, NULL, NULL),
+(1455, '51103202', '5', 'El Tiempo ', '5', 'D', 0, 1, 0, 0, 1, '511032', NULL, 0, 0, 0, NULL, NULL),
+(1456, '51103203', '5', 'Coodansocial', '5', 'D', 0, 1, 0, 0, 1, '511032', NULL, 0, 0, 0, NULL, NULL),
+(1457, '51103204', '5', 'Confecoop', '5', 'D', 0, 1, 0, 0, 1, '511032', NULL, 0, 0, 0, NULL, NULL),
+(1458, '51103205', '5', 'Konel Support', '5', 'D', 0, 1, 0, 0, 1, '511032', NULL, 0, 0, 0, NULL, NULL),
+(1459, '51103206', '5', 'Legis Informacion Profesional Sa', '5', 'D', 0, 1, 0, 0, 1, '511032', NULL, 0, 0, 0, NULL, NULL),
+(1460, '511034', '5', 'Asistencia Tecnica', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1461, '51103401', '5', 'Asistencia Tecnica Cifin ', '5', 'D', 0, 1, 0, 0, 1, '511034', NULL, 0, 0, 0, NULL, NULL),
+(1462, '511038', '5', 'Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1463, '51103827', '5', 'Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', '5', 'D', 0, 1, 0, 0, 1, '511038', NULL, 0, 0, 0, NULL, NULL),
+(1464, '511044', '5', 'Gastos De Representacion', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1465, '51104401', '5', 'Gastos De Representacion', '5', 'D', 0, 1, 0, 0, 1, '511044', NULL, 0, 0, 0, NULL, NULL),
+(1466, '51104402', '5', 'Gastos Representacion Rodriguez Alfonso', '5', 'D', 0, 1, 0, 0, 1, '511044', NULL, 0, 0, 0, NULL, NULL),
+(1467, '51104403', '5', 'Gastos Representacion Mosquera Gustavo', '5', 'D', 0, 1, 0, 0, 1, '511044', NULL, 0, 0, 0, NULL, NULL),
+(1468, '51104405', '5', 'Gastos Representacion Lopez De A Maria ', '5', 'D', 0, 1, 0, 0, 1, '511044', NULL, 0, 0, 0, NULL, NULL),
+(1469, '511052', '5', 'Gastos De Viajes', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1470, '51105201', '5', 'Gastos De Viaje', '5', 'D', 0, 1, 0, 0, 1, '511052', NULL, 0, 0, 0, NULL, NULL),
+(1471, '511058', '5', 'Servicios Colonia', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1472, '51105801', '5', 'Gastos Servicios Colonia Vacacional', '5', 'D', 0, 1, 0, 0, 1, '511058', NULL, 0, 0, 0, NULL, NULL),
+(1473, '511060', '5', 'Cuotas De Sostenimiento', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1474, '51106001', '5', 'Cuota De Sostenimineto', '5', 'D', 0, 1, 0, 0, 1, '511060', NULL, 0, 0, 0, NULL, NULL),
+(1475, '511064', '5', 'Auxilios Y Donaciones', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1476, '51106401', '5', 'Auxilios Y Donaciones', '5', 'D', 0, 1, 0, 0, 1, '511064', NULL, 0, 0, 0, NULL, NULL),
+(1477, '51106402', '5', 'Cet', '5', 'D', 0, 1, 0, 0, 1, '511064', NULL, 0, 0, 0, NULL, NULL),
+(1478, '511073', '5', 'Fondo Social Recreacion Y Deportes', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1479, '51107301', '5', 'Fondep', '5', 'D', 0, 1, 0, 0, 1, '511073', NULL, 0, 0, 0, NULL, NULL),
+(1480, '511078', '5', 'Gastos Fondo Bienestar Social', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1481, '51107801', '5', 'Gastos Fondo Bienestar Social', '5', 'D', 0, 1, 0, 0, 1, '511078', NULL, 0, 0, 0, NULL, NULL),
+(1482, '511095', '5', 'Otros', '4', 'D', 0, 0, 0, 0, 0, '5110', NULL, 0, 0, 0, NULL, NULL),
+(1483, '51109501', '5', 'Gastos Varios', '5', 'D', 0, 1, 0, 0, 1, '511095', NULL, 0, 0, 0, NULL, NULL),
+(1484, '51109502', '5', 'Gastos Varios Colonia ', '5', 'D', 0, 1, 0, 0, 1, '511095', NULL, 0, 0, 0, NULL, NULL),
+(1485, '51109503', '5', 'Eventos Colonia ', '5', 'D', 0, 1, 0, 0, 1, '511095', NULL, 0, 0, 0, NULL, NULL),
+(1486, '51109504', '5', 'Fondo De Inversion ', '5', 'D', 0, 1, 0, 0, 1, '511095', NULL, 0, 0, 0, NULL, NULL),
+(1487, '5115', '5', 'Deterioro', '3', 'D', 1, 0, 0, 0, 0, '51', NULL, 0, 0, 0, NULL, NULL),
+(1488, '511503', '5', 'Inversiones  Para Mantener Hasta Su Vencimiento', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1489, '51150301', '5', 'Banco Del Estado-Uconal', '5', 'D', 0, 1, 0, 0, 1, '511503', NULL, 0, 0, 0, NULL, NULL),
+(1490, '51150302', '5', 'Colpatria', '5', 'D', 0, 1, 0, 0, 1, '511503', NULL, 0, 0, 0, NULL, NULL),
+(1491, '51150303', '5', 'Financiafondos', '5', 'D', 0, 1, 0, 0, 1, '511503', NULL, 0, 0, 0, NULL, NULL),
+(1492, '51150304', '5', 'Coopcentral', '5', 'D', 0, 1, 0, 0, 1, '511503', NULL, 0, 0, 0, NULL, NULL),
+(1493, '511504', '5', 'Inversiones Para Mantener Hasta El Vencimiento', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1494, '51150402', '5', 'Colpatria', '5', 'D', 0, 1, 0, 0, 1, '511504', NULL, 0, 0, 0, NULL, NULL),
+(1495, '511515', '5', 'CrEditos De Consumo', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1496, '51151501', '5', 'Creditos De Consumo ', '5', 'D', 0, 1, 0, 0, 1, '511515', NULL, 0, 0, 0, NULL, NULL),
+(1497, '511517', '5', 'Creditos De Consumo', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1498, '51151701', '5', 'Creditos De Consumo ', '5', 'D', 0, 1, 0, 0, 1, '511517', NULL, 0, 0, 0, NULL, NULL),
+(1499, '511518', '5', 'Intereses Creditos De Consumo', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1500, '51151801', '5', 'Intereses Creditos De Consumo', '5', 'D', 0, 1, 0, 0, 1, '511518', NULL, 0, 0, 0, NULL, NULL),
+(1501, '511524', '5', 'Provision Cartera General ', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1502, '51152401', '5', 'Cartera De Asociados ', '5', 'D', 0, 1, 0, 0, 1, '511524', NULL, 0, 0, 0, NULL, NULL),
+(1503, '51152463', '5', 'Deterioro General Adicional Cartera De Creditos', '5', 'D', 0, 1, 0, 0, 1, '511524', NULL, 0, 0, 0, NULL, NULL),
+(1504, '511529', '5', 'Deterioro General De Cartera De Creditos', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1505, '51152901', '5', 'Deterioro General De Cartera De Creditos', '5', 'D', 0, 1, 0, 0, 1, '511524', NULL, 0, 0, 0, NULL, NULL),
+(1506, '511530', '5', 'Cuentas Por Cobrar', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1507, '51153001', '5', 'Cuentas Por Cobrar', '5', 'D', 0, 1, 0, 0, 1, '511530', NULL, 0, 0, 0, NULL, NULL),
+(1508, '51153002', '5', 'Grupo Colcasa', '5', 'D', 0, 1, 0, 0, 1, '511530', NULL, 0, 0, 0, NULL, NULL),
+(1509, '51153003', '5', 'Mogollon Arlex', '5', 'D', 0, 1, 0, 0, 1, '511530', NULL, 0, 0, 0, NULL, NULL),
+(1510, '51153004', '5', 'Casallas Mora Magda Carolina', '5', 'D', 0, 1, 0, 0, 1, '511530', NULL, 0, 0, 0, NULL, NULL),
+(1511, '511552', '5', 'Inversiones Contabilizadas A Valor Razon', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1512, '51155201', '5', 'Colpatria', '5', 'D', 0, 1, 0, 0, 1, '511552', NULL, 0, 0, 0, NULL, NULL),
+(1513, '511559', '5', 'Interes Creditos Con Periodo De Gracia', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1514, '51155901', '5', 'Interes Creditos Con Periodo De Gracia', '5', 'D', 0, 1, 0, 0, 1, '511559', NULL, 0, 0, 0, NULL, NULL),
+(1515, '511563', '5', 'Deterioro General Adicional Cartera De Creditos', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1516, '511565', '5', 'Otros Conceptos Causados Por Periodos De Gracia', '4', 'D', 0, 0, 0, 0, 0, '5115', NULL, 0, 0, 0, NULL, NULL),
+(1517, '51156501', '5', 'Otros Conceptos Causados Por Periodos De Gracia', '5', 'D', 0, 1, 0, 0, 1, '511565', NULL, 0, 0, 0, NULL, NULL),
+(1518, '51156502', '5', 'Costo Conversion Proyecto Niif', '5', 'D', 0, 1, 0, 0, 1, '511565', NULL, 0, 0, 0, NULL, NULL),
+(1519, '5125', '5', 'Depreciaciones Propiedad Planta Y Equipo ', '3', 'D', 1, 0, 0, 0, 0, '51', NULL, 0, 0, 0, NULL, NULL),
+(1520, '512510', '5', 'Muebles Y Equipo De Oficina ', '4', 'D', 0, 0, 0, 0, 0, '5125', NULL, 0, 0, 0, NULL, NULL),
+(1521, '51251001', '5', 'Muebles Y Equipos ', '5', 'D', 0, 1, 0, 0, 1, '512510', NULL, 0, 0, 0, NULL, NULL),
+(1522, '512515', '5', 'Equipo De Computo Y Comunicacion', '4', 'D', 0, 0, 0, 0, 0, '5125', NULL, 0, 0, 0, NULL, NULL),
+(1523, '51251501', '5', 'Equipo De Computo Y Comunicaci¢N ', '5', 'D', 0, 1, 0, 0, 1, '512515', NULL, 0, 0, 0, NULL, NULL),
+(1524, '512545', '5', 'Maquinaria Y Equipo ', '4', 'D', 0, 0, 0, 0, 0, '5125', NULL, 0, 0, 0, NULL, NULL),
+(1525, '51254501', '5', 'Maquinaria Y Equipo ', '5', 'D', 0, 1, 0, 0, 1, '512545', NULL, 0, 0, 0, NULL, NULL),
+(1526, '512550', '5', 'Edificaciones', '4', 'D', 0, 0, 0, 0, 0, '5125', NULL, 0, 0, 0, NULL, NULL),
+(1527, '51255001', '5', 'Depreciacion Edificaciones', '5', 'D', 0, 1, 0, 0, 1, '512550', NULL, 0, 0, 0, NULL, NULL),
+(1528, '5140', '5', 'Gastos Financieros ', '3', 'D', 1, 0, 0, 0, 0, '51', NULL, 0, 0, 0, NULL, NULL),
+(1529, '514020', '5', 'Intereses', '4', 'D', 0, 0, 0, 0, 0, '5140', NULL, 0, 0, 0, NULL, NULL),
+(1530, '51402001', '5', 'Banco Uconal', '5', 'D', 0, 1, 0, 0, 1, '514020', NULL, 0, 0, 0, NULL, NULL),
+(1531, '51402002', '5', 'Analfe', '5', 'D', 0, 1, 0, 0, 1, '514020', NULL, 0, 0, 0, NULL, NULL),
+(1532, '51402003', '5', 'Coopcentral ', '5', 'D', 0, 1, 0, 0, 1, '514020', NULL, 0, 0, 0, NULL, NULL),
+(1533, '51402004', '5', 'Megabanco', '5', 'D', 0, 1, 0, 0, 1, '514020', NULL, 0, 0, 0, NULL, NULL),
+(1534, '51402005', '5', 'Coomeva', '5', 'D', 0, 1, 0, 0, 1, '514020', NULL, 0, 0, 0, NULL, NULL),
+(1535, '51402006', '5', 'Financiafondos', '5', 'D', 0, 1, 0, 0, 1, '514020', NULL, 0, 0, 0, NULL, NULL),
+(1536, '51402007', '5', 'Banco Bogota', '5', 'D', 0, 1, 0, 0, 1, '514020', NULL, 0, 0, 0, NULL, NULL),
+(1537, '51402008', '5', 'Banco Colombia ', '5', 'D', 0, 1, 0, 0, 1, '514020', NULL, 0, 0, 0, NULL, NULL),
+(1538, '51402009', '5', 'Financiafondos', '5', 'D', 0, 1, 0, 0, 1, '514020', NULL, 0, 0, 0, NULL, NULL),
+(1539, '51402010', '5', 'Colpatria', '5', 'D', 0, 1, 0, 0, 1, '514020', NULL, 0, 0, 0, NULL, NULL),
+(1540, '514095', '5', 'Otros', '4', 'D', 0, 0, 0, 0, 0, '5140', NULL, 0, 0, 0, NULL, NULL),
+(1541, '51409501', '5', 'Otros Intereses', '5', 'D', 0, 1, 0, 0, 1, '514095', NULL, 0, 0, 0, NULL, NULL),
+(1542, '52', '5', 'Otros Gastos ', '2', 'D', 0, 0, 0, 0, 0, '5', NULL, 0, 0, 0, NULL, NULL),
+(1543, '5210', '5', 'Gastos Financieros ', '3', 'D', 1, 0, 0, 0, 0, '52', NULL, 0, 0, 0, NULL, NULL),
+(1544, '521005', '5', 'Gastos Bancarios ', '4', 'D', 0, 0, 0, 0, 0, '5210', NULL, 0, 0, 0, NULL, NULL),
+(1545, '52100501', '5', 'Banco De Colombia', '5', 'D', 0, 1, 0, 0, 1, '521005', NULL, 0, 0, 0, NULL, NULL),
+(1546, '52100502', '5', 'Megabanco', '5', 'D', 0, 1, 0, 0, 1, '521005', NULL, 0, 0, 0, NULL, NULL),
+(1547, '52100503', '5', 'Banco De Colombia ', '5', 'D', 0, 1, 0, 0, 1, '521005', NULL, 0, 0, 0, NULL, NULL),
+(1548, '52100504', '5', 'Coopcentral', '5', 'D', 0, 1, 0, 0, 1, '521005', NULL, 0, 0, 0, NULL, NULL),
+(1549, '52100505', '5', 'Coomeva', '5', 'D', 0, 1, 0, 0, 1, '521005', NULL, 0, 0, 0, NULL, NULL),
+(1550, '52100506', '5', 'Banco Bogota', '5', 'D', 0, 1, 0, 0, 1, '521005', NULL, 0, 0, 0, NULL, NULL),
+(1551, '521020', '5', 'Comisiones', '4', 'D', 0, 0, 0, 0, 0, '5210', NULL, 0, 0, 0, NULL, NULL),
+(1552, '52102001', '5', 'Comision Manejo Ges -Gasto Admon', '5', 'D', 0, 1, 0, 0, 1, '521020', NULL, 0, 0, 0, NULL, NULL),
+(1553, '52102002', '5', 'Comision Banco Colombia ', '5', 'D', 0, 1, 0, 0, 1, '521020', NULL, 0, 0, 0, NULL, NULL),
+(1554, '52102003', '5', 'Comision Coopcentral ', '5', 'D', 0, 1, 0, 0, 1, '521020', NULL, 0, 0, 0, NULL, NULL),
+(1555, '52102004', '5', 'Banco De Bogota  033408329', '5', 'D', 0, 1, 0, 0, 1, '521020', NULL, 0, 0, 0, NULL, NULL),
+(1556, '52102005', '5', 'Comision Coomeva', '5', 'D', 0, 1, 0, 0, 1, '521020', NULL, 0, 0, 0, NULL, NULL),
+(1557, '6', '6', 'Costos De Ventas', '1', 'D', 0, 0, 0, 0, 0, NULL, NULL, 0, 0, 0, NULL, NULL),
+(1558, '61', '6', 'Costo De Ventas Y De Prestacion De Servicios', '2', 'D', 0, 0, 0, 0, 0, '6', NULL, 0, 0, 0, NULL, NULL),
+(1559, '6150', '6', 'Intereses De Depositos Y  Creditos De Bancos', '3', 'D', 1, 0, 0, 0, 0, '61', NULL, 0, 0, 0, NULL, NULL),
+(1560, '615010', '6', 'Intereses Cdat', '4', 'D', 0, 1, 0, 0, 1, '6150', NULL, 0, 0, 0, NULL, NULL),
+(1561, '615020', '6', 'Intereses Ahorro Permanente', '4', 'D', 0, 1, 0, 0, 0, '6150', NULL, 0, 0, 0, NULL, NULL),
+(1562, '615035', '6', 'Intereses Credito Bancos', '4', 'D', 0, 0, 0, 0, 0, '6150', NULL, 0, 0, 0, NULL, NULL),
+(1563, '61503501', '6', 'Banco De Colombia', '5', 'D', 0, 1, 0, 0, 0, '615035', NULL, 0, 0, 0, NULL, NULL),
+(1564, '61503502', '6', 'Banco De Bogota', '5', 'D', 0, 1, 0, 0, 0, '615035', NULL, 0, 0, 0, NULL, NULL),
+(1565, '61503503', '6', 'Coomeva', '5', 'D', 0, 1, 0, 0, 0, '615035', NULL, 0, 0, 0, NULL, NULL),
+(1566, '61503504', '6', 'Coopcentral', '5', 'D', 0, 1, 0, 0, 0, '615035', NULL, 0, 0, 0, NULL, NULL),
+(1567, '61503505', '6', 'Coomeva Otro', '5', 'D', 0, 1, 0, 0, 0, '615035', NULL, 0, 0, 0, NULL, NULL),
+(1568, '61503508', '6', 'Banco Colombia', '5', 'D', 0, 1, 0, 0, 0, '615035', NULL, 0, 0, 0, NULL, NULL),
+(1569, '61503509', '6', 'Secretaria De Hacienda Distrital', '5', 'D', 0, 1, 0, 0, 0, '615035', NULL, 0, 0, 0, NULL, NULL),
+(1570, '61503510', '6', 'Colpensiones', '5', 'D', 0, 1, 0, 0, 0, '615035', NULL, 0, 0, 0, NULL, NULL),
+(1571, '615060', '6', 'Interes Credito Bancos ', '4', 'D', 0, 1, 0, 0, 1, '6150', NULL, 0, 0, 0, NULL, NULL),
+(1572, '6170', '6', 'Servicio De Credito ', '3', 'D', 1, 0, 0, 0, 0, '61', NULL, 0, 0, 0, NULL, NULL),
+(1573, '617010', '6', 'Interes Cdat', '4', 'D', 0, 1, 0, 0, 1, '6170', NULL, 0, 0, 0, NULL, NULL),
+(1574, '617020', '6', 'Interes Ahorro Permanente ', '4', 'D', 0, 1, 0, 0, 1, '6170', NULL, 0, 0, 0, NULL, NULL),
+(1575, '8', '8', 'Cuentas De Revelacion De Informacion Financiera - Deudoras', '1', 'D', 0, 0, 0, 0, 0, NULL, NULL, 0, 0, 0, NULL, NULL),
+(1576, '81', '8', 'Deudores Contingentes', '2', 'D', 0, 0, 0, 0, 0, '8', NULL, 0, 0, 0, NULL, NULL),
+(1577, '8110', '8', 'Bienes Y Valores Entregados En Garantia', '3', 'D', 1, 0, 0, 0, 0, '81', NULL, 0, 0, 0, NULL, NULL),
+(1578, '811005', '8', 'Bienes Inmuebles ', '4', 'C', 0, 1, 0, 0, 0, '8110', NULL, 0, 0, 0, NULL, NULL),
+(1579, '811010', '8', 'Valores Mobiliarios', '4', 'C', 0, 1, 0, 0, 0, '8110', NULL, 0, 0, 0, NULL, NULL),
+(1580, '8115', '8', 'Intereses Cartera De Credito', '3', 'D', 1, 0, 0, 0, 0, '81', NULL, 0, 0, 0, NULL, NULL),
+(1581, '811501', '8', 'Multas Sanciones E Indemnizaci', '4', 'C', 0, 1, 0, 0, 0, '8115', NULL, 0, 0, 0, NULL, NULL),
+(1582, '811540', '8', 'Categoria C Riesgo Apreciable', '4', 'C', 0, 1, 0, 0, 1, '8115', NULL, 0, 0, 0, NULL, NULL),
+(1583, '811545', '8', 'Categoria D Riesgo Significativo', '4', 'C', 0, 1, 0, 0, 1, '8115', NULL, 0, 0, 0, NULL, NULL),
+(1584, '811550', '8', 'Categoria E Riesgo De Incobrabilidad', '4', 'C', 0, 1, 0, 0, 1, '8115', NULL, 0, 0, 0, NULL, NULL),
+(1585, '83', '8', 'Deudoras De Control', '2', 'D', 0, 0, 0, 0, 0, '8', NULL, 0, 0, 0, NULL, NULL),
+(1586, '8310', '8', 'Activos Castigados', '3', 'D', 1, 0, 0, 0, 0, '83', NULL, 0, 0, 0, NULL, NULL),
+(1587, '831025', '8', 'Cuentas Por Cobrar', '4', 'C', 0, 1, 0, 0, 1, '8310', NULL, 0, 0, 0, NULL, NULL),
+(1588, '8320', '8', 'Activos Totalmente Depreciados', '3', 'D', 1, 0, 0, 0, 0, '83', NULL, 0, 0, 0, NULL, NULL),
+(1589, '832015', '8', 'Muebles Y Equipos De Oficina ', '4', 'C', 0, 1, 0, 0, 0, '8320', NULL, 0, 0, 0, NULL, NULL),
+(1590, '832020', '8', 'Equipo De Computacion ', '4', 'C', 0, 1, 0, 0, 0, '8320', NULL, 0, 0, 0, NULL, NULL),
+(1591, '832025', '8', 'Maquinaria Y Equipo ', '4', 'C', 0, 1, 0, 0, 0, '8320', NULL, 0, 0, 0, NULL, NULL),
+(1592, '8385', '8', 'Otras Deudas De Control', '3', 'C', 1, 0, 0, 0, 0, '83', NULL, 0, 0, 0, NULL, NULL),
+(1593, '838585', '8', 'Otras', '4', 'C', 0, 1, 0, 0, 0, '8385', NULL, 0, 0, 0, NULL, NULL),
+(1594, '86', '8', 'Deudoras Contingentes Por Contra', '2', 'C', 0, 0, 0, 0, 0, '8', NULL, 0, 0, 0, NULL, NULL),
+(1595, '8605', '8', 'Deudoras Contingentes Por Contra (Cr)', '3', 'C', 1, 0, 0, 0, 0, '86', NULL, 0, 0, 0, NULL, NULL),
+(1596, '860501', '8', 'Deudoras Contingentes Por El Contra', '4', 'C', 0, 1, 0, 0, 0, '8605', NULL, 0, 0, 0, NULL, NULL),
+(1597, '860505', '8', 'Deudoras Contingentes Por Contra (Cr)', '4', 'C', 0, 1, 0, 0, 0, '8605', NULL, 0, 0, 0, NULL, NULL),
+(1598, '88', '8', 'Deudoras De Control Por Contra', '2', 'C', 0, 0, 0, 0, 0, '8', NULL, 0, 0, 0, NULL, NULL),
+(1599, '8805', '8', 'Deudoras De Control Por Contra (Cr)', '3', 'C', 1, 0, 0, 0, 0, '88', NULL, 0, 0, 0, NULL, NULL),
+(1600, '880501', '8', 'Deudoras De Control Por Contra', '4', 'C', 0, 1, 0, 0, 0, '8805', NULL, 0, 0, 0, NULL, NULL),
+(1601, '880505', '8', 'Deudoras De Control Por Contra (Cr)', '4', 'C', 0, 1, 0, 0, 1, '8805', NULL, 0, 0, 0, NULL, NULL),
+(1602, '9', '9', 'Cuentas De Revelacion De Informacion Financiera - Acreedoras', '1', 'C', 0, 0, 0, 0, 0, NULL, NULL, 0, 0, 0, NULL, NULL),
+(1603, '91', '9', 'Acreedoras Contingentes', '2', 'C', 0, 0, 0, 0, 0, '9', NULL, 0, 0, 0, NULL, NULL),
+(1604, '9110', '9', 'Bienes Y Valores Recibidos En Garantia', '3', 'C', 1, 0, 0, 0, 0, '91', NULL, 0, 0, 0, NULL, NULL),
+(1605, '911010', '9', 'Creditos De Consumo ', '4', 'C', 0, 1, 0, 0, 0, '9110', NULL, 0, 0, 0, NULL, NULL),
+(1606, '9115', '9', 'Creditos Aprobados No Desembolsados ', '3', 'C', 1, 0, 0, 0, 0, '91', NULL, 0, 0, 0, NULL, NULL),
+(1607, '911505', '9', 'Creditos Aprobados No Desembolsados ', '4', 'C', 0, 1, 0, 0, 0, '9115', NULL, 0, 0, 0, NULL, NULL),
+(1608, '93', '9', 'Acreedoras De Control', '2', 'C', 0, 0, 0, 0, 0, '9', NULL, 0, 0, 0, NULL, NULL),
+(1609, '9312', '9', 'Capital Minimo Irreducible ', '3', 'C', 1, 0, 0, 0, 0, '93', NULL, 0, 0, 0, NULL, NULL),
+(1610, '931205', '9', 'Capital Minimo Irreducible', '4', 'C', 0, 1, 0, 0, 0, '9312', NULL, 0, 0, 0, NULL, NULL),
+(1611, '96', '9', 'Acreedoras  Por Contra (Db)', '2', 'D', 0, 0, 0, 0, 0, '9', NULL, 0, 0, 0, NULL, NULL),
+(1612, '9605', '9', 'Responsabilidades Contingentes Por El Contrario', '3', 'C', 1, 0, 0, 0, 0, '96', NULL, 0, 0, 0, NULL, NULL),
+(1613, '960505', '9', 'Acreedorascontingentes Por El Contrario ', '4', 'C', 0, 1, 0, 0, 0, '9605', NULL, 0, 0, 0, NULL, NULL),
+(1614, '98', '9', 'Acreedoras De Control Por Contra (Cr)', '2', 'C', 0, 0, 0, 0, 0, '9', NULL, 0, 0, 0, NULL, NULL),
+(1615, '9805', '9', 'Acreedoras De Control Por Contra (Db)', '3', 'C', 1, 0, 0, 0, 0, '98', NULL, 0, 0, 0, NULL, NULL),
+(1616, '980505', '9', 'Acreedoras De Control Por El Contrario', '4', 'C', 0, 1, 0, 0, 0, '9805', NULL, 0, 0, 0, NULL, NULL);");
+    DB::update("
+        UPDATE pucs AS p1
+            INNER JOIN pucs AS p2 
+                ON p1.puc_padre = p2.puc
+        SET p1.pucs_id = p2.id;"
+    );
     }
 }
