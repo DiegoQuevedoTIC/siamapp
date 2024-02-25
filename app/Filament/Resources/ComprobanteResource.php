@@ -3,9 +3,11 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ComprobanteResource\Pages;
+use App\Filament\Resources\ComprobanteResource\Widgets\PlantillaComprobanteOverview;
 use App\Models\Comprobante;
 use App\Models\ParametrosTercero;
 use App\Models\Puc;
+use App\Models\Tercero;
 use App\Models\TipoContribuyente;
 use App\Models\TipoDocumentoContable;
 use Filament\Forms\Components\DatePicker;
@@ -16,6 +18,8 @@ use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
 use Filament\Forms\Set;
+use Filament\Infolists;
+use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Support\RawJs;
 use Filament\Tables;
@@ -24,6 +28,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Icetalker\FilamentTableRepeater\Forms\Components\TableRepeater;
+
 
 class ComprobanteResource extends Resource
 {
@@ -57,6 +62,34 @@ class ComprobanteResource extends Resource
         return $form
             ->schema([
                 //
+                Toggle::make('usar_plantilla')
+                    ->label('Usar plantilla')
+                    ->live(),
+
+                Select::make('plantilla')
+                    ->label('Plantilla')
+                    ->options(function () {
+                        $query = Comprobante::where('is_plantilla', '=', true)->get()->pluck('descripcion_comprobante', 'id');
+                        return $query;
+                    })
+                    ->disabled(function (Get $get, Set $set): bool {
+                        if ($get('usar_plantilla')) {
+                            $template = Comprobante::all()->find($get('plantilla'));
+                            if (!is_null($template)) {
+                                $template = $template->toArray();
+                                $set('tipo_documento_contables_id', $template['tipo_documento_contables_id']);
+                                $set('n_documento', $template['n_documento']);
+                                $set('tercero_id', $template['tercero_id']);
+                                $set('is_plantilla', 0);
+                                $set('descripcion_comprobante', $template['descripcion_comprobante']);
+                            }
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    })
+                    ->live(),
+
                 Select::make('tipo_documento_contables_id')
                     ->label('Tipo de Documento')
                     ->native(false)
@@ -68,11 +101,11 @@ class ComprobanteResource extends Resource
                     ->label('Nº de Documento')
                     ->required(),
 
-                Select::make('tercero_comprobante')
+                Select::make('tercero_id')
                     ->label('Tercero Comprobante')
                     ->required()
                     ->native(false)
-                    ->options($terceroComprobante),
+                    ->relationship(name: 'tercero', titleAttribute: 'nombres'),
 
                 DatePicker::make('fecha_comprobante')
                     ->label('Fecha de comprobante')
@@ -88,8 +121,7 @@ class ComprobanteResource extends Resource
                                 $set('fecha_comprobante', date('Y-m-d'));
                                 return true;
                             }
-                        }
-                        else{
+                        } else {
                             return false;
                         }
                     }),
@@ -102,40 +134,58 @@ class ComprobanteResource extends Resource
                     ->label('Descripcion del Comprobante')
                     ->required(),
 
-                Select::make('clase_comprobante_origen')
-                    ->label('Clase Comprobante Origen')
-                    ->options([
-                        1 => 'Ejemplo de comprobante origen'
-                    ])
-                    ->required(),
                 TableRepeater::make('detalle')
                     ->label('Detalle comprobante')
                     ->relationship('comprobanteLinea')
                     ->schema([
                         Select::make('pucs_id')
                             ->label('Cuenta PUC')
-                            ->options($puc),
+                            ->options($puc)
+                            ->live()
+                            ->native(false)
+                            ->searchable()
+                            ->required(),
 
-                        Select::make('tercero_registro')
+                        Select::make('tercero_id')
                             ->label('Tercero Registro')
-                            ->options(function () {
-                                return TipoContribuyente::all()->pluck('nombre', 'id');
-                            }),
+                            ->relationship(name: 'tercero', titleAttribute: 'nombres')
+                            ->required(),
 
                         TextInput::make('descripcion_linea')
-                            ->label('Descripcion Linea'),
+                            ->label('Descripcion Linea')
+                            ->required(),
 
                         TextInput::make('debito')
                             ->placeholder('Debito')
                             ->mask(RawJs::make('$money($input)'))
                             ->numeric()
-                            ->prefix('$'),
+                            ->prefix('$')
+                            ->disabled(function (Get $get): bool {
+                                $query = Puc::all()->find($get('pucs_id'));
+                                if (!is_null($query)) {
+                                    $query = $query->toArray();
+                                    if ($query['naturaleza'] != 'D') {
+                                        return true;
+                                    }
+                                }
+                                return false;
+                            }),
 
                         TextInput::make('credito')
                             ->placeholder('Credito')
                             ->numeric()
                             ->inputMode('decimal')
-                            ->prefix('$'),
+                            ->prefix('$')
+                            ->disabled(function (Get $get): bool {
+                                $query = Puc::all()->find($get('pucs_id'));
+                                if (!is_null($query)) {
+                                    $query = $query->toArray();
+                                    if ($query['naturaleza'] != 'C') {
+                                        return true;
+                                    }
+                                }
+                                return false;
+                            }),
                     ])
                     ->reorderable()
                     ->cloneable()
@@ -151,21 +201,26 @@ class ComprobanteResource extends Resource
             ->columns([
                 //
                 TextColumn::make('id')
-                    ->label('Nº'),
+                    ->label('Nº')
+                    ->searchable()
+                    ->sortable(),
 
                 TextColumn::make('tipo_documento_contables_id')
                     ->label('Tipo de Documento Contable')
-                    ->formatStateUsing(fn (string $state): string => TipoDocumentoContable::all()->find($state)['tipo_documento']),
+                    ->formatStateUsing(fn (string $state): string => TipoDocumentoContable::all()->find($state)['tipo_documento'])
+                    ->searchable()
+                    ->sortable(),
 
                 TextColumn::make('n_documento')
-                    ->label('Nº de documento'),
+                    ->label('Nº de documento')
+                    ->searchable()
+                    ->sortable(),
 
-                TextColumn::make('tercero_comprobante')
+                TextColumn::make('tercero_id')
                     ->label('Tercero Comprobante')
-                    ->formatStateUsing(fn (string $state): string => TipoContribuyente::all()->find($state)['nombre']),
-
-                TextColumn::make('clase_comprobante_origen')
-                    ->label('Clase comprobante origen'),
+                    ->formatStateUsing(fn (string $state): string => Tercero::all()->find($state)['nombres'])
+                    ->searchable()
+                    ->sortable(),
             ])
             ->filters([
                 //
