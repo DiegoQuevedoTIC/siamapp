@@ -12,6 +12,8 @@ class ComprobanteLinea extends Model
 
     protected $fillable = ['pucs_id', 'tercero_registro', 'descripcion_linea', 'debito', 'credito', 'comprobante_id'];
 
+    protected $table = 'comprobante_lineas';
+
     public function comprobante(): BelongsTo
     {
         return $this->belongsTo(Comprobante::class);
