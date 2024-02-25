@@ -32,7 +32,7 @@ return new class extends Migration
             $table->foreignId('nivelescolar_id')->constrained('nivel_escolars');
             $table->foreignId('estadocivil_id ')->constrained('estado_civils');            
             $table->text('observaciones')->nullable();
-            $table->string('autorizacion');
+            $table->string('autorizacion')->nullable();
             $table->boolean('activo')->default(true);
             $table->timestamps();
             $table->softDeletes();
