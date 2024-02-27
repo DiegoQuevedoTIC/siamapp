@@ -33,80 +33,67 @@ class PucResource extends Resource
     protected static ?string    $navigationIcon = 'heroicon-o-swatch';
     protected static ?string    $navigationLabel = 'Plan Unico de Cuentas';
     protected static ?string    $navigationGroup = 'Contabilidad';
-    protected static ?string    $navigationParentItem = 'Parametros Contabilidad';   
+    protected static ?string    $navigationParentItem = 'Parametros Contabilidad';
     protected static ?string    $modelLabel = 'PUC - Cuenta';
 
     public static function form(Form $form): Form
     {
         return $form
-            ->columns(9)
+            ->columns(2)
             ->schema([
                 TextInput::make('puc')
-                ->maxLength(10)
-                ->columnSpan(2)
-                ->required()
-                ->label('Cuenta PUC'),
+                    ->maxLength(10)
+                    ->required()
+                    ->label('Cuenta PUC'),
                 TextInput::make('grupo')
-                ->maxLength(1)
-                ->columnSpan(1)
-                ->required()
-                ->label('Grupo Cuenta'),
+                    ->maxLength(1)
+                    ->required()
+                    ->label('Grupo Cuenta'),
                 TextInput::make('descripcion')
-                ->maxLength(255)
-                ->columnSpan(3)
-                ->required()
-                ->label('Descripcion Cuenta'),
+                    ->maxLength(255)
+                    ->required()
+                    ->label('Descripcion Cuenta'),
                 TextInput::make('nivel')
-                ->maxLength(1)
-                ->columnSpan(1)
-                ->required()
-                ->label('Nivel Cuenta'),
-                TextInput::make('puc_padre')
-                ->maxLength(10)
-                ->columnSpan(2)
-                ->required()
-                ->label('Cuenta PUC Padre'),
+                    ->maxLength(1)
+                    ->required()
+                    ->label('Nivel Cuenta'),
+                Select::make('puc_padre')
+                    ->label('PUC Padre')
+                    ->searchable()
+                    ->native(false)
+                    ->getSearchResultsUsing(fn (string $search): array => Puc::where('puc_padre', '=', "{$search}")->orWhere('descripcion', 'like', "%{$search}%")->limit(50)->pluck('descripcion', 'id')->toArray())
+                    ->getOptionLabelUsing(fn ($value): ?string => Puc::find($value)?->puc),
                 Select::make('naturaleza')
-                ->required()
-                ->label('Naturaleza de la cuenta')
-                ->columnSpan(2)
-                ->options([
-                    'D' => 'Debito',
-                    'C' => 'Credito ',
-                ]),
+                    ->required()
+                    ->label('Naturaleza de la cuenta')
+                    ->options([
+                        'D' => 'Debito',
+                        'C' => 'Credito ',
+                    ]),
                 Toggle::make('mayor_rep')
-                ->required()
-                ->label('Cuenta mayor?')
-                ->columnSpan(9), 
+                    ->required()
+                    ->label('Cuenta mayor?'),
                 Toggle::make('movimiento')
-                ->required()
-                ->label('Cuenta permite movimiento?')
-                ->columnSpan(9), 
+                    ->required()
+                    ->label('Cuenta permite movimiento?'),
                 Toggle::make('subcentro')
-                ->required()
-                ->label('Cuenta se maneja por subcentro?')
-                ->columnSpan(9), 
+                    ->required()
+                    ->label('Cuenta se maneja por subcentro?'),
                 Toggle::make('bancaria')
-                ->required()
-                ->label('Es cuenta bancaria?')
-                ->columnSpan(9), 
+                    ->required()
+                    ->label('Es cuenta bancaria?'),
                 Toggle::make('tercero')
-                ->required()
-                ->label('Cuenta requiere adminisracion por Terceros?')
-                ->columnSpan(9), 
+                    ->required()
+                    ->label('Cuenta requiere adminisracion por Terceros?'),
                 Toggle::make('base_gravable')
-                ->required()
-                ->label('Cuenta solicita base gravable?')
-                ->columnSpan(9), 
+                    ->required()
+                    ->label('Cuenta solicita base gravable?'),
                 Toggle::make('mueve_modulo')
-                ->required()
-                ->label('Es cuenta de conciliacion?')
-                ->columnSpan(9), 
+                    ->required()
+                    ->label('Es cuenta de conciliacion?'),
                 Toggle::make('codigo_dian')
-                ->required()
-                ->label('Es cuenta que reporta a la DIAN?')
-                ->columnSpan(9), 
-
+                    ->required()
+                    ->label('Es cuenta que reporta a la DIAN?'),
             ]);
     }
 
@@ -115,14 +102,12 @@ class PucResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('puc')
-                ->searchable(),
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('descripcion')
-                ->searchable(),
+                    ->searchable(),
             ])
             ->defaultSort('puc')
-            ->filters([
-                
-            ])
+            ->filters([])
             ->actions([
                 Tables\Actions\EditAction::make(),
             ])
@@ -135,14 +120,14 @@ class PucResource extends Resource
                 Tables\Actions\CreateAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -150,5 +135,5 @@ class PucResource extends Resource
             'create' => Pages\CreatePuc::route('/create'),
             'edit' => Pages\EditPuc::route('/{record}/edit'),
         ];
-    }    
+    }
 }

@@ -45,7 +45,9 @@ class AdminPanelProvider extends PanelProvider
             ->authGuard('web')
             ->collapsibleNavigationGroups()
             ->sidebarFullyCollapsibleOnDesktop()
-            ->brandName('Siam App')
+            ->brandName('Siam')
+            ->brandLogo(asset('images/logo.png'))
+            ->brandLogoHeight('5rem')
             ->navigationGroups([
                 NavigationGroup::make()
                     ->label('Terceros & Asociados'),
@@ -68,7 +70,6 @@ class AdminPanelProvider extends PanelProvider
                     ->isActiveWhen(fn (): bool => request()->routeIs('filament.admin.resources.gestion-asociados.create'))
                     ->sort(5),
             ])
-            ->favicon(asset('images/LogoSiam.png'))
             ->colors([
                 'danger' => Color::Rose,
                 'gray' => Color::Gray,

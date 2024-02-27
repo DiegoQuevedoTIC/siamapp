@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\CierreMensualController;
 use Illuminate\Support\Facades\Route;
+use App\Jobs\CierreMensual;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +17,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/x', function () {
-    return view('welcome');
+    return view('inicio');
 });
+
+
+Route::get('/cierre',[CierreMensualController::class, 'index']);
+
+Route::get('/apertura',[CierreMensualController::class, 'apertura']);

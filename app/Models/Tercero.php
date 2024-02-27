@@ -28,6 +28,20 @@ class Tercero extends Model
     }
 
 
+    public function nivelescolar(): BelongsTo
+    {
+        return $this->belongsTo(NivelEscolar::class);
+    }
+
+    public function estadocivil(): BelongsTo
+    {
+        return $this->belongsTo(EstadoCivil::class);
+    }
+
+    public function profesion(): BelongsTo
+    {
+        return $this->belongsTo(Profesion::class);
+    }
 
     public function barrio(): BelongsTo
     {
@@ -111,6 +125,9 @@ class Tercero extends Model
         'ciudad_id',
         'barrio_id',
         'tipo_contribuyente_id',
+        'ocupacion',
+        'nivelescolar_id',
+        'estadocivil_id',  
         'observaciones',
 
 

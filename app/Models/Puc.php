@@ -15,4 +15,14 @@ class Puc extends Model
     {
         return $this->hasMany(ComprobanteLinea::class);
     }
+
+    public function pucs(): HasMany
+    {
+        return $this->hasMany(Puc::class, 'pucs_id');
+    }
+
+    public function allPucs()
+    {
+        return $this->pucs()->with('allPucs');
+    }
 }

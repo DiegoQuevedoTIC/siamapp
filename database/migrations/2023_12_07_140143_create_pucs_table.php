@@ -24,6 +24,8 @@ return new class extends Migration
             $table->boolean('bancaria')->default(false);
             $table->boolean('tercero')->default(false);
             $table->string('puc_padre',10);
+            $table->unsignedBigInteger('pucs_id')->nullable();
+            $table->foreign('pucs_id')->on('pucs')->references('id');
             $table->boolean('base_gravable')->default(false);
             $table->boolean('mueve_modulo')->default(false);
             $table->boolean('codigo_dian')->default(false);

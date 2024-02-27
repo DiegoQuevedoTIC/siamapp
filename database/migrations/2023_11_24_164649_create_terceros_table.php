@@ -28,7 +28,13 @@ return new class extends Migration
             $table->foreignId('ciudad_id')->constrained('ciudads');
             $table->foreignId('barrio_id')->constrained('barrios');
             $table->foreignId('tipo_contribuyente_id')->constrained('tipo_contribuyentes');
+            $table->foreignId('profesion_id')->constrained('profesions');
+            $table->foreignId('nivelescolar_id')->constrained('nivel_escolars');
+            $table->unsignedBigInteger('estadocivil_id');
+            $table->foreign('estadocivil_id')->on('estado_civils')->references('id');
+            //$table->foreignId('estadocivil_id ')->constrained('estado_civils');            
             $table->text('observaciones')->nullable();
+            $table->string('autorizacion')->nullable();
             $table->boolean('activo')->default(true);
             $table->timestamps();
             $table->softDeletes();

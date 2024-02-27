@@ -65,5 +65,9 @@ class Asociado extends Model
         return $this->BelongsTo(Tercero::class);
     }
 
-    protected $fillable = [];
+    protected $fillable = [
+
+    ];
+
+
 }

@@ -8,6 +8,9 @@ use App\Models\Tercero;
 use App\Models\Pais;
 use App\Models\Ciudad;
 use App\Models\Barrio;
+use App\Models\NivelEscolar;
+use App\Models\EstadoCivil;
+use App\Models\Profesion;
 use App\Models\Novedades;
 use App\Models\TipoIdentificacion;
 use Illuminate\Database\Eloquent\Builder;
@@ -21,7 +24,7 @@ use Filament\Tables\Table;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
-
+use Filament\Forms\Components\CheckboxList;
 use Filament\Forms\Components\Radio;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Toggle;
@@ -87,8 +90,8 @@ class TerceroResource extends Resource
                 ->columnSpanFull(),
                 Wizard\Step::make('Datos Basicos')
                 ->columns(4)
-                ->schema([                
-                TextInput::make('nombres')
+                ->schema([              
+                    TextInput::make('nombres')
                     ->required()
                     ->markAsRequired(false)
                     ->maxLength(255)
@@ -169,15 +172,57 @@ class TerceroResource extends Resource
                     ->preload()
                     ->columnSpan(1)
                     ->label('Tipo de Contribuyente'),
-                Toggle::make('activo')
-                    ->required(), 
+                Select::make('profesion_id')
+                    ->relationship('profesion', 'nombre')
+                    ->required()
+                    ->markAsRequired(false)
+                    ->columnSpan(1)
+                    ->label('Ocupacion'),
+                Select::make('nivelescolar_id')
+                    ->relationship('nivelescolar', 'nombre')
+                    ->required()
+                    ->markAsRequired(false)
+                    ->preload()
+                    ->columnSpan(1)
+                    ->label('Nivel Escolar'),
+                Select::make('estadocivil_id')
+                    ->relationship('estadocivil', 'nombre')
+                    ->required()
+                    ->markAsRequired(false)
+                    ->preload()
+                    ->columnSpan(1)
+                    ->label('Estado Civil'),
                 Textarea::make('observaciones')
                     ->maxLength(65535)
                     ->markAsRequired(false)
                     ->columnSpanFull(),
-
-                ]),
-                            
+                Toggle::make('activo')
+                    ->onIcon('heroicon-m-hand-thumb-up')
+                    ->offColor('danger')
+                    ->offIcon('heroicon-m-hand-thumb-down')
+                    ->label('Autorización tratamiento de datos personales
+                    FONDEP. 
+                    Responsable de los datos personales recolectados de sus Asociados con ocasión 
+                    de la prestación del servicio y en atención a la ley 1581 de 2012 y del Decreto 1377 de
+                     2013, Autorizo para continuar con el tratamiento de mis datos que permita recaudar, 
+                     almacenar, usar, circular, suprimir, procesar, compilar, intercambiar, y en general la
+                      información suministrada en este formulario, con fines que cumpla el objeto social de
+                    FONDEP')
+                    ->columnSpanFull()
+                    ->required(),
+                CheckboxList::make('autorizacion')
+                    ->label('Autorizo recibir información general de Fondep por el o los siguientes medios')
+                    ->options([
+                        'Correo_Electronico' => 'Correo_Electronico',
+                        'SMS' => 'SMS',
+                        'Whatsapp' => 'Whatsapp',
+                        'Grupo_Whatsapp' => 'Grupo_Whatsapp',
+                    ])
+                ->columns(4)
+                ->gridDirection('row')
+                ->columnSpanFull()
+                ->hiddenOn('create'),
+                ]),              
                 ])->columnSpanFull(),
                 
             ]);
