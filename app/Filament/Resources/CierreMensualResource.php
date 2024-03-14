@@ -14,6 +14,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Icetalker\FilamentTableRepeater\Forms\Components\TableRepeater;
 use Illuminate\Database\Eloquent\Builder;
@@ -72,17 +73,28 @@ class CierreMensualResource extends Resource
         return $table
             ->columns([
                 //
+                TextColumn::make('mes_cierre')
+                ->label('Mes Cierre')
+                ->searchable(),
+                TextColumn::make('fecha_cierre')
+                ->label('Fecha Cierre')
+                ->searchable()
+                ->sortable()
+                ->date('d/m/Y')
+                
             ])
             ->filters([
                 //
+
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                //Tables\Actions\EditAction::make(),
+                Tables\Actions\ViewAction::make()->label('Ver Cierre')
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
+                /*Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
-                ]),
+                ]),*/
             ]);
     }
 
@@ -98,7 +110,8 @@ class CierreMensualResource extends Resource
         return [
             'index' => Pages\ListCierreMensuals::route('/'),
             'create' => Pages\CreateCierreMensual::route('/create'),
-            //'edit' => Pages\EditCierreMensual::route('/{record}/edit'),
+            'edit' => Pages\EditCierreMensual::route('/{record}/edit'),
+            'view' => Pages\ViewCierreMensual::route('/{record}/view')
         ];
     }
 }
