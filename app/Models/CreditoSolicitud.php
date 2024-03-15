@@ -10,4 +10,8 @@ class CreditoSolicitud extends Model
     use HasFactory;
 
     protected $table = 'credito_solicitudes';
+
+    public function asociado(){
+        return $this->belongsTo(Asociado::class);
+    }
 }

@@ -63,6 +63,9 @@ return new class extends Migration
             $table->integer('ciius')->default(0)->nullable();
             $table->date('fecha_primer_vto')->nullable();
 
+
+            $table->foreign('cliente')->references('id')->on('asociados');
+
             $table->timestamps();
         });
     }
