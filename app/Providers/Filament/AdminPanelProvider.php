@@ -63,10 +63,10 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->navigationItems([
                 NavigationItem::make()
-                    ->label('Administración Asociados')
+                    ->label('Gestión de Asociados')
                     ->url(fn (): string => GestionAsociadoResource::getUrl('create'))
                     ->icon('heroicon-o-rectangle-stack')
-                    ->group('Gestión de Asociados')
+                    ->group('Gestión de Clientes')
                     ->isActiveWhen(fn (): bool => request()->routeIs('filament.admin.resources.gestion-asociados.create'))
                     ->sort(5),
             ])

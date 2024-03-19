@@ -66,7 +66,7 @@ class Asociado extends Model
     }
 
     protected $fillable = [
-
+        
     ];
 
 
