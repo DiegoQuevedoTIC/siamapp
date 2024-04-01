@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('pucs_id');
             $table->foreign('pucs_id')->on('pucs')->references('id');
+            $table->unsignedBigInteger('cierre_anual_id');
+            $table->foreign('cierre_anual_id')->on('cierre_anuales')->references('id');
             $table->decimal('saldo_anterior', 12, 2)->default(0.00)->nullable();
             $table->decimal('saldo_actual', 12, 2)->default(0.00)->nullable();
             $table->decimal('debito', 12, 2)->nullable()->default(0.00);

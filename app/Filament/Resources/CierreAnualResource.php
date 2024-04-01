@@ -11,6 +11,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -20,6 +21,9 @@ class CierreAnualResource extends Resource
     protected static ?string $model = CierreAnual::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string    $navigationLabel = 'Cierre Anual';
+    protected static ?string    $navigationGroup = 'Contabilidad';
+    protected static ?string    $navigationParentItem = 'Procesos';
 
     public static function form(Form $form): Form
     {
@@ -40,12 +44,15 @@ class CierreAnualResource extends Resource
         return $table
             ->columns([
                 //
+                TextColumn::make('fecha_cierre')->label('Fecha Cierre')->date('d/m/Y'),
+                TextColumn::make('ano_cierre')->label('Año cierre'),
+
             ])
             ->filters([
                 //
             ])
             ->actions([
-                //Tables\Actions\EditAction::make(),
+                Tables\Actions\ViewAction::make()->label('Ver'),
             ])
             ->bulkActions([
                 /*Tables\Actions\BulkActionGroup::make([
@@ -66,6 +73,7 @@ class CierreAnualResource extends Resource
         return [
             'index' => Pages\ListCierreAnuals::route('/'),
             'create' => Pages\CreateCierreAnual::route('/create'),
+            'view'   => Pages\CierreAnualView::route('/{record}/view')
             //'edit' => Pages\EditCierreAnual::route('/{record}/edit'),
         ];
     }
