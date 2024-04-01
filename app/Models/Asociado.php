@@ -65,6 +65,11 @@ class Asociado extends Model
         return $this->BelongsTo(Tercero::class);
     }
 
+    public function creditoSolicitudes()
+    {
+        return $this->hasMany(CreditoSolicitud::class);
+    }
+
     protected $fillable = [
         
     ];

@@ -61,15 +61,6 @@ class AdminPanelProvider extends PanelProvider
                     ->label('Roles y Permisos')
                     ->collapsed(),
             ])
-            ->navigationItems([
-                NavigationItem::make()
-                    ->label('Gestión de Asociados')
-                    ->url(fn (): string => GestionAsociadoResource::getUrl('create'))
-                    ->icon('heroicon-o-rectangle-stack')
-                    ->group('Gestión de Clientes')
-                    ->isActiveWhen(fn (): bool => request()->routeIs('filament.admin.resources.gestion-asociados.create'))
-                    ->sort(5),
-            ])
             ->colors([
                 'danger' => Color::Rose,
                 'gray' => Color::Gray,

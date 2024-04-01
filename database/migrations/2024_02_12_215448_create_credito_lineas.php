@@ -13,32 +13,26 @@ return new class extends Migration
     {
         Schema::create('credito_lineas', function (Blueprint $table) {
             $table->id();
-            $table->integer('linea');
-            $table->string('descripcion');
-            $table->unsignedBigInteger('clasificacion');
+            $table->unsignedBigInteger('linea');
+            $table->string('descripcion', 120);
+            $table->string('clasificacion', 3);
             $table->unsignedBigInteger('tipo_garantia');
             $table->unsignedBigInteger('tipo_inversion');
-            $table->unsignedBigInteger('moneda')->nullable();
-            $table->unsignedBigInteger('periodo_pago')->nullable();
-            $table->float('interes_cte')->default(0)->nullable();
-            $table->float('interes_mora')->default(0)->nullable();
-            $table->string('tipo_cuota')->nullable();
-            $table->string('tipo_tasa')->nullable();
-            $table->integer('nro_cuotas_max')->nullable();
-            $table->integer('nro_cuotas_gracia')->default(0);
-            $table->integer('cant_gar_real')->nullable();
-            $table->integer('cant_gar_pers')->nullable();
+            $table->unsignedInteger('moneda')->nullable();
+            $table->unsignedInteger('periodo_pago')->nullable();
+            $table->float('interes_cte')->default(0);
+            $table->float('interes_mora')->default(0);
+            $table->string('tipo_cuota', 1);
+            $table->string('tipo_tasa', 1);
+            $table->unsignedBigInteger('nro_cuotas_max');
+            $table->unsignedBigInteger('nro_cuotas_gracia')->default(0);
+            $table->unsignedBigInteger('cant_gar_real');
+            $table->unsignedBigInteger('cant_gar_pers');
             $table->float('monto_min')->nullable();
             $table->float('monto_max')->nullable();
-            $table->string('abonos_extra')->nullable();
-            $table->integer('ciius')->nullable();
-            $table->string('subcentro')->nullable();
-
-            $table->foreign('moneda')->references('id')->on('monedas');
-            $table->foreign('clasificacion')->references('id')->on('clasificacion_creditos');
-            $table->foreign('tipo_inversion')->references('id')->on('tipo_inversiones');
-            $table->foreign('tipo_garantia')->references('id')->on('tipo_garantias');
-            $table->foreign('periodo_pago')->references('id')->on('pago_periodos');
+            $table->string('abonos_extra', 1);
+            $table->unsignedBigInteger('ciius');
+            $table->string('subcentro', 16);
             $table->timestamps();
         });
     }

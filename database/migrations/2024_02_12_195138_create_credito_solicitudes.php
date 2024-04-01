@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('solicitud');
             $table->integer('linea');
-            $table->unsignedBigInteger('cliente');
+            $table->unsignedBigInteger('asociado_id');
             $table->string('asociado')->nullable();
             $table->string('estado')->nullable();
             $table->date('fecha_solicitud')->nullable();
@@ -31,7 +31,7 @@ return new class extends Migration
             $table->date('fecha_novedad')->nullable();
             $table->string('tipo_desembolso')->nullable();
             $table->string('int_cte_mlv')->nullable();
-            $table->float('interes_cte')->default(0)->nullable();
+            $table->unsignedBigInteger('tasa_id');
             $table->string('int_mora_mlv')->nullable();
             $table->float('interes_mora')->default(0)->nullable();
             $table->string('tipo_cuota')->nullable();
@@ -64,8 +64,8 @@ return new class extends Migration
             $table->date('fecha_primer_vto')->nullable();
 
 
-            $table->foreign('cliente')->references('id')->on('asociados');
-
+            $table->foreign('asociado_id')->references('id')->on('asociados');
+            $table->foreign('tasa_id')->references('id')->on('tasas');
             $table->timestamps();
         });
     }
