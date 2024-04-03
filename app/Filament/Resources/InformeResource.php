@@ -19,7 +19,7 @@ class InformeResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string    $navigationLabel = 'Informes';
-    protected static ?string    $navigationGroup = 'Informes';
+    protected static ?string    $navigationGroup = 'Contabilidad';
 
     public static function form(Form $form): Form
     {

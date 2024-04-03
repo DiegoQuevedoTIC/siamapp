@@ -23,7 +23,7 @@ class BalanceResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string    $navigationLabel = 'Balances';
-    protected static ?string    $navigationGroup = 'Informes';
+    protected static ?string    $navigationGroup = 'Contabilidad';
     protected static ?string    $navigationParentItem = 'Informes';
 
     public static function form(Form $form): Form

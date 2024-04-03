@@ -24,7 +24,7 @@ class AuxiliarATerceroResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string    $navigationLabel = 'Auxiliar A Tercero';
-    protected static ?string    $navigationGroup = 'Informes';
+    protected static ?string    $navigationGroup = 'Contabilidad';
     protected static ?string    $navigationParentItem = 'Informes';
 
     public static function form(Form $form): Form
