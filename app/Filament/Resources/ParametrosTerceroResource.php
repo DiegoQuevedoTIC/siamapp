@@ -20,7 +20,7 @@ class ParametrosTerceroResource extends Resource
 {
     protected static ?string $model = ParametrosTercero::class;
 
-    protected static ?string    $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string    $navigationIcon = 'heroicon-o-bars-arrow-up';
     protected static ?string    $navigationLabel = 'Parametros Terceros';
     protected static ?string    $navigationGroup = 'Parametros';
 

@@ -17,9 +17,10 @@ class InformeResource extends Resource
 {
     protected static ?string $model = Informe::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-book-open';
     protected static ?string    $navigationLabel = 'Informes';
     protected static ?string    $navigationGroup = 'Contabilidad';
+    protected static ?int       $navigationSort = 3;
 
     public static function form(Form $form): Form
     {

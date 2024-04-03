@@ -29,11 +29,13 @@ class GestionAsociadoResource extends Resource
 {
     protected static ?string $model = Asociado::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    protected static ?string $navigationLabel = 'Gestión de Asociados';
-    protected static ?string $navigationGroup = 'Gestión de Clientes';
+    protected static ?string $navigationIcon = 'heroicon-o-identification';
+    protected static ?string $navigationLabel = 'Estado de Cuenta';
+    protected static ?string $navigationGroup = 'Gestión de Asociados';
     protected static ?string $modelLabel = 'Estado de cuenta Asociado';
     protected static ?string $pluralModelLabel = 'Estado de cuenta Asociado';
+    protected static ?int       $navigationSort = 1;
+    
 
     public static function form(Form $form): Form
     {
@@ -48,17 +50,27 @@ class GestionAsociadoResource extends Resource
         return $table
             ->columns([
                 //
-                Tables\Columns\TextColumn::make('codigo_interno_pag')
-                    ->searchable(),
+                Tables\Columns\TextColumn::make('tercero.tercero_id')
+                    ->searchable()
+                    ->label('Identificacion'),
                 Tables\Columns\TextColumn::make('tercero.nombres')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Nombres'),
+                Tables\Columns\TextColumn::make('tercero.primer_apellido')
+                    ->searchable()
+                    ->label('Primer Apellido'),
+                Tables\Columns\TextColumn::make('tercero.segundo_apellido')
+                    ->searchable()
+                    ->label('Segundo Apellido'),
                 Tables\Columns\TextColumn::make('EstadoCliente.nombre')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Estado Actual'),
                 Tables\Columns\TextColumn::make('pagaduria.nombre')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Pagaduria'),
             ])
             ->filters([
-                //
+                
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),

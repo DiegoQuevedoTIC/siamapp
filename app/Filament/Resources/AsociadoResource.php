@@ -48,9 +48,10 @@ class AsociadoResource extends Resource
 
 
     protected static ?string    $navigationIcon = 'heroicon-o-user-plus';
-    protected static ?string    $navigationLabel = 'Definir como Asociado';  
-    protected static ?string    $navigationGroup = 'Terceros & Asociados';
+    protected static ?string    $navigationLabel = 'Vincular Asociado';  
+    protected static ?string    $navigationGroup = 'Administracion de Terceros';
     protected static ?string    $modelLabel = 'Asociado';
+    protected static ?int       $navigationSort = 2;
 
 public static function form(Form $form): Form
 {

@@ -17,7 +17,7 @@ class ParametrosGeneralesResource extends Resource
 {
     protected static ?string $model = ParametrosGenerales::class;
 
-    protected static ?string    $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string    $navigationIcon = 'heroicon-o-arrows-right-left';
     protected static ?string    $navigationLabel = 'Parametros Generales';
     protected static ?string    $navigationGroup = 'Parametros';
 
