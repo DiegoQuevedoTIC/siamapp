@@ -22,8 +22,9 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Althinect\FilamentSpatieRolesPermissions\FilamentSpatieRolesPermissionsPlugin;
 use App\Filament\Pages\Auth\Login;
+use App\Filament\Resources\GestionAsociadoResource;
 use Filament\Support\Enums\MaxWidth;
- 
+
 
 
 
@@ -49,7 +50,7 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogoHeight('5rem')
             ->navigationGroups([
                 NavigationGroup::make()
-                     ->label('Terceros & Asociados'),
+                    ->label('Terceros & Asociados'),
                 NavigationGroup::make()
                     ->label('Contabilidad')
                     ->collapsed(),
@@ -58,7 +59,7 @@ class AdminPanelProvider extends PanelProvider
                     ->collapsed(),
                 NavigationGroup::make()
                     ->label('Roles y Permisos')
-                    ->collapsed(),   
+                    ->collapsed(),
             ])
             ->colors([
                 'danger' => Color::Rose,
@@ -70,8 +71,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
-            ->pages([
-            ])
+            ->pages([])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
                 Widgets\AccountWidget::class,
@@ -94,5 +94,3 @@ class AdminPanelProvider extends PanelProvider
             ]);
     }
 }
-
-
