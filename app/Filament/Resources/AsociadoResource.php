@@ -115,7 +115,7 @@ public static function form(Form $form): Form
                     ->columns(7)
                     ->schema([
                         Select::make('ciudad_nacimiento_id')
-                                ->options(Ciudad::query()->pluck('nombre', 'id'))
+                                ->options(Ciudad::query()->orderBy('nombre')->pluck('nombre', 'id'))
                                 ->markAsRequired(false)
                                 ->required()
                                 ->preload()

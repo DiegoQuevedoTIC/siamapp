@@ -122,13 +122,13 @@ class TerceroResource extends Resource
                     ->columnSpan(3)
                     ->label('Direccion Residencia'),
                 Select::make('pais_id')
-                    ->options(Pais::query()->pluck('nombre', 'id'))
-                    ->markAsRequired(false)
-                    ->required()
-                    ->preload()
-                    ->columnSpan(1)
-                    ->live()
-                    ->label('Pais de Residencia'),
+                        ->options(Pais::query()->pluck('nombre', 'id'))
+                        ->markAsRequired(false)
+                        ->required()
+                        ->preload()
+                        ->columnSpan(1)
+                        ->live()
+                        ->label('Pais de Residencia'),
                 Select::make('ciudad_id')
                     ->options(fn (Get $get): Collection => Ciudad::query()
                     ->where('pais_id', $get('pais_id'))
